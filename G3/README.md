@@ -5,4 +5,4 @@ This is the folder containing the source code and presentation materials for the
 ## Contact
 
 - Trainer: Ilija Mitev ilija.mitev3@gmail.com
-- Assistant: [ASSISTANT NAME] [assistant email]
+- Assistant: Frosina Stamenkovska stamenkovskaf@gmail.com
