@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Basic Web Concepts</title>
+
+	<meta name="description" content="HTML and CSS Presentation">
+	<meta name="author" content="QA">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="assets/css/reveal.css">
+	<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'assets/text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>Basic Web Concepts</h1>
+					<h3>Introduction</h3>
+					<p>
+						<small>Trainer: <a href="#">Ilija Mitev</a> - ilija.mitev3@gmail.com</small></br>
+						<small>Assistant: <a href="#">Frosina Stamenkovska</a> - stamenkovskaf@gmail.com</small></br>
+					<div
+						style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+						<img src="./assets/img/lg.png" alt="logo"
+							style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+					</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+
+				<!-- Slide 2.1 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>About Trainer</h2>
+					<ul>
+						<li>
+							<span style="font-weight: bold;">Software Developer</span> at @Sorsix
+						</li>
+						<li>
+							<span style="font-weight: bold;">Professional Trainer and Lecturer</span><br /> at
+							<div
+								style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+								<img src="./assets/img/lg.png" alt="logo"
+									style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Slide 2.2 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>About Assistant</h2>
+					<ul>
+						<li>
+							<span style="font-weight: bold;">Software Developer</span> at @Aspekt
+						</li>
+						<li>
+							<span style="font-weight: bold;">Assistant</span><br /> at
+							<div
+								style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+								<img src="./assets/img/lg.png" alt="logo"
+									style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Contact info</h2>
+					<ul>
+						<li>Trainer Mail: <a href="mailto:ilija.mitev3@gmail.com"><strong style="color:#007ac9;"><a
+										href="">ilija.mitev3@gmail.com</strong></a><span style="font-size: 50%;">
+								(*preferred)</span></li>
+
+						<li>Assistant Mail: <a href="mailto:stamenkovskaf@gmail.com"><strong style="color:#007ac9;"><a
+										href="">stamenkovskaf@gmail.com</strong></a><span style="font-size: 50%;">
+								(*preferred)</span></li>
+					</ul>
+				</section>
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Session overview</h2>
+					<ul>
+						<li>This session is divided into two parts</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Part 1</h2>
+					<ul>
+						<li>History of Internet and WWW (World Wide Web)</li>
+						<li>How the web works</li>
+						<li>Web Pages, Websites and Web Apps</li>
+						<li>Browsers and Browser types</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Part 2</h2>
+					<ul>
+						<li>Web Development Process</li>
+						<li>Hosting</li>
+						<li>SEO</li>
+						<li>Maintenance</li>
+						<li>Backup</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>History</h1>
+				</section>
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>History of the Internet</h2>
+					<ul>
+						<li>Soviet Union – successfully launch of the first satellite in Earth’s orbit –Satellite name:
+							“Sputnik 1”</li>
+						<li>Soviet Union vs. US – Competing in the Intelligence and Technology sphere, as the biggest
+							rivals worldwide that time</li>
+						<li>The event of “Sputnik 1” made US to create the US Department of Defense ARPA (the Advanced
+							Research Projects Agency)</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>DARPA</h2>
+					<ul>
+						<li>Researches develops advanced ideas and technology beyond the currently identified needs</li>
+						<li>Their most famous and most widely used project:
+							<ul>
+								<li><strong style="color:#007ac9;">The Creation of Internet</strong></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#222222"
+					data-background-transition="slide" style="color: #ffffff;">
+					<h3>Student Research #1</h3>
+					<p><strong>Action:</strong> Find out more about “Man-Computer Symbiosis”</p>
+				</section>
+
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>ARPANET</h2>
+					<ul>
+						<li>ARPANET stands for Advanced Research Projects Agency Network</li>
+						<li>The name of the first computer network</li>
+						<li>Presented in year <strong>1967</strong></li>
+						<li>First four-computer network was up and running in <strong>1969</strong></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 49 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+						data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+						<div class="sl-block-content"><img src="assets/img/arpanet_1969.jpg"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 49 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+						data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+						<div class="sl-block-content"><img src="assets/img/arpanet_1977.jpg"></div>
+					</div>
+				</section>
+
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Internet and Web</h1>
+				</section>
+
+
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Internet</h2>
+					<ul>
+						<li>Global network of computing recources</li>
+						<li>Collection of nodes (computers, routers, networks, ets.) interconnected and
+							intercommunicating between each other</li>
+						<li>Common deffinitions:
+							<ul>
+								<li>A network of networks based on the TCP/IP communications protocol</li>
+								<li>A community of people who use and develop those networks</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#222222"
+					data-background-transition="slide" style="color: #ffffff;">
+					<h3>Student Research #2</h3>
+					<p><strong>Action:</strong> Find out how TCP/IP was invented?</p>
+				</section>
+
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Internet services</h2>
+					<ul>
+						<li>There are many known Internet Services Today</li>
+						<li>Most basic which exists from it's beginnings:
+							<ul>
+								<li><a href="http://searchexchange.techtarget.com/definition/e-mail-electronic-mail-or-email"
+										target="_blank">Email</a></li>
+								<li><a href="http://searchnetworking.techtarget.com/definition/Telnet"
+										target="_blank">Telnet</a></li>
+								<li><a href="http://searchenterprisewan.techtarget.com/definition/File-Transfer-Protocol"
+										target="_blank">FTP</a></li>
+								<li><a href="http://searchnetworking.techtarget.com/definition/Usenet"
+										target="_blank">Usenet</a></li>
+								<li><a href="http://searchcrm.techtarget.com/definition/World-Wide-Web"
+										target="_blank">World Wide Web (WWW)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>WWW</h2>
+					<ul>
+						<li>Gopher –Information Retrieval System used in the early <strong>1990s</strong></li>
+						<li>Gopher provided method of delivering menus of links and files</li>
+						<li>Created by University of Minnesota</li>
+						<li>See more here: <a
+								href="https://en.wikipedia.org/wiki/Gopher_(protocol)">https://en.wikipedia.org/wiki/Gopher_(protocol)</a>
+						</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>WWW (2)</h2>
+					<ul>
+						<li>Replaced by CERN’s project lead by <a href="https://www.w3.org/People/Berners-Lee/"
+								target="_blank">Tim Berners-Lee</a></li>
+						<li>CERN –European Council for Nuclear Research</li>
+						<li>Tim Berners-Lee has been working on Information Management System in which documents with
+							texts can contain links</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>WWW or WEB</h2>
+					<ul>
+						<li><strong>WWW</strong> stands for <strong>W</strong>orld <strong>W</strong>ide
+							<strong>W</strong>eb
+						</li>
+						<li>Tim Berners-Lee, the "father" of World Wide Web defined it as follows:
+							<blockquote cite="">
+								&ldquo;The World Wide Web is the universe of network-accasible information, an
+								embodiment of human knowledge&rdquo;
+							</blockquote>
+						</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>WWW Technical Definition</h2>
+					<ul>
+						<li>All the users and resources on the Internet that are using the <strong>HTTP (Hyper-Text
+								Transfer Protocol)</strong></li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 18 -->
+				<section data-background="#fff">
+					<h2>Watch this on YouTube</h2>
+					<a href="https://www.youtube.com/watch?v=21eFwbb48sE" target="_blank">
+						<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+							data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+							<div class="sl-block-content"><img src="assets/img/video.png"></div>
+						</div>
+					</a>
+				</section>
+
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>HTTP</h1>
+					<h3><span style="color:#000">H</span>yper-<span style="color:#000">T</span>ext <span
+							style="color:#000">T</span>ransfer <span style="color:#000">P</span>rotocol</h3>
+				</section>
+
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>HTTP</h2>
+					<ul>
+						<li>Exapmle:
+							<ul>
+								<li><strong>http</strong>://facebook.com</li>
+							</ul>
+						</li>
+						<li>Current version HTTP/1.1</li>
+						<a href="http://www.rfc-editor.org/rfc/rfc2616.txt"
+							target="_blank">http://www.rfc-editor.org/rfc/rfc2616.txt</a>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>How HTTP works?</h2>
+					<ul>
+						<li>When clicking a link (hypertext link), you are transferring an URL to your browser. From
+							this URL, your browser knows which server to contact and what file to ask for.</li>
+						<li>The communication between your computer and the server is done by using HTTP protocol</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>HTTP Communication Lifecycle</h2>
+					<p>During an http transaction, the requester, known as the <strong>client</strong>, asks for a file
+						to a <strong>server.</strong></p>
+					<p>Normal schema:</p>
+					<ol>
+						<li>Client connects to host</li>
+						<li>Sever accepts connection</li>
+						<li>Client requests response</li>
+						<li>Server sends a response (including file or not)</li>
+					</ol>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+						data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+						<div class="sl-block-content"><img src="assets/img/http.png"></div>
+					</div>
+				</section>
+
+
+
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>URL</h1>
+					<h3><span style="color:#000">U</span>niform <span style="color:#000">R</span>esource <span
+							style="color:#000">L</span>ocator </h3>
+				</section>
+
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>URL</h2>
+					<ul>
+						<li>URL stands for Uniform Resource Locator, and is used to specify addresses on the World Wide
+							Web</li>
+						<li>A URL is the fundamental network identification for any resource connected to the web (e.g.,
+							hypertext pages, images, and sound files)</li>
+						<li>URL format:
+							<ul>
+								<li><span style="color:red">protocol://</span><span style="color:blue">host/</span><span
+										style="color:green">appends</span></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Web Servers</h1>
+				</section>
+
+
+
+
+				<!-- Slide 31 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web Servers</h2>
+					<ul>
+						<li>Every Web site sits on a computer known as a Web server</li>
+						<li>This server is always connected to the internet</li>
+						<li>Every Web server that is connected to the Internet is given a unique address made up of a
+							series of four numbers between 0 and 256 separated by periods, for example,
+							<strong>68.198.17.112</strong> or <strong>78.221.45.27</strong> called IP Address
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 32 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web Servers (2)</h2>
+					<ul>
+						<li>When you register a Web address, also known as a domain name, such as mywebsite.com you have
+							to specify the IP address of the Web server that will host the site</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 37 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>ISP</h1>
+					<h3><span style="color:#000">I</span>nternet <span style="color:#000">S</span>ervice <span
+							style="color:#000">P</span>rovider </h3>
+				</section>
+
+
+
+
+				<!-- Slide 38 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>ISP</h2>
+					<p>This stands for <strong>I</strong>nternet <strong>S</strong>ervice <strong>P</strong>rovider.
+						They are the companies who provide you service in terms of internet connection to connect to the
+						internet.</p>
+				</section>
+
+
+
+				<!-- Slide 39 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>DNS</h1>
+					<h3><span style="color:#000">D</span>omain <span style="color:#000">N</span>ame <span
+							style="color:#000">S</span>ystem </h3>
+				</section>
+
+
+
+
+				<!-- Slide 40 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>DNS</h2>
+					<p>DNS stands for <strong>D</strong>omain <strong>N</strong>ame <strong>S</strong>ystem.</p>
+					<p>When someone types your website address, e.g. www.facebook.com, your browser will ask the
+						<strong>Domain Name System</strong> to find your <strong>IP address</strong> that <strong>hosts
+							your site.</strong>
+					</p>
+				</section>
+
+
+
+
+				<!-- Slide 22 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+						data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+						<div class="sl-block-content"><img src="assets/img/dns.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 41 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Domains</h1>
+				</section>
+
+
+
+
+				<!-- Slide 42 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Domains and Subdomains</h2>
+					<p><strong>Domain</strong> is the main part of your website name that comes after
+						<strong>www</strong>. For website www.<strong>mywebsite</strong>.com –domain is <strong
+							style="color:#007ac9;">mywebsite.com</strong>
+					</p>
+					<p><strong>Subdomain</strong> is the further division of your domain</p>
+					<p>Subdomains can be:</p>
+					<ul>
+						<li><span style="color:green;">forum</span>.mywebsite.com</li>
+						<li><span style="color:green;">chat</span>.mywebsite.com</li>
+						<li><span style="color:green;">blog</span>.mywebsite.com</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 43 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Domain Extensions</h2>
+					<p>There are many different domain extensions today</p>
+					<p>Most known ones:</p>
+					<ul>
+						<li><span style="color:green;">.com</span> - Stands for commercial or company, but most widely
+							used today for any type of website</li>
+						<li><span style="color:green;">.net</span> - Stands for network - usually used for network sites
+						</li>
+						<li><span style="color:green;">.org</span> - Stands for organization and is supposed to be used
+							for non-profit bodies</li>
+						<li><span style="color:green;">.us</span> or <span style="color:green;">.mk</span> - Country
+							based domain extensions</li>
+						<li><span style="color:green;">.biz</span> - Stands for business</li>
+						<li><span style="color:green;">.gov</span> - Stands for government</li>
+						<li><span style="color:green;">.tv</span> - Stands for Television</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Web Pages, Websites and Web Apps</h1>
+				</section>
+
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web Pages</h2>
+					<ul>
+						<li>Single Document written using <b>HyperText Markup Language (HTML)</b></li>
+						<li><b>Hypertext</b> is a text that contains hyperlinks that lead to other documents</li>
+						<li><b>Hyperlink</b> is a text, word, sentence, button, icon, when you click on it, you will be
+							directed to another web page</li>
+						<li>We access a web page by entering its URL (Uniform Resource Locator) address using a web
+							browser</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Websites</h2>
+					<ul>
+						<li>A group of <b>interlinked</b> and <b>well-structured</b> web pages that exist on the same
+							domain</li>
+						<li>There are two types of websites: <strong style="color:#007ac9;">static</strong> and <strong
+								style="color:#007ac9;">dynamic</strong></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Static Websites</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">Static Websites:</strong> websites that contains only Static
+							web pages</li>
+						<li><strong style="color:#007ac9;">Static Web Page:</strong> A document that <b>every time</b>
+							it is requested displays on the browser <b>exactly as it is stored in the server</b></li>
+						<li>It doesn't change at all, unless the creator (owner) changes it <b>manually</b></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Dynamic Websites</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">Dynamic Websites:</strong> websites that contains Dynamic web
+							pages</li>
+						<li><strong style="color:#007ac9;">Dynamic Web Page:</strong> Web pages that are generated using
+							scripting languages and programs interacting with a database on the server side</li>
+						<li>Programs that add, restrict, edit or remove data without the creator's intervention</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+						data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+						<div class="sl-block-content"><img src="assets/img/staticdynamic.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<ul>
+						<li>There are more than billion websites available on web today <a
+								href="https://www.internetlivestats.com/total-number-of-websites/" target="_blank">Check
+								the Live Stats</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web Apps</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">Web Apps: </strong>A <b>software application/program</b> that
+							exists on the server and runs using a web browser, through a web page</li>
+						<li>Created using a combination of <b>programming languages</b> and web application
+							<b>frameworks</b>
+						</li>
+						<li>*it may use the RAM, allows for user interaction and it's designed for many uses</li>
+						<li>*the Web Pages are generated using scripts and programs</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+						data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+						<div class="sl-block-content"><img src="assets/img/webapps.jpg"></div>
+					</div>
+				</section>
+
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Dynamic websites vs. Web Apps</h2>
+					<h4><strong style="color:#007ac9;">Dynamic Websites</strong></h4>
+					<ul>
+						<li>Allows the user to interact and add content</li>
+						<li>The <b>creator</b>'s content is the <b>dominant</b></li>
+						<li>They are <b>less complicated</b> and need less skills than web apps do</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Dynamic websites vs. Web Apps</h2>
+					<h4><strong style="color:#007ac9;">Web Apps</strong></h4>
+					<ul>
+						<li><b>Web Apps</b> are based on <b>user engagement</b></li>
+						<li>Almost all their content is from the <b>end user</b></li>
+						<li>Web Apps are similar to <b>desktop</b> apps</li>
+						<li>They are <b>more complicated</b> and need more skills than websites do</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 34 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Web Browsers</h1>
+				</section>
+
+
+
+
+				<!-- Slide 35 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web Browsers</h2>
+					<p>Web browsers are nothing but software applications installed on your computer that helps you
+						browse Websites</p>
+					<ul>
+						<li><strong>Note:</strong> You can build your own Web Browser if you know how to code</li>
+					</ul>
+					<p>Popular Web Browsers:</p>
+					<ul>
+						<li><a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft
+								Edge</a></li>
+						<li><a href="https://www.mozilla.org/en-US/firefox/new/?product=firefox-3.6.8&os=osx%E2%8C%A9=en-US"
+								target="_blank">Mozilla Firefox</a></li>
+						<li><a href="https://www.google.com/chrome/browser/desktop/" target="_blank">Google Chrome</a>
+						</li>
+						<li><a href="http://www.opera.com/" target="_blank">Opera</a></li>
+						<li><a href="http://www.apple.com/safari/" target="_blank">Safari</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 36 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web Browsers (2)</h2>
+					<p>Less Popular Web Browsers:</p>
+					<ul>
+						<li>Konqueror</li>
+						<li>SeaMonkey</li>
+						<li>MaxhtonBrowser</li>
+						<li>KidZui</li>
+						<li>RockMelt</li>
+						<li>Iron Browser</li>
+						<li>Sleipnir</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 44 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>W3C</h1>
+					<h3><span style="color:#000">W</span>orld <span style="color:#000">W</span>ide <span
+							style="color:#000">W</span>eb <span style="color:#000">C</span>onsortium</h3>
+				</section>
+
+
+
+
+				<!-- Slide 45 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>W3C</h2>
+					<p>This stands for <strong>World Wide Web Consortium</strong> which is an international consortium
+						of companies involved with the Internet and the Web.</p>
+					<p>The W3C was founded in 1994 by <strong>Tim Berners-Lee</strong>, the original architect of the
+						World Wide Web</p>
+					<p>The organization's purpose is to develop open standards so that the Web evolves in a single
+						direction rather than being splintered among competing factions</p>
+					<p>The W3C is the chief standards body for <strong>HTTP</strong> and <strong>HTML</strong></p>
+					<a href="http://www.w3.org/">http://www.w3.org/</a>
+				</section>
+
+
+
+
+				<!-- Slide 18 -->
+				<section data-background="#fff">
+					<h2>Watch this TED Talk</h2>
+					<a href="https://www.ted.com/talks/tim_berners_lee_on_the_next_web?language=en" target="_blank">
+						<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+							data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+							<div class="sl-block-content"><img src="assets/img/videoTED.png"></div>
+						</div>
+					</a>
+				</section>
+
+
+
+				<!-- Slide 45 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Advantages of Web Applications</h2>
+					<ul>
+						<li>24/7 Availability</li>
+						<li>Accessibility across devices</li>
+						<li>Integration with other systems</li>
+						<li>Advertising opportunities</li>
+						<li>Global reach</li>
+						<li>Easier maintenance – thus cost saving</li>
+						<li>Showcase your work worldwide</li>
+						<li>Easy and quick access</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 45 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Disadvantages of Web Applications</h2>
+					<ul>
+						<li>Internet reliance</li>
+						<li>Security</li>
+						<li>Performance limitations</li>
+						<li>Browser Support</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 45 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Skills required to work in web industry</h2>
+					<ul>
+						<li>HTML Knowledge</li>
+						<li>CSS Knowledge</li>
+						<li>Scripting (JavaScript/PHP//Ajax technology...)</li>
+						<li>Remote Access tools (RDP, FileZilla–FTP)</li>
+						<li>File Uploading &amp; Downloading (FTP, Data Transfer)</li>
+					</ul>
+					<p><strong>For advanced web applications:</strong></p>
+					<ul>
+						<li>ASP.NET, C#, Python, Java, SQL, Software Engineering skills...</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 46 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>How do you start?</h1>
+				</section>
+
+
+
+				<!-- Slide 47 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>How do you start?</h2>
+					<p>We learned a lot about basic concepts of the Web</p>
+					<ul>
+						<li>Now you are ready to go deeper into building <b>web pages</b>, <b>websites</b> and later
+							<b>web apps</b>
+						</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 48 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web development proccess</h2>
+					<p>There are numerous steps in the web site design and development process</p>
+					<ol>
+						<li>Information Gathering</li>
+						<li>Planning</li>
+						<li>Design</li>
+						<li>Development</li>
+						<li>Testing and Delivery</li>
+						<li>SEO</li>
+						<li>Maintenance</li>
+					</ol>
+				</section>
+
+
+
+				<!-- Slide 49 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;"
+						data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+						<div class="sl-block-content"><img src="assets/img/development-process.gif"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 50 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Information Gathering</h1>
+				</section>
+
+
+
+				<!-- Slide 51 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Information Gathering</h2>
+					<ul>
+						<li>Purpose</li>
+						<li>Target Audience</li>
+						<li>Content &amp; business requirements</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 52 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Planning</h1>
+				</section>
+
+
+
+				<!-- Slide 53 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Planning</h2>
+					<ul>
+						<p>Using the information gathered from phase one, it is time to put together a plan for your
+							website</p>
+						<p>This is the point where a <strong>site map</strong> is developed.</p>
+						<p>The site map is a list of all main topic areas of the site, as well as sub-topics, if
+							applicable. This serves as a guide as to what content will be on the site.</p>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 54 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Hosting</h2>
+					<ul>
+						<p>Engineers should consider few things when hosting a website:</p>
+						<ul>
+							<li>Hosting platform:
+								<ol>
+									<li>Windows Servers (for IIS, Apache, ASP.NET, ASP, PHP, Perl, Phyton, Java, etc.)
+									</li>
+									<li>Linux Servers (for Apache, PHP, Perl, Phyton, Java)</li>
+								</ol>
+							</li>
+						</ul>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 55 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Hosting (2)</h2>
+					<ul>
+						<p>Things to consider when hosting a website:</p>
+						<ul>
+							<li>Hosting types:
+								<ol>
+									<li>Free hosting</li>
+									<li>Shared hosting</li>
+									<li>VPS</li>
+									<li>Dedicated hosting</li>
+									<li>Cloud hosting</li>
+								</ol>
+							</li>
+						</ul>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 58 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#222222"
+					data-background-transition="slide" style="color: white;">
+					<h3>Student Research #4</h3>
+					<p><strong>Action:</strong> Find out the difference between the hosting types. What hosting type is
+						mostly used today and why?</p>
+				</section>
+
+
+
+
+				<!-- Slide 56 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>SEO</h1>
+					<h3><span style="color:#000">S</span>earch <span style="color:#000">E</span>ngine <span
+							style="color:#000">O</span>ptimization</h3>
+				</section>
+
+
+
+				<!-- Slide 55 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>SEO</h2>
+					<ul>
+						<li><b>Search engine optimization (SEO)</b> is the process of improving the <b>quality</b> and
+							<b>quantity</b> of website traffic to a website or a web page from search engines
+						</li>
+						<li>SEO targets <b>unpaid traffic</b> (known as "natural" or "organic" results) rather than
+							direct traffic or paid traffic.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 55 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>SEO (2)</h2>
+					<ul>
+						<li>As an <b>Internet marketing strategy</b>, SEO considers how search engines work, the
+							computer-programmed algorithms that dictate search engine behavior, what people search for,
+							the actual search terms or keywords typed into search engines, and which search engines are
+							preferred by their targeted audience.</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 58 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#222222"
+					data-background-transition="slide" style="color: white;">
+					<h3>Student Research #5</h3>
+					<p><strong>Action:</strong> Find out the most used SEO techniques today.</p>
+				</section>
+
+
+
+				<!-- Slide 59 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Web maintenance</h1>
+				</section>
+
+
+
+				<!-- Slide 60 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Web maintenance</h2>
+					<ul>
+						<p>Maintenance of website is important to prevent losing data</p>
+						<p>Maintenance means:</p>
+						<ul>
+							<li>Regular website backups</li>
+							<li>Regular website health monitoring checks</li>
+							<li>Correct and on time updates of the information in the website</li>
+						</ul>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 61 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Website backups</h2>
+					<ul>
+						<p>Backup of a website can be done by copying website data to another location</p>
+						<p>It is general practice to have the data on three different places, so that you will be 99,99%
+							sure your data is safe</p>
+						<p>Backups can be done on a periods of time depending of the website frequency of information
+							updates</p>
+						<p>Backups should be preserved in a different server locations, different servers, tapes or
+							other external media devices or machines</p>
+				</section>
+
+
+
+
+
+				<!-- Slide 64 -->
+				<section style="text-align: center;" data-background="#fff">
+					<h3>Now we are ready to get into code</h3>
+				</section>
+
+
+
+				<!-- Slide 65 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="assets/lib/js/head.min.js"></script>
+	<script src="assets/js/reveal.js"></script>
+
+	<script>
+
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+			// Transition speed
+			transitionSpeed: 'default', // default/fast/slow
+
+			// Enable slide navigation via mouse wheel
+			mouseWheel: true,
+
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'assets/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'assets/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+				{ src: 'assets/plugin/notes/notes.js', async: true }
+			]
+		});
+
+	</script>
+
+</body>
+
+</html>
