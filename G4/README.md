@@ -1,4 +1,4 @@
-# Group 3
+# Group [4]
 
 This is the folder containing the source code and presentation materials for the group.
 
