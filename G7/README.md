@@ -1,8 +1,8 @@
-# Group [NUMBER]
+# Group G7
 
 This is the folder containing the source code and presentation materials for the group.
 
 ## Contact
 
-- Trainer: [TRAINER NAME] [trainer email]
-- Assistant: [ASSISTANT NAME] [assistant email]
+- Trainer: Panche Manaskov - panemanaskov@gmail.com
+- Assistant: Aleksandar Milovski - aleksandarmilovski1@gmail.com
