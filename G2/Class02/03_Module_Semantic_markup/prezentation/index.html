@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>Text Content Elements</h3>
+					<p>
+						<small>Trainer: <a href="#">Ivan Jamandilovski</a> - jamandilovski@gmail.com</small></br>
+						<small>Assistant: <a href="#">Hristina Bozhinova</a> - hristina.bozhinova93@gmail.com</small></br>
+						<div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Structural and semantic markup</li>
+						<li>HTML headings and paragraphs</li>
+						<li>Ordered and unordered list</li>
+						<li>Quotations</li>
+						<li>Other text elements</li>
+						<li>Escape/Special characters</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Introduction</h2>
+					<ul>
+						<li>Despite the popularity of multimedia rich websites, <b>text</b> remains as one of the main parts of the Web</li>
+						<li>Documents are mostly based on text, and so is the Web</li>
+						<li>In this lesson, we will explore and learn HTML <b>text formatting</b> and <b>text layout tags</b></li>
+						<li>Most importantly, you will learn how to use text formatting standards</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Markup</h2>
+					<ul>
+						<li><strong>Structural markup:</strong> the elements we use to set up the structure of a page; ex. elements like section, header, footer, headings, etc...</li>
+						<li><strong>Semantic markup:</strong> the elements we use to provide any extra information with semantic value; ex. where emphasis is placed in a sentence, that something you have written is a quotation (and who said it), the meaning of acronyms, etc...</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Structural markup</h1>
+				</section>
+
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Headings</h2>
+					<p>HTML has six "levels" of headings, with <b>&lt;h1&gt;</b> being the highest section level and <b>&lt;h6&gt;</b> being the lowest.</p>
+					<ul>
+						<li><span style="color:#007ac9;">&lt;h1&gt;</span> - used for main headings</li>
+						<li><span style="color:#007ac9;">&lt;h2&gt;</span> - used for subheadings</li>
+						<li><span style="color:#007ac9;">&lt;h3&gt;</span></li>
+						<li><span style="color:#007ac9;">&lt;h4&gt;</span></li>
+						<li><span style="color:#007ac9;">&lt;h5&gt;</span></li>
+						<li><span style="color:#007ac9;">&lt;h6&gt;</span></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Headings</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;h1&gt;This is a Main Heading&lt;/h1&gt;
+&lt;h2&gt;This is a Level 2 Heading&lt;/h2&gt;
+&lt;h3&gt;This is a Level 3 Heading&lt;/h3&gt;
+&lt;h4&gt;This is a Level 4 Heading&lt;/h4&gt;
+&lt;h5&gt;This is a Level 5 Heading&lt;/h5&gt;
+&lt;h6&gt;This is a Level 6 Heading&lt;/h6&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Headings</h2>
+					<p>You should only use one <b>&lt;h1&gt;</b> per page. Using more than one will not result in an error, but using only one is seen as a best practice.
+						It makes logical sense — <b>&lt;h1&gt;</b> is the most important heading, and tells you what the purpose of the overall page is.</p>
+					<p>Having a single top-level title is also arguably better for screenreader users, and SEO.</p>
+				</section>
+
+
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Paragraphs</h2>
+					<p>To create a paragraph, surround the words/sentences that make up the paragraph with an opening <strong>&lt;p&gt;</strong> tag and closing <strong>&lt;/p&gt;</strong> tag.</p>
+					<p>By <b>default</b>, a browser will show each paragraph on a new line with some space between it and any subsequent paragraphs.</p>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Paragraphs</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;p&gt;A paragraph consists of one or more sentences that form
+a self-contained unit of discourse. The start of a paragraph
+is indicated by a new line.&lt;/p&gt;
+
+&lt;p&gt;Text is easier to understand when it is split up into units of text.
+For example, a book may have chapters. Chapters can have subheadings.
+Under each heading there will be one or more paragraphs.&lt;/p&gt;
+					</code></pre></p>
+				</section>
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Lists</h2>
+					<p>There are lots of occasions when we need to use lists. HTML provides us with <b>3</b> different types:</p>
+					<ul>
+						<li><strong>Ordered lists</strong></li>
+						<li><strong>Unordered lists</strong></li>
+						<li><strong>Description lists</strong><i> - Before HTML5 they were called Definition Lists</i></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Lists</h2>
+					<ul>
+						<li><strong>Ordered lists: </strong>are lists where each item in the list is numbered. For example, the list might be a set of steps for a recipe that must be performed in order, or a legal contract where each point needs to be identified by a section number.</li>
+						<li><strong>Unordered lists: </strong>are lists that begin with a bullet point (rather than characters that indicate order).</li>
+						<li><strong>Description lists: </strong>are made up of a set of terms along with the descriptions for each of those terms. (a list of key-value pairs)</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Ordered lists</h2>
+					<ul>
+						<li>The ordered list is created with the <strong style="color:#007ac9;">&lt;ol&gt;</strong> element.</li>
+						<li>Each item in the list is placed between an opening <strong style="color:#007ac9;">&lt;li&gt;</strong> tag and a closing <strong style="color:#007ac9;">&lt;/li&gt;</strong> tag. (The <strong style="color:#007ac9;">li</strong> stands for list item.)</li>
+						<li>Browsers indent lists by default</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Ordered list</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;ol&gt;
+	&lt;li&gt;List Item 01&lt;/li&gt;
+	&lt;li&gt;List Item 02&lt;/li&gt;
+	&lt;li&gt;List Item 03&lt;/li&gt;
+	&lt;li&gt;List Item 04&lt;/li&gt;
+	&lt;li&gt;List Item 05&lt;/li&gt;
+&lt;/ol&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Unordered lists</h2>
+					<ul>
+						<li>The unordered list is created with the <strong style="color:#007ac9;">&lt;ul&gt;</strong> element.</li>
+						<li>Each item in the list is placed between an opening <strong style="color:#007ac9;">&lt;li&gt;</strong> tag and a closing <strong style="color:#007ac9;">&lt;/li&gt;</strong> tag. (The <strong style="color:#007ac9;">li</strong> stands for list item.)</li>
+						<li>Browsers indent lists by default</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Unordered list</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;ul&gt;
+	&lt;li&gt;List Item 01&lt;/li&gt;
+	&lt;li&gt;List Item 02&lt;/li&gt;
+	&lt;li&gt;List Item 03&lt;/li&gt;
+	&lt;li&gt;List Item 04&lt;/li&gt;
+	&lt;li&gt;List Item 05&lt;/li&gt;
+&lt;/ul&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Description lists</h2>
+					<ul>
+						<li>The description list is created with the <strong style="color:#007ac9;">&lt;dl&gt;</strong> element and usually consists of a series of terms and their descriptions.</li>
+						<li>Inside the <strong>&lt;dl&gt;</strong>  element you will usually see pairs of <strong style="color:#007ac9;">&lt;dt&gt;</strong> and <strong style="color:#007ac9;">&lt;dd&gt;</strong> elements.</li>
+						<li><strong style="color:#007ac9;">&lt;dt&gt;</strong> is used to contain the term being described.</li>
+						<li><strong style="color:#007ac9;">&lt;dd&gt;</strong> is used to contain the description.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Description list</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;dl&gt;
+	&lt;dt&gt;Sashimi&lt;/dt&gt;
+	&lt;dd&gt;Sliced raw fish that is served with condiments such as
+	shredded daikon radish or ginger root, wasabi and soy sauce&lt;/dd&gt;
+	&lt;dt&gt;Scale&lt;/dt&gt;
+	&lt;dd&gt;A device used to accurately measure
+	the weight of ingredients&lt;/dd&gt;
+&lt;/dl&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Nested lists</h2>
+					<ul>
+						<li>You can put a second list inside a <strong style="color:#007ac9;">&lt;li&gt;</strong> element to create a sublist or nested list.</li>
+					</ul>
+										<p><pre><code class="hljs" data-trim contenteditable>
+&lt;ul&gt;
+  &lt;li&gt;List Item 01&lt;/li&gt;
+  &lt;li&gt;List Item 02&lt;/li&gt;
+  &lt;li&gt;
+	&lt;ul&gt;
+	  &lt;li&gt;Sublist Item 01&lt;/li&gt;
+	  &lt;li&gt;Sublist Item 02&lt;/li&gt;
+	&lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Inline text formatting elements</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">&lt;b&gt;</strong>Bold<strong style="color:#007ac9;">&lt;/b&gt;</strong> - <b>Bold</b></li>
+						<li><strong style="color:#007ac9;">&lt;i&gt;</strong>Italic<strong style="color:#007ac9;">&lt;/i&gt;</strong> - <i>Italic</i></li>
+						<li><strong style="color:#007ac9;">&lt;u&gt;</strong>Underline<strong style="color:#007ac9;">&lt;/u&gt;</strong> - <u>Underline</u></li>
+						<li><strong style="color:#007ac9;">&lt;sup&gt;</strong>superscript<strong style="color:#007ac9;">&lt;/sup&gt;</strong> Content - <sup>superscript</sup>Content</li>
+						<li><strong style="color:#007ac9;">&lt;sub&gt;</strong>subscript<strong style="color:#007ac9;">&lt;/sub&gt;</strong> Content - <sub>subscript</sub>Content</li>
+					</ul>
+					<p><i>*You can use their CSS alternatives for styling the text</i></p>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Line Breaks &amp; Horizontal Rules</h2>
+					<p><strong style="color:#007ac9;">&lt;br /&gt;</strong></p>
+					<ul>
+						<li>As you have already seen, the browser will automatically show each new paragraph or heading on a new line. But if you wanted to add a line break inside the middle of a paragraph you can use the line break tag <strong>&lt;br /&gt;</strong></li>
+					</ul>
+					<p><strong style="color:#007ac9;">&lt;hr /&gt;</strong></p>
+					<ul>
+						<li>To create a break between themes — such as a change of topic in a book or a new scene in a play — you can add a horizontal rule between sections using the <strong>&lt;hr /&gt;</strong></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Self-closing tags</h2>
+					<p><strong style="color:#007ac9;">&lt;br /&gt;</strong> and <strong style="color:#007ac9;">&lt;hr /&gt;</strong> are what is called a self-closing tags</p>
+					<p>In <b>HTML5</b> writing self-closing tags without the forward slash "/" is valid</p>
+					<p><strong style="color:#007ac9;">&lt;br /&gt;</strong> and <strong style="color:#007ac9;">&lt;br&gt;</strong> are the same thing for the browsers in HTML5</p>
+					<p>There are more self-closing tags that we'll learn later on</p>
+				</section>
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>White Space</h2>
+					<p>In order to make code easier to read, web developers often add extra spaces or start some elements on new lines.</p>
+					<p>When the browser comes across two or more spaces next to each other, it only displays one space.</p>
+					<p>Similarly if it comes across a line break, it treats that as a single space too. This is known as <strong>white space collapsing.</strong></p>
+				</section>
+
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>White space (2)</h2>
+										<p><pre><code class="hljs" data-trim contenteditable>
+&lt;p&gt;The moon is drifting away from Earth.&lt;/p&gt;
+&lt;p&gt;The moon            is drifting away from Earth.&lt;/p&gt;
+&lt;p&gt;The moon is drifting away from
+
+Earth.&lt;/p&gt;
+					</code></pre></p>
+					<p>The moon is drifting away from Earth.</p>
+					<p>The moon is drifting away from Earth.</p>
+					<p>The moon is drifting away from Earth.</p>
+				</section>
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Semantic markup</h1>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Strong &amp; Emphasis</h2>
+					<p><strong style="color:#007ac9;">&lt;strong&gt;</strong>Strong<strong style="color:#007ac9;">&lt;/strong&gt;</strong></p>
+					<ul>
+						<li>The use of the <strong>&lt;strong&gt;</strong> element indicates that its content has strong importance.</li>
+						<li>By default, browsers will show the contents of a <strong>&lt;strong&gt;</strong> element in bold.</li>
+					</ul>
+					<p><strong style="color:#007ac9;">&lt;em&gt;</strong>Emphasis<strong style="color:#007ac9;">&lt;/em&gt;</strong></p>
+					<ul>
+						<li>The <strong>&lt;em&gt;</strong> element marks text that has stress emphasis. The &lt;em&gt;
+							element can be nested, with each level of nesting indicating a greater degree of emphasis.</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Quotations</h2>
+					<p>There are two elements commonly used for quotations:</p>
+					<p><strong style="color:#007ac9;">&lt;blockquote&gt;</strong>Blockquote<strong style="color:#007ac9;">&lt;/blockquote&gt;</strong></p>
+					<ul>
+						<li>The <strong>&lt;blockquote&gt;</strong> element indicates that the enclosed text is an extended quotation.
+							Usually, this is rendered visually by indentation</li>
+					</ul>
+					<p><strong style="color:#007ac9;">&lt;q&gt;</strong>Quote<strong style="color:#007ac9;">&lt;/q&gt;</strong></p>
+					<ul>
+						<li>The <strong>&lt;q&gt;</strong> element indicates that the enclosed text is a short inline quotation.
+							Most modern browsers implement this by surrounding the text in quotation marks.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Quotations (2)</h2>
+					<p>The <strong style="color:#007ac9;">&lt;blockquote&gt;</strong> tag has an optional attribute ‘cite’ that can be used for sources by entering the URL in the attribute.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh"&gt;
+	&lt;p&gt;Did you ever stop to think, and forget to start again?&lt;/p&gt;
+&lt;/blockquote&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Abbreviations &amp; Acronyms</h2>
+					<p><strong style="color:#007ac9;">&lt;abbr&gt;</strong></p>
+					<p>If you use an abbreviation or an acronym, then the <strong>&lt;abbr&gt;</strong> element can be used.</p>
+					<p>A title attribute on the opening tag is used to specify the full term.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;p&gt;&lt;abbr title="Professor"&gt;Prof&lt;/abbr&gt; Stephen Hawking is
+a theoretical physicist and cosmologist.&lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="National Aeronautics and Space Administration"&gt;NASA&lt;/abbr&gt;
+do some crazy stuff.&lt;/p&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Side-Comments or Small Print</h2>
+					<p><strong style="color:#007ac9;">&lt;small&gt;</strong></p>
+					<p>The <strong>&lt;small&gt;</strong> element represents side-comments and small print, like copyright and legal text, independent of its styled presentation.
+						By default, it renders text within it one font-size smaller</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;p&gt;&lt;small&gt;All rights reserved. QA 2024&lt;/small&gt;&lt;/p&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 31 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Changes to Content</h2>
+					<p>These elements let you provide indications that specific parts of the text have been altered.</p>
+					<ul>
+						<li><strong style="color:#007ac9;">&lt;ins&gt;</strong>Inserted text<strong style="color:#007ac9;">&lt;/ins&gt;</strong> - <ins>Inserted text</ins></li>
+						<li><strong style="color:#007ac9;">&lt;del&gt;</strong>Deleted text<strong style="color:#007ac9;">&lt;/del&gt;</strong> - <del>Deleted text</del></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 32 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Escape Characters</h2>
+					<p>There are some characters that are used in and reserved by HTML code. (For example, the left and right angled brackets)</p>
+					<p>Therefore, if you want these characters to appear on your page you need to use what are termed "escape" characters (also known as escape codes or entity references)</p>
+					<p><a href="https://dev.w3.org/html5/html-author/charref" target="_blank">https://dev.w3.org/html5/html-author/charref</a></p>
+					<p><a href="http://www.htmlandcssbook.com/extras/html-escape-codes/" target="_blank">http://www.htmlandcssbook.com/extras/html-escape-codes/</a></p>
+				</section>
+
+
+
+				<!-- Slide 33 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 80%; height: 80%;" data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+					    <div class="sl-block-content"><img src="assets/img/escapeCharacters.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 34 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#222222" data-background-transition="slide" style="color: #ffffff">
+					<h3>Homework #1</h3>
+					<p><strong>Title:</strong> Working with multi-level nested HTML lists</p>
+					<p><strong>Description:</strong> Create list having up to <b>5-level</b> of nested child lists. Try different text formating tags on the list items.</p>
+					<p><strong>Example 3-level list:</strong> <a href="https://i.stack.imgur.com/bjuI6.png" target="_blank">https://i.stack.imgur.com/bjuI6.png</a></p>
+					<ul style="list-style-type: none;">
+						<li><small>ul: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul</a></small></li>
+						<li><small>ol: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol</a></small></li>
+						<li><small>ol: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl</a></small></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 35 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
