@@ -7,15 +7,26 @@
     </head>
     <body>
         <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../images/penguin-logo.svg" alt="Penguin Logo">
+                </a>
+            </li>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="">Images Page</a></li>
             <li><a href="../hyperlinks/hyperlinks-demo.html">Hyperlinks Page</a></li>
+            <li><a href="">Images Page</a></li>
         </ul>
         <h1>Images</h1>
 
         <!-- Base Syntax -->
-        <!-- <img src="" alt=""> -->
-
+        <!-- <img src="image.jpeg" alt="Description of the image"> -->
+        <!--  
+            ===== ATTRIBUTES USED WITHIN THE IMG ELEMENT =====
+            - src => specifies the URL (location) of the image file (mandatory attribute)
+            - alt => alternative text with description of the image, usually displayed when the image cannot be loaded. It is crucial for accessibility. Write descriptive text for the alt, avoid using redunant context (for example: Image of..., Picture of... etc.)
+            - width, height => set the display dimensions (width and height) of the image. Usually we need to specify only one, to maintain aspect-ratio. It is considered best practice to import images that already have the desired dimensions. 
+            - loading => indicates how the browser should load the image (eager, lazy)
+        -->
         <hr>
         <h2>Different ways of embedding and using images</h2>
 
@@ -26,6 +37,35 @@
         <!-- <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Two cute Golden Retriever puppies in a park"> -->  
         <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Two cute Golden Retriever puppies in a park" width="300">
         <!-- <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Two cute Golden Retriever puppies in a park" width="300" height="600"> -->
+
+        <h3>Displaying the 'alt' text if the image loading failed</h3>
+        <img src="https://ima8099/pexels-photo-1108099.jpeg" alt="Two cute Golden Retriever puppies in a park" width="300">
+
+        <h3>Images from local directory</h3>
+        <img src="../images/lion-400x250.png" alt="Lion resting in the savannah" loading="lazy">
+
+        <h3>Image used as a hyperlink</h3>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Cockatoo" target="_blank">
+                <img src="../images/cockatoo.webp" alt="Funny staring Cockatoo parrot" width="600" title="Whatcha lookin' at ?">
+            </a>
+        </p>
+        
+        <!-- 
+            1) Photographs and Complex Images: *JPEG* or *WebP*
+            2) Logos, Icons, and Simple Graphics: *PNG*
+            3) Logos, Illustrations, Icons, and Vector Graphics: *SVG*
+            4) Animated Images: *GIF* or *WebP*
+        -->
+
+        <h2>Image Map</h2>
+
+        <img src="../images/html-css-500x386.png" usemap="#html-css-image-map" alt="">
+
+        <map name="html-css-image-map">
+            <area target="_blank" shape="rect" coords="48,119,201,289" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+            <area target="_blank" shape="rect" coords="303,119,454,292" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+        </map>
 
     </body>
 </html>
