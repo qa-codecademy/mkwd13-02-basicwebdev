@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>Images</h3>
+					<p>
+						<small>Trainer: <a href="#">Panche Manaskov</a> - panemanaskov@gmail.com</small></br>
+						<small>Assistant: <a href="#">Aleksandar Milovski</a> - aleksandarmilovski1@gmail.com</small></br>
+						<div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Introduction</li>
+						<li>Add images to web pages</li>
+						<li>Choosing the right image format</li>
+						<li>Optimizing images for the web</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Introduction</h1>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Introduction</h2>
+					<ul>
+						<li>Images are essential part of the web today</li>
+						<li>Together with text and hyperlinks, images help in enriching the content of the website</li>
+						<li>There are several things to consider when selecting and preparing images for your site, but taking time to get them right
+							will make it look more attractive and professional</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;" data-background="#fff">
+					<p>Images can be used to set the tone for a site in less time than it takes to read a description.</p>
+				</section>
+
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Storing images on your site</h2>
+					<ul>
+						<li><b>BEST PRACTICE:</b> If you are building a site from scratch, it is good practice to create a folder for all of the images the site uses</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Adding images</h1>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Adding images</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">&lt;img /&gt;</strong></li>
+						<li>Required Attributes: <strong style="color:#007ac9;">src</strong> and <strong style="color:#007ac9;">alt</strong></li>
+						<li>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Example</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;img src="img/imagename.png" alt="image description" /&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>src &amp; alt</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">src</strong> - The image URL. Mandatory for the <b>&lt;img /&gt;</b> element.</li>
+						<li><strong style="color:#007ac9;">alt</strong> - Defines an alternative text description of the image</li>
+					</ul>
+					<p><b>Note:</b> Browsers do not always display images. There are a number of situations in which a browser might not display images.
+						Always use the <b>alt</b> attribute to provide an alternative for all users</p>
+				</section>
+
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Width &amp; Height</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">width</strong> - specifies the width of the image in pixels</li>
+						<li><strong style="color:#007ac9;">height</strong> - specifies the height of the image in pixels</li>
+					</ul>
+					<p><b>PRO TIP:</b> Use just one of them to keep the aspect-ratio / proportions of the image.</p>
+					<p>*If not specified the image is displayed in its original dimensions</p>
+				</section>
+
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Create image links</h2>
+						<ul>
+							<li>You can easily create link around an image by wrapping it inside Hyperlink anchor tag</li>
+						</ul>
+						<p><pre><code class="hljs" data-trim contenteditable>
+&lt;a href="link-here"/&gt;&lt;img src="img/image.png" alt="image description"/&gt;&lt;/a&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Image formats</h1>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Data Compression</h2>
+						<ul>
+							<li>Images are typically large date size files and thus not very friendly for web use without some kind of compression</li>
+							<li>Data Compression is a technique in which the size of data is reduced without loss of information</li>
+						</ul>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Data Compression (2)</h2>
+						<ul>
+							<li><strong style="color:#007ac9;">Lossy compression</strong> and <strong style="color:#007ac9;">Lossless compression</strong>
+								are the two categories of data compression methods</li>
+							<li>The main difference between the two compression techniques is that,
+								<b>lossy compression</b> technique does not restore the data in its original form after decompression
+								and <b>lossless compression</b> does</li>
+						</ul>
+				</section>
+
+
+
+				<!-- Slide 16 -->
+				<section data-background="#fff">
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+					    <div class="sl-block-content"><img src="assets/img/image-compression.gif"></div>
+					</div>
+				</section>
+
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">JPEG</strong></li>
+						<li>The JPEG image format is currently the most widely used lossy compression format for still images</li>
+						<li>It's particulary useful for photographs</li>
+						<li>Whenever you have many different colors in a picture you should use a JPEG</li>
+						<li>Doesn't support alpha transparency</li>
+						<li><b>File extension(s):</b> .jpg, .jpeg, .jpe, .jif, .jfif</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats (2)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">PNG</strong></li>
+						<li>The PNG image format uses lossless compression to provide more efficient compression,
+							and supports higher color depths than GIF, as well as full alpha transparency support</li>
+						<li>PNG pictures are a good choice for line drawings and other textual or iconic graphics because
+							of the sharp contrasts between adjacent pixels</li>
+						<li><b>File extension(s):</b> .png</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats (3)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">APNG</strong></li>
+						<li>APNG is a file format first introduced by Mozilla which extends the PNG standard to add support for animated images</li>
+						<li>Conceptually similar to the animated GIF format which has been in use for decades, APNG is more capable in that it supports a variety of color depths,
+							whereas animated GIF supports only 8-bit indexed color</li>
+						<li><b>File extension(s):</b> .apng</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats (4)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">GIF</strong></li>
+						<li>GIF was one of the first two graphics formats supported by HTML, along with XBM</li>
+						<li>Each pixel in a GIF is represented by a single 8-bit value serving as an index into a palette of
+							24-bit colors (8 bits each of red, green, and blue)</li>
+							<li>GIF supports simple animation as well as transparency in the pictures</li>
+						<li><b>File extension(s):</b> .gif</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats (5)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">GIF</strong></li>
+						<li>GIF has been extremely popular for decades, due to its simplicity and compatibility</li>
+						<li>Its animation support caused a resurgence in its popularity in the social media era, when animated GIFs began to be widely used for short "videos",
+							memes, and other simple animation sequences</li>
+						<li>Typically, modern content should use <b>PNG</b> for lossless and indexed still images, and should consider using <b>APNG</b>
+							for lossless animation sequences</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats (6)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">WebP image</strong></li>
+						<li>Lossy WebP images average 25–35% smaller than JPEG images of visually similar compression levels</li>
+						<li>Lossless WebP images are typically 26% smaller than the same images in PNG format</li>
+						<li>WebP also supports animation</li>
+						<li>WebP now has broad support in the latest versions of major web browsers, although it does not have deep historical support</li>
+						<li><b>File extension(s):</b> .webp</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats (7)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">SVG (Scalable Vector Graphics)</strong></li>
+						<li>SVG is a vector graphics format that specifies the contents of an image as a set of drawing commands that create shapes, lines, apply colors, filters, and so forth</li>
+						<li>SVG files are ideal for diagrams, icons, and other images which can be accurately drawn at any size</li>
+						<li>As such, SVG is popular for user interface elements in modern Web design</li>
+						<li><b>File extension(s):</b> .svg</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats (8)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">SVG (Scalable Vector Graphics)</strong></li>
+						<li>SVG files are text files containing source code that, when interpreted, draws the desired image</li>
+						<li>SVG can be used in web content in two ways:
+							<ol>
+								<li>You can directly write the <b>&lt;svg&gt;</b> element within the <b>HTML</b>, containing SVG elements to draw the image</li>
+								<li>You can display an SVG image using the <b>&lt;img /&gt;</b> element same as with all other image formats</li>
+							</ol>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image formats</h2>
+					<ul>
+						<li>Read more on image formats: <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types" target="_blank">
+							https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Image optimization</h1>
+				</section>
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image optimization</h2>
+					<ul>
+						<li>Image optimization is about reducing the file size of your images as much as possible without sacrificing quality so that your page load times remain <b>low.</b></li>
+						<li>It’s also about <b>image SEO.</b> That is, getting your product images and decorative images to rank higher on Google and other image search engines.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h4>Name your images descriptively and in plain language</h4>
+					<ul>
+						<li>When it comes to image SEO, it's important to use relevant keywords to help your webpage rank on search engines</li>
+						<li>Creating descriptive, keyword-rich file names is crucial for image optimization</li>
+						<li>Search engines not only crawl the text on your webpage, they also crawl your image file names</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h4>Optimize your alt attributes carefully</h4>
+					<ul>
+						<li>Alt attributes are the text alternative to images when a browser can't properly render them</li>
+						<li>They’re also used for web accessibility</li>
+						<li>Adding appropriate alt attributes that include relevant keywords to the images on your website can help you rank better in the search engines</li>
+						<li>Setting this attribute to an empty string <b>(alt="")</b> indicates that the image is not a key part of the content (it’s decoration or a tracking pixel),
+							and that non-visual browsers may omit it from rendering</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h4>Image dimensions</h4>
+					<ul>
+						<li>The images you use on your website should be saved at the same width and height that you want them to appear on the page wherever possible</li>
+						<li>When cropping images it is important not to lose valuable information</li>
+						<li>Be careful providing <b>larger images</b> to your visitors, as they will increase your page load time</li>
+						<li>Instead, you can make a smaller image (thumbnail) and provide the option to view a larger image in a pop-up window or on a separate webpage</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 31 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h4>Choose the right file format</h4>
+					<ul>
+						<li>Choose the format that will provide the best quality for the smallest file size</li>
+						<li>Learn more about the usage of different image file formats to make informed decisions</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 32 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Image Map</h1>
+				</section>
+
+
+
+				<!-- Slide 33 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image Map</h2>
+					<ul>
+						<li>Image maps are a bit more complex than simple images</li>
+						<li>To create image map, you can use <strong style="color:#007ac9;">&lt;map&gt;</strong> tag with specifying one or more
+							<strong style="color:#007ac9;">&lt;area /&gt;</strong> tags combined with <br />
+							<strong style="color:#007ac9;">&lt;img /&gt;</strong> tag which is linked to the
+							<strong style="color:#007ac9;">&lt;map&gt;</strong></li>
+						<li>MDN page for image maps: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 34-->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Image Map</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;img src="https://placehold.it/350x150"
+alt="350 x 150 pic" usemap="#primary" /&gt;
+
+&lt;map name="primary"&gt;
+	&lt;area shape="circle" coords="75,75,75" href="left.html" /&gt;
+	&lt;area shape="circle" coords="275,75,75" href="right.html" /&gt;
+&lt;/map&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 35 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+					    <div class="sl-block-content"><img src="assets/img/coords.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 36 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#222222" data-background-transition="slide">
+					<h3>Homework #2</h3>
+					<p><strong>Title:</strong> Working with hyperlinks</p>
+					<p><strong>Description:</strong> Create 3 different HTML documents (Home, About Us and Contact) and link them together using hyperlinks!</p>
+					<p>Put different content in the body of every HTML document including several images that will link to external websites.</p>
+					<p>Create a "back to the top" link on the bottom that will link to the top of the home page!</p>
+					<p>BONUS: Include an image with an image map</p>
+				</section>
+
+
+
+
+				<!-- Slide 37 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

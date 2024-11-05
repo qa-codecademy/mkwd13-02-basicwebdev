@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- Basic table -->
+    <table border="2">
+      <caption>
+        Users and emails
+      </caption>
+      <thead>
+        <tr>
+          <th>First and Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>johndoe@email.com</td>
+        </tr>
+        <tr>
+          <td>Jill Wayne</td>
+          <td>jillwayne@mail.com</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total Users</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Colspan -->
+    <table border="2">
+      <caption>
+        School schedule
+      </caption>
+      <thead>
+        <th>Week day / Class</th>
+        <th>8am</th>
+        <th>9am</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12am</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td colspan="2">Math</td>
+          <td>Biology</td>
+          <td colspan="2">Chemistry</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td colspan="3">Gym</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Rowspan -->
+    <table border="2">
+      <caption>
+        Daily Program
+      </caption>
+      <thead>
+        <th>Hours / Program</th>
+        <th>HBO</th>
+        <th>TV1000</th>
+        <th>Sport Arena</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>6pm - 7pm</td>
+          <td rowspan="2"><img src="./images/circle.png" alt="" /></td>
+          <td>Comedy Central</td>
+          <td>NBA</td>
+        </tr>
+        <tr>
+          <td>7pm - 8pm</td>
+          <td>News</td>
+          <td>Weather</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Rowspan and colspan -->
+    <table border="2">
+      <caption>
+        Colspan and rowspan together
+      </caption>
+      <thead>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8AM - 9AM</td>
+          <td
+            rowspan="2"
+            style="background-color: chartreuse; border-radius: 50%"
+          >
+            Math
+          </td>
+          <td rowspan="3" colspan="2" style="background-color: red">Science</td>
+        </tr>
+        <tr>
+          <td>9AM - 10AM</td>
+        </tr>
+        <tr>
+          <td>10AM - 11AM</td>
+          <td>English</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

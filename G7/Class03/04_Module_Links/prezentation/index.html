@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>Hyperlinks</h3>
+					<p>
+						<small>Trainer: <a href="#">Panche Manaskov</a> - panemanaskov@gmail.com</small></br>
+						<small>Assistant: <a href="#">Aleksandar Milovski</a> - aleksandarmilovski1@gmail.com</small></br>
+						<div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Introduction</li>
+						<li>Understand URLs</li>
+						<li>Using absolute hyperlink URLs</li>
+						<li>Using relative hyperlink URLs</li>
+						<li>Adding target</li>
+						<li>Linking to other sites</li>
+						<li>Linking to email addresses</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Introduction</h2>
+					<ul>
+						<li>The World Wide Web as we know it is based on <strong>HyperLinks</strong></li>
+						<li>Links are the <b>defining feature</b> of the web because they allow you to move from one web page to another — enabling the very idea of browsing or surfing</li>
+						<li>A <b>hyperlink</b> is a location in a document that links to another location in that document or links to another document or resource</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Understanding URLs</h2>
+						<ul>
+							<li><strong style="color:#007ac9;">http://www.mywebsite.com/categories/shoes.html</strong></li>
+							<li><strong style="color:#007ac9;">http://</strong> is the communication protocol</li>
+							<li><strong style="color:#007ac9;">www.mywebsite.com</strong> is the domain of my website</li>
+							<li><strong style="color:#007ac9;">categories</strong> is a <strong>room/folder</strong> in my website</li>
+							<li><strong style="color:#007ac9;">shoes.html</strong> is the HTML document</li>
+						</ul>
+				</section>
+
+
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Writing Links</h1>
+				</section>
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Writing links</h2>
+					<ul>
+						<li>Links are created using the <strong style="color:#007ac9;">&lt;a&gt;</strong> element</li>
+						<li>Users can click on anything between the opening <strong style="color:#007ac9;">&lt;a&gt;</strong> tag and the closing <strong style="color:#007ac9;">&lt;/a&gt;</strong> tag</li>
+						<li>You specify which page you want to link to using the <strong>href</strong> attribute.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section data-background="assets/img/writingLinks.png">
+						<!-- Here the image is showing in the background of the slide -->
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Using absolute hyperlink URLs</h2>
+					<ul>
+						<li>Absolute URL’s are most of the time used for external links</li>
+						<li>Example:
+							<ul>
+								<li><strong style="color:#007ac9;">&lt;a href=“http://www.microsoft.com”&gt;</strong>Microsoft’s Website<strong style="color:#007ac9;">&lt;/a&gt;</strong></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Using relative hyperlink URLs</h2>
+					<ul>
+						<li>Relative URL’s are most of the time used for pointing to an internal resources</li>
+						<li>Example:
+							<ul>
+								<li><strong style="color:#007ac9;">&lt;a href=“/categories/shoes.html”&gt;</strong>Shoes<strong style="color:#007ac9;">&lt;/a&gt;</strong></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Directory Structure</h1>
+				</section>
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Directory Structure</h2>
+					<p>On larger websites it's a good idea to organize your code by placing the pages for different section of the site into a separate folders</p>
+					<p>Folders on a website are sometimes referred to as directories</p>
+					<p>The top-level folder is known as the <strong>root</strong> folder</p>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+					    <div class="sl-block-content"><img src="assets/img/structure.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 13 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="04e5289dbbcaf1645e860129fe76de6b">
+					    <div class="sl-block-content"><img src="assets/img/relativeURLs.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Adding Target</h2>
+					<ul>
+						<li>the <strong>target</strong> attribute specifies how you want to open the HyperLink</li>
+						<li>Target can be:</li>
+						<li>Example:
+							<ul>
+								<li><strong style="color:#007ac9;">_blank</strong> - Opens the linked document in a new window or tab</li>
+								<li><strong style="color:#007ac9;">_self</strong> - Opens the linked document in the same frame as it was clicked (this is default)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Anchors</h2>
+					<ul>
+						<li>In HTML, when saying <strong>anchor element</strong> it is referred to pointing out to a <b>specific part</b> of the same page using <strong style="color:#007ac9;">id="ID"</strong> attribute (which can be used on every HTML element).</li>
+						<li>To link to an element that uses an id attribute you use the <strong style="color:#007ac9;">&lt;a&gt;</strong> element again, but the value of the <strong style="color:#007ac9;">href</strong> attribute starts with the <strong style="color:#007ac9;">#</strong> symbol, followed by the value of the <strong style="color:#007ac9;">id</strong> attribute of the element you want to link to.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 16-->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Anchors</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;h1 id="top"&gt;Film-Making Terms&lt;/h1&gt;
+	&lt;a href="#arc_shot"&gt;Arc Shot&lt;/a&gt;&lt;br /&gt;
+	&lt;a href="#interlude"&gt;Interlude&lt;/a&gt;&lt;br /&gt;
+	&lt;a href="#prologue"&gt;Prologue&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;h2 id="arc_shot"&gt;Arc Shot&lt;/h2&gt;
+	&lt;p&gt;A shot in which the subject is photographed by an
+	encircling or moving camera&lt;/p&gt;
+&lt;h2 id="interlude"&gt;Interlude&lt;/h2&gt;
+	&lt;p&gt;A brief, intervening film scene or sequence, not
+	specifically tied to the plot, that appears
+	within a film&lt;/p&gt;
+&lt;h2 id="prologue"&gt;Prologue&lt;/h2&gt;
+	&lt;p&gt;A speech, preface, introduction, or brief scene
+	preceding the the main action or plot of a film;
+	contrast to epilogue&lt;/p&gt;
+	&lt;p&gt;&lt;a href="#top"&gt;Top&lt;/a&gt;&lt;/p&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h2>Link to e-mail addresses</h2>
+					<ul>
+						<li>Linking to email addresses is very similar as other simple links / hyperlinks</li>
+						<li>You only use <strong style="color:#007ac9;">mailto:&lt;email-address&gt;</strong> inside the <strong style="color:#007ac9;">href</strong> of the element</li>
+						<li>Exapmle:
+							<ul>
+								<li><strong style="color:#007ac9;">&lt;a href="mailto:jon@example.org"&gt;Email Jon&lt;/a&gt;</strong></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+
+
+				<!-- Slide 41 -->
+				<section style="text-align: left;" data-background="#fff">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
