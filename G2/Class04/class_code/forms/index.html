@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <form action="" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <br>
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="radio" name="genre" value="rock" id="rock">
+        <label for="rock">Rock</label>
+        <br>
+        <input type="radio" name="genre" value="pop" id="pop">
+        <label for="pop">Pop</label>
+        <br>
+        <input type="radio" name="genre" value="jazz" id="jazz">
+        <label for="jazz">Jazz</label>
+        <br>
+        <br>
+        <p>Please select your favourite service</p>
+        <input type="checkbox" name="service" value="iTunes" id="iTunes" checked="checked">
+        <label for="iTunes">iTunes</label>
+        <br>
+        <input type="checkbox" name="service" value="spotify" id="spotify">
+        <label for="spotify">Spotify</label>
+        <br>
+        <input type="checkbox" name="service" value="lastFm" id="lastFm">
+        <label for="lastFm">LastFm</label>
+        <br>
+        <label for="devices">What music do you listen your music on?</label>
+        <select name="devices" id="devices">
+            <option value="" disabled selected hidden>Select your option</option>
+            <option value="iPod" disabled>iPod</option>
+            <option value="radio">radio</option>
+            <option value="computer">computer</option>
+        </select>
+        <br>
+        <label for="instruments">What music instruments do you play on?</label>
+        <select name="instruments" id="instruments" multiple size="3">
+            <option value="guitar">guitar</option>
+            <option value="keyboard">keyboard</option>
+            <option value="drums">drums</option>
+        </select>
+        <br>
+        <label for="upload">Upload your song here</label>
+        <br>
+        <br>
+        <input type="file" name="upload" id="upload">
+        <br>
+        <label for="email">Type your email here:</label>
+        <input required type="email" name="email" id="email" placeholder="123@gmail.comments">
+        <br>
+        <input type="submit" value="Subscribe">
+        <input type="reset" value="Reset">
+
+        <br>
+        <br>
+        <button id="someButtonId">
+            Some Button
+        </button>
+        <input type="hidden" name="product-code" value="p1234">
+        <fieldset>
+            <legend>Contact details</legend>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+            <label for="mobile">Mobile:</label>
+            <input type="tel" name="mobile" id="mobile" />
+            <label for="telephone">Telephone:</label>
+            <input type="tel" name="telephone" id="telephone" />
+        </fieldset>
+        <input type="date" name="date" id="date">
+    </form>
+</body>
+
+</html>
