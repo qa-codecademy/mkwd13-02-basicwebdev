@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello G1</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <input type="text" name="username" id="username" />
+      <label for="username">Username</label>
+      <br />
+
+      <input type="password" name="password" id="password" />
+      <label for="password">Password</label>
+
+      <br />
+      <input type="submit" value="Log in" />
+    </form>
+
+    <hr />
+    <form>
+      <input type="date" name="date" id="date" />
+      <label for="date">Date Picker</label>
+
+      <br />
+      <input type="email" name="email" id="email" />
+      <label for="email">Email</label>
+      <br />
+      <input type="submit" />
+    </form>
+
+    <br />
+    <form>
+      <label for="text">Enter your text here</label>
+      <br />
+      <textarea name="text" id="text" cols="30" rows="4"></textarea>
+    </form>
+
+    <h3>Radio buttons</h3>
+
+    <form>
+      <p>Please select your favorite music genre</p>
+
+      <input type="radio" name="music-genre" id="rock" value="Rock" />
+      <label for="rock">Rock</label>
+      <input type="radio" name="music-genre" id="pop" value="pop" />
+      <label for="pop">Pop</label>
+
+      <input type="radio" name="music-genre" id="jazz" value="jazz" />
+      <label for="jazz">Jazz</label>
+    </form>
+
+    <hr />
+    <h3>Checkbox</h3>
+
+    <form>
+      <p>Please select your favorite music streaming service(s)</p>
+
+      <input
+        type="checkbox"
+        name="service"
+        id="apple"
+        value="AppleMusic"
+        checked
+      />
+      <label for="apple">Apple</label>
+
+      <input type="checkbox" name="service" id="spotify" value="Spotify" />
+      <label for="spotify">Spotify</label>
+    </form>
+
+    <hr />
+    <h3>Drop down list</h3>
+    <form>
+      <label for="devices">What device do you listen to music on?</label>
+      <select name="devices" id="devices">
+        <option value="" selected disabled>Please select an option</option>
+        <option value="Phone">Phone</option>
+        <option value="Desktop">Desktop</option>
+        <option value="MP3Player">MP3 Player</option>
+      </select>
+    </form>
+
+    <hr />
+    <h3>Multiple select box</h3>
+    <form>
+      <label for="instruments">Do you play any of these instruments?</label>
+      <select name="instruments" id="instruments" multiple>
+        <option value="" selected disabled>Please select an option</option>
+        <option value="Guitar">Guitar</option>
+        <option value="Drums">Drums</option>
+        <option value="Keyboard">Keyboard</option>
+        <option value="Bass">Bass</option>
+      </select>
+    </form>
+
+    <hr />
+    <h3>File input box</h3>
+    <form>
+      <label for="file-input">Upload a file</label>
+      <input type="file" name="file-input" id="file-input" />
+    </form>
+
+    <hr />
+    <h3>Submit and reset buttons</h3>
+    <form>
+      <fieldset>
+        <legend>Submit and reset buttons</legend>
+        <input type="text" name="movie" id="movie" required />
+        <label for="movie">Name of your favorite movie</label>
+        <br />
+        <input type="text" name="actor" id="actor" required />
+        <label for="actor">Name of your favorite actor</label>
+        <br />
+        <input type="text" name="producer" id="producer" required />
+        <label for="producer">Name of your favorite producer</label>
+
+        <input type="color" />
+        <input type="range" min="5" max="15" />
+
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Genres</legend>
+        <input type="text" name="movie-genres" id="movie-genres" />
+        <label for="movie-geners">Whats your favorite movie genres</label>
+      </fieldset>
+      <input type="reset" value="Reset form" />
+      <input type="submit" value="Submit form" />
+    </form>
+
+    <br />
+    <h3>Using fieldset to group form elements</h3>
+    <form>
+      <fieldset>
+        <legend>radio inputs</legend>
+      </fieldset>
+    </form>
+
+    <hr />
+
+    <form>
+      <fieldset>
+        <legend>Placeholders</legend>
+        <label for="your-name">Your name</label>
+        <input
+          type="text"
+          name="your-name"
+          id="your-name"
+          placeholder="Ex: Ivan Apostolovski"
+        />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
