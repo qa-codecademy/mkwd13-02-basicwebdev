@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 04 - Tables</title>
+</head>
+<body>
+    <h1>Tables</h1>
+
+    <h2>Different types of tables</h2>
+
+    <h3>Basic Table</h3>
+    <table border="1">
+        <caption>Users Table v1</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bob Bobsky</td>
+                <td>bob.bobsky@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+                <!-- <td>usteedenmail@mail.com</td> -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>John Doe</td>
+                <td>john.doe@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Table with attributes (cellspacing, cellpadding, scope)</h3>
+
+    <table border="1" cellpadding="5" cellspacing="10">
+        <caption>Users Table v1</caption>
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Bob Bobsky</td>
+                <td>bob.bobsky@mail.com</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>John Doe</td>
+                <td>john.doe@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
