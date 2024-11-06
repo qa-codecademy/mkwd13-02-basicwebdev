@@ -9,7 +9,9 @@
     <h1>Tables</h1>
 
     <h2>Different types of tables</h2>
-
+    
+    <!-- Basic Table Structure -->
+    <!-- NOTE: border attribute is marked red as it is deprecated and should not be used, we will learn how to achive this in CSS (the better way) -->
     <h3>Basic Table</h3>
     <table border="1">
         <caption>Users Table v1</caption>
@@ -30,6 +32,7 @@
                 <td>2</td>
                 <td>Jane Smith</td>
                 <td>jane.smith@example.com</td>
+                <!-- Any extra/missing column will break the whole table structure -->
                 <!-- <td>usteedenmail@mail.com</td> -->
             </tr>
             <tr>
@@ -40,8 +43,8 @@
         </tbody>
     </table>
 
-    <h3>Table with attributes (cellspacing, cellpadding, scope)</h3>
 
+    <h3>Table with attributes (cellspacing, cellpadding, scope)</h3>
     <table border="1" cellpadding="5" cellspacing="10">
         <caption>Users Table v1</caption>
         <thead>
@@ -70,6 +73,7 @@
         </tbody>
     </table>
 
+
     <h3>Table with colspan</h3>
     <table border="1">
         <caption>Tracking Student Activity</caption>
@@ -77,10 +81,12 @@
             <tr>
                 <th>Student</th>
                 <th colspan="2">Activity Type</th>
+                <!-- By specifing colspan=2 we are basicly telling this column to take space as two <th> elements -->
                 <!-- 1 Student + 2 Activity Type = 3 Total Columns -->
             </tr>
             <tr>
                 <th></th>
+                <!-- Here we must leave empty <th> element that corresponds to the Student <th> from the previous row -->
                 <th>Homework</th>
                 <th>Participation</th>
             </tr>
@@ -99,6 +105,7 @@
         </tbody>
     </table>
 
+
     <h3>Table with rowspan</h3>
     <table border="1">
         <caption>Departments Employees</caption>
@@ -112,11 +119,13 @@
         <tbody>
             <!-- IT Department -->
             <tr>
+                <!-- 'IT' department spans three rows bellow, meaning there should be three users in this department -->
                 <td align="center" rowspan="3">IT</td>
                 <td>Manager</td>
                 <td>Mr. Smith</td>
             </tr>
             <tr>
+                <!-- The next row continues with the same department, no need for a new cell for 'IT' -->
                 <!-- <td>IT</td> -->
                 <td>Developer</td>
                 <td>Mr. Bobsky</td>
@@ -174,7 +183,7 @@
             <tr>
                 <td rowspan="2">John Doe</td>
                 <td>john@mail.com</td>
-                <td>+1 234-434-545</td>
+                <td>+ 1 234-434-545</td>
                 <td rowspan="2">Skoevska bb</td>
             </tr>
             <tr>
@@ -184,9 +193,46 @@
                 <!-- <td>Skoevska bb</td> -->
             </tr>
         </tbody>
-        <tfoot>
 
+        <!-- Table Footer => typically used for rendering summary information -->
+        <tfoot style="background-color: rgb(231, 231, 231);">
+            <tr>
+                <th scope="row" colspan="3">Total Number of Users</th>
+                <td style="text-align: center;">3</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">CTO</th>
+                <td colspan="2" style="text-align: center;">Bob Bobsky</td>
+            </tr>
         </tfoot>
+    </table>
+
+    <!-- IMPORTANT !!!
+        ===> Keep in mind the total number of columns you are working with throughout the table!!!
+        ===> If it is easier for you, first write all the table cells (td/th) and then see which ones you want to merge together
+    -->
+
+    <h3>Table with Colored Cells & Image</h3>
+    <table border="1" cellpadding="30">
+        <caption>Colored Table Example</caption>
+        <thead>
+            <tr>
+                <th style="background-color: rgb(255, 147, 147);"></th>
+                <th style="background-color: rgb(255, 112, 112);"></th>
+                <th style="background-color: rgb(254, 87, 87);"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" colspan="2" style="background-color: rgb(252, 224, 183);">
+                    <img src="images/parrot-transparent.webp" alt="Ara Parrot" width="50">
+                </td>
+                <td style="background-color: rgb(167, 215, 248);"></td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(160, 252, 204);"></td>
+            </tr>
+        </tbody>
     </table>
 
 </body>
