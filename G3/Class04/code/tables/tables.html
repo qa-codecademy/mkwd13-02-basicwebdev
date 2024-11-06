@@ -70,6 +70,124 @@
         </tbody>
     </table>
 
+    <h3>Table with colspan</h3>
+    <table border="1">
+        <caption>Tracking Student Activity</caption>
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th colspan="2">Activity Type</th>
+                <!-- 1 Student + 2 Activity Type = 3 Total Columns -->
+            </tr>
+            <tr>
+                <th></th>
+                <th>Homework</th>
+                <th>Participation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bob Bobsky</td>
+                <td>+</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>+</td>
+                <td>+</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Table with rowspan</h3>
+    <table border="1">
+        <caption>Departments Employees</caption>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Role</th>
+                <th>Employee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- IT Department -->
+            <tr>
+                <td align="center" rowspan="3">IT</td>
+                <td>Manager</td>
+                <td>Mr. Smith</td>
+            </tr>
+            <tr>
+                <!-- <td>IT</td> -->
+                <td>Developer</td>
+                <td>Mr. Bobsky</td>
+            </tr>
+            <tr>
+                <!-- <td>IT</td> -->
+                <td>Intern</td>
+                <td>Ms. Jill</td>
+            </tr>
+
+            <!-- HR Department -->
+            <tr>
+                <td align="center" rowspan="2">HR</td>
+                <td>Head of HR</td>
+                <td>Ms. Taylor</td>
+            </tr>
+            <tr>
+                <td>Recruiter</td>
+                <td>Ms. Trump</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Table with Colspan & Rowspan</h3>
+    <table border="1">
+        <caption>Users Information</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">User</th>
+                <th colspan="3">Details</th>
+            </tr>
+            <tr>
+                <!-- <th></th> -->
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- First User -->
+            <tr>
+                <td>Bob Bobsky</td>
+                <td><a href="mailto:bob.bobsky@mail.com">bob.bobsky@mail.com</a></td>
+                <td><a href="tel:+223305">+223305</a></td>
+                <td>123 Bobsky St., Skopje</td>
+            </tr>
+            <!-- Second User -->
+            <tr>
+                <td>Greg Gregsky</td>
+                <td>greg@mail.com</td>
+                <td>+123456789</td>
+                <td>Gregsky Bld.</td>
+            </tr>
+            <!-- Third User (has 2 mails and 2 phone numbers) -->
+            <tr>
+                <td rowspan="2">John Doe</td>
+                <td>john@mail.com</td>
+                <td>+1 234-434-545</td>
+                <td rowspan="2">Skoevska bb</td>
+            </tr>
+            <tr>
+                <!-- <td>John Doe</td> -->
+                <td>johndoe@mail.com</td>
+                <td>+1 123-123-000</td>
+                <!-- <td>Skoevska bb</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
 
 </body>
 </html>
