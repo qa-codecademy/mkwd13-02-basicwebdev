@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table</title>
+</head>
+
+<body>
+    <h1>Tables in HTML</h1>
+
+    <h2>Basic table</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <th>First colmun</th>
+            <th>Second colmun</th>
+            <th>Third colmun</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 01, Column 01</td>
+                <td>Row 01, Column 02</td>
+                <td>Row 01, Column 03</td>
+            </tr>
+            <tr>
+                <td>Row 02, Column 01</td>
+                <td>Row 02, Column 02</td>
+                <td>Row 02, Column 03</td>
+            </tr>
+            <tr>
+                <td>Row 03, Column 01</td>
+                <td>Row 03, Column 02</td>
+                <td>Row 03, Column 03</td>
+                <!-- <td>Row 03, Column 04</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Complete table structure</h2>
+    <table border="1" cellspacing="5" cellpadding="10">
+        <caption>Code Academy Timetable</caption>
+
+        <!-- table header -->
+        <thead>
+            <tr bgcolor="lightblue">
+                <th>Groups</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td bgcolor="lightblue"><b>G1</b></td>
+                <td>Html & CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>Html & CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>Html & CSS</td>
+                <td colspan="2" bgcolor="lightgreen"></td>
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G2</b></td>
+                <td bgcolor="lightgreen"></td>
+                <td>Html & CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>Html & CSS</td>
+                <td colspan="3" bgcolor="lightgreen"></td>
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G3</b></td>
+                <td>Html & CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>Html & CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>Html & CSS</td>
+                <td colspan="2" bgcolor="lightgreen"></td>
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G4</b></td>
+                <td rowspan="3">Html & CSS</td>
+                <td rowspan="3" bgcolor="lightgreen"></td>
+                <td rowspan="3">Html & CSS</td>
+                <td rowspan="3" bgcolor="lightgreen"></td>
+                <td rowspan="3">Html & CSS</td>
+                <td rowspan="3" colspan="2" bgcolor="lightgreen"></td>
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G5</b></td>
+                <!-- we don't need td elements here because we alredy have them with rowspan in the prevoius one -->
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G6</b></td>
+                <!-- we don't need td elements here because we alredy have them with rowspan in the prevoius one -->
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <caption>Calendar</caption>
+        <colgroup>
+            <col bgcolor="aqua">
+            <col bgcolor="lightgrey">
+            <col bgcolor="lightgreen">
+            <col bgcolor="lightyellow">
+            <col bgcolor="lightblue">
+        </colgroup>
+        <thead>
+            <th></th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <!-- 9am -->
+                <td colspan="2">Math</td>  
+                <!-- 10am -->
+                <!-- <td></td> We don't need a cell here, we have colspan -->
+                <!-- 11am -->
+                <td rowspan="2">Art</td>
+                <!-- 12am -->
+                <td bgcolor="red">Geography</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Math</td>
+              <td>Gym</td>
+              <!-- <td></td> We don't need a td here, we have rowspan from Monday - Art -->
+              <td rowspan="2">Biology</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="3">Gym</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <caption>Fruit Table</caption>
+        <thead>
+            <th>Banana</th>
+            <th>Kiwi</th>
+            <th>Orange</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td bgcolor="yellow">Yellow</td>
+                <td bgcolor="green"> <a href="https://www.kiwi.com/" target="_blank">Green</a> </td>
+                <td bgcolor="orange"><img src="https://befreshcorp.net/wp-content/uploads/2017/07/product-packshot-Orange-558x600.jpg" alt="orange" width="30"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
