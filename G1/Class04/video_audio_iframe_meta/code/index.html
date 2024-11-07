@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="video and audio"
+      content="A page displaying video audio and metadata"
+    />
+    <meta http-equiv="author" content="Aneta Stankovska" />
+    <meta http-equiv="keywords" content="audio, video, iframe, html, academy" />
+    <title>Video, audio, iframe and meta</title>
+  </head>
+  <body>
+    <!-- Video imported from file path -->
+    <video
+      src="./videos/video_example.mp4"
+      type="video.mp4"
+      width="600"
+      height="300"
+      poster="./videos/poster.png"
+      controls
+      loop
+      preload="auto"
+    >
+      <p>Video is not available</p>
+    </video>
+    <br />
+    <audio
+      src="./audios/sample_audio.mp3"
+      type="audio.mp3"
+      controls
+      preload="auto"
+      loop
+    ></audio>
+
+    <!-- Iframe google maps -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.1489444359754!2d21.430388375610224!3d41.99707890795725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415b3e65c3faf%3A0xb531e9ce6935c725!2sMacedonia%20Square%2C%201000%20Skopje!5e0!3m2!1sen!2smk!4v1730921630651!5m2!1sen!2smk"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- Iframe from youtube -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/p1QU3kLFPdg?si=v4Mu53W9tEp2vZ5x"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

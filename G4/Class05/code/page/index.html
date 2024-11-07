@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .top-header {
+      background-color: black;
+      color: white;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-nav ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+
+    .menu-nav ul :not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .menu-nav li {
+      text-transform: capitalize;
+    }
+
+    .main-content {
+      display: flex;
+    }
+
+    .main-section {
+      background-color: red;
+      color: white;
+      padding: 20px 40px;
+      flex-basis: 70%;
+    }
+
+    .the-article img {
+      width: 100%;
+      height: auto;
+    }
+
+
+    .the-article h1 {
+      font-size: 32px;
+    }
+
+    .side-bar {
+      background-color: green;
+      color: white;
+      flex-basis: 30%;
+      padding: 20px;
+    }
+
+    .side-bar a {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .side-bar a:hover {
+      color: blue;
+    }
+
+
+
+    .the-footer {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .dolor {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-header">
+    <a href="index.html">
+      <p>Logo</p>
+    </a>
+
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form action="" method="">
+      <label for="search">Search: </label>
+      <input type="search" name="search" placeholder="Search anything" id="search" />
+      <input type="submit" value="Go!" />
+    </form>
+
+  </header>
+  <main class="main-content">
+    <section class="main-section">
+      <article class="the-article">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis ipsum doloremque, libero nostrum
+          dolorem totam placeat commodi maiores natus debitis iste quis ratione architecto tempore blanditiis voluptatum
+          adipisci dicta dolor corrupti quaerat nulla nisi in voluptate? Voluptates quibusdam perspiciatis, velit minus
+          fugit cum magni dolores similique laboriosam veniam molestias pariatur consequatur fuga numquam repellat
+          obcaecati aspernatur facilis inventore ipsam laudantium laborum. Maiores temporibus dolore, quod ea doloremque
+          odio eos optio placeat earum laborum? Maiores autem cumque neque incidunt quaerat. Quos quam assumenda ex,
+          eaque repudiandae minima accusantium. Vel quisquam quibusdam quam tempora? Nobis reiciendis, adipisci autem
+          beatae odit velit!</p>
+
+        <img src="images/ohrid.jpg" alt="Image of Ohrid">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magni explicabo ullam sed officia, cum vel
+          reiciendis asperiores dolores, quos obcaecati, velit ducimus culpa. Fuga sapiente repellendus explicabo nam
+          molestias fugit, cum necessitatibus rem assumenda, perspiciatis dolore iure. Suscipit, est? Maxime incidunt
+          nam modi ullam eum labore iusto possimus nihil cupiditate! Ipsum animi asperiores dolore, veniam quis
+          exercitationem eum voluptatem vitae quidem unde recusandae nam dolores aspernatur ab soluta tempora odit,
+          laboriosam officia laborum fuga blanditiis quasi odio harum necessitatibus? Iure quibusdam esse unde quod
+          incidunt maxime. Accusamus, pariatur dolores nostrum autem minima, repellendus iste nisi nam doloremque ipsam
+          architecto.</p>
+
+      </article>
+
+      <a href="" class="span-a">Lorem ipsum <span class="dolor">dolor</span> sit amet.</a>
+
+    </section>
+
+
+    <aside class="side-bar">
+      <h2>Popular Recipes</h2>
+      <a href="">Yakitori (grilled chicken)</a>
+      <a href="">Tsukune (minced chicken patties)</a>
+      <a href="">Okonomiyaki (savory pancakes)</a>
+      <a href="">Mizutaki (chicken stew)</a>
+    </aside>
+
+  </main>
+
+
+
+  <footer class="the-footer">
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </footer>
+
+</body>
+
+</html>
