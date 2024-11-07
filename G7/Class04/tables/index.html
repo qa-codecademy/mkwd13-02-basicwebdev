@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tables in html</h1>
+
+    <h2>Basic table structure</h2>
+
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Row 01, Column 01</td>
+                <td colspan="2">Row 01, Column 02</td>
+            </tr>
+            <tr>
+                <td>Row 02, Column 01</td>
+                <td colspan="2">Row 02, Column 02</td>
+            </tr>
+            <tr>
+                <td>Row 03, Column 01</td>
+                <td>Row 03, Column 02</td>
+                <td>Row 03, Column 03</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Complete table structure</h2>
+
+    <table border="2" cellspacing="10" cellpadding="10">
+        <caption>Code Academy Timetable</caption>
+        <thead>
+            <tr>
+                <th scope="col">Groups</th>
+                <th scope="col">4.11 Monday</th>
+                <th scope="col">5.11 Tuesday</th>
+                <th scope="col">6.11 Wednesday</th>
+                <th scope="col">7.11 Thursday</th>
+                <th scope="col">8.11 Friday</th>
+                <th scope="col">9.11 Saturday</th>
+                <th scope="col">10.11 Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row for G5-->
+            <tr>
+                <th scope="row" style="background-color: red">G5</th>
+                <td></td>
+                <td>HTML & CSS</td>
+                <td></td>
+                <td>HTML & CSS</td>
+                <td></td>
+                <td colspan="2" rowspan="3" align="center">Day Off</td>
+                <!-- <td>Day Off</td> -->
+            </tr>
+            <!-- Row for G6-->
+            <tr>
+                <th scope="row">G6</th>
+                <td>HTML & CSS</td>
+                <td></td>
+                <td>HTML & CSS</td>
+                <td></td>
+                <td>HTML & CSS</td>
+                <!-- <td>Day Off</td>
+                <td>Day Off</td> -->
+            </tr>
+            <!-- Row for G7-->
+             <tr>
+                <th scope="row">G7</th>
+                <td></td>
+                <td>HTML & CSS</td>
+                <td></td>
+                <td>HTML & CSS</td>
+                <td></td>
+                <!-- <td>Day Off</td>
+                <td>Day Off</td> -->
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Time</th>
+                <td colspan="5" align="center">17:30 - 20:45</td>
+                <td colspan="2" align="center">//</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

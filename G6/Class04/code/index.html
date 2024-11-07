@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Table</title>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+
+    <h2>Basic Table</h2>
+    <table border="1" cellpadding="10" cellspacing="6">
+        <tbody>
+            <tr>
+                <td>Row 01, Column 01</td>
+                <td>Row 01, Column 02</td>
+                <td>Row 01, Column 03</td>
+            </tr>
+            <tr>
+                <td>Row 02, Column 01</td>
+                <td>Row 02, Column 02</td>
+                <td>Row 02, Column 03</td>
+            </tr>
+            <tr>
+                <td>Row 03, Column 01</td>
+                <td>Row 03, Column 02</td>
+                <td>Row 03, Column 03</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/>
+    <hr/>
+    <table border="1" cellpadding="25" cellspacing="5">
+        <caption>Empty Table</caption>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/>
+    <hr>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <caption>Fruit Table</caption>
+        <thead>
+            <tr>
+                <th>Banana</th>
+                <th>Kiwi</th>
+                <th>Orange</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td bgcolor="yellow">Yellow</td>
+                <td bgcolor="green"><a href="https://www.kiwi.com/" target="_blank">Green</a></td>
+                <td><img src="https://www.fervalle.com/wp-content/uploads/2022/07/transparent-orange-apple5eacfeae85ac29.7815306015883956945475.png" width="10%" height="2%" alt="orange fruit"/></td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <hr/>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <caption>Calendar</caption>
+        <colgroup>
+            <col bgcolor="aqua">
+            <col bgcolor="grey">
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>8am</th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td colspan="2">Math</td>
+                <!--<td></td>-->
+                <td>Art</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>Math</td>
+                <td>Art</td>
+                <td rowspan="2">Gym</td>
+                <td bgcolor="blue" rowspan="2">Biology</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Art</td>
+                <td>Math</td>
+                <!-- <td>Gym</td> -->
+                <!-- <td>Math</td> -->
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <hr/>
+    <h2>Complete table structure</h2>
+    <table border="1" cellspacing="5" cellpadding="10">
+        <caption>Qinshift Academy Time Table (November Week 02)</caption>
+        <colgroup>
+            <col bgcolor="aqua">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Groups</th>
+                <th>04.11 Monday</th>
+                <th>05.11 Tuesday</th>
+                <th>06.11 Wednesday</th>
+                <th>07.11 Thursday</th>
+                <th>08.11 Friday</th>
+                <th>09.11 Saturday</th>
+                <th>10.11 Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>G1</th>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class04</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class05</td>
+                <td colspan="3" bgcolor="lightgreen"></td>
+                <!-- <td colspan="2" rowspan="2" bgcolor="lightgreen"></td> -->
+                <!--<td></td> -->
+            </tr>
+            <tr>
+                <th>G2</th>
+                <td>HTML & CSS Class04</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class 05</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class 06</td>
+                <td colspan="2" bgcolor="lightgreen"></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <th>G3</th>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class04</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class05</td>
+                <td bgcolor="lightgreen"></td>
+                <td colspan="2" rowspan="2" bgcolor="lightgreen"></td>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <th>G4</th>
+                <td>HTML & CSS Class04</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class05</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML & CSS Class06</td>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <th>G5</th>
+                <td rowspan="2" bgcolor="lightgreen"></td>
+                <td rowspan="2">HTML & CSS Class04</td>
+                <td rowspan="2" bgcolor="lightgreen"></td>
+                <td rowspan="2">HTML & CSS Class05</td>
+                <td colspan="3" rowspan="2" bgcolor="lightgreen"></td>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <th>G6</th>
+                <!-- <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Time</th>
+                <td colspan="5" align="center">17:30 - 20:45</td>
+                <td colspan="2" align="center">Weekend</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
