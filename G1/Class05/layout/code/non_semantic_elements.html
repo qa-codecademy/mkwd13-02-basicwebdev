@@ -6,13 +6,16 @@
     <title>Non semantic elements</title>
   </head>
   <body>
+    <!-- h1 element is a block element meaning that it will always render in new line and will expand till the end of the row -->
     <h1 style="background-color: blueviolet">This is a block element</h1>
     <p style="background-color: crimson">This is a block element too</p>
-    <span style="background-color: aqua"
-      >This is inline element
+    <!-- span element is an inline element meaning that it will take only what is needed and will not take the whole row -->
+    <span style="background-color: aqua">This is inline element </span>
+    <!-- if we place a block level element inside an inline element it will respect block level rules and will render in a new line -->
+    <span style="background-color: coral"
+      >Another span element
       <p>This is a paragraph inside a span element</p></span
     >
-    <span style="background-color: coral">Another span element</span>
     <p style="background-color: deeppink">This is a block element</p>
   </body>
 </html>
