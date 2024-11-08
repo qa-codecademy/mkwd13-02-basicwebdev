@@ -1,0 +1,20 @@
+* {
+  background-color: antiquewhite;
+}
+
+.lorem-article {
+  background-color: chartreuse;
+}
+
+#unique-header {
+  color: darkred !important;
+}
+
+#unique-header {
+  color: yellow;
+}
+
+h5,
+h3 {
+  color: darkblue;
+}
