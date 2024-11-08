@@ -31,10 +31,11 @@
 
 
     <h3>Using Labels</h3>
+    <!-- IMPORTANT ! In order to connect the <label> with the coresponding <input> we must match the *for* attribute from the label, with the *id* attribute value from the input -->
     <form action="" method="post">
         <!-- One way (better way) -->
         <label for="username">Username:</label>
-        <input type="text" name="username" id="username" placeholder="Enter username"><br><br>
+        <input type="text" name="usernameValue" id="username" placeholder="Enter username"><br><br>
         <!-- Other way -->
         <label>Password: <input type="password" name="password" placeholder="Enter password"></label>
 
