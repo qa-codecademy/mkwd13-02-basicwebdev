@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+    <hr>
+    <form action="" method="post">
+<fieldset>
+        <legend>Text inputs</legend>
+        <h3>------Text input-------</h3>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" required placeholder="Enter username" />
+        
+        <h3>------Password-------</h3>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" />
+        
+        <h3>------Text area-------</h3>
+        <label for="comments">Comment: </label>
+        <br>
+        <textarea id="comments" name="comments" cols="15" rows="5" placeholder="Enter your comment">
+       </textarea>
+    </fieldset>
+    <fieldset>
+       <legend>Making choices</legend>
+       <h3>------Radio button-------</h3>
+
+       <input type="radio" name="genre" id="rock" value="rock"/>
+       <label for="rock">Rock</label>
+
+       <input type="radio" name="genre" id="jazz" value="jazz"/>
+       <label for="jazz">Jazz</label>
+       
+       <input type="radio" name="genre" id="pop" value="pop"/>
+       <label for="pop">Pop</label>
+
+       <h3>------Chekbox-------</h3>
+       <input type="checkbox" name="service" id="appleMusic" value="appleMusic"/>
+       <label for="appleMusic">Apple music</label>
+
+       <input type="checkbox" name="service" id="googleMusic" value="googleMusic"/>
+       <label for="googleMusic">Google music</label>
+
+       <input type="checkbox" name="service" id="spotify" value="spotify"/>
+       <label for="spotify">Spotify</label>
+
+       <h3>------Dropdown/Select-------</h3>
+       <label for="instrument">What instrument do you play music on?</label>
+       <select name="instrument" id="instrument" required>
+        <option value="" selected disabled hidden>Please select</option>
+        <option value="guitar">Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="bass">Bass</option>
+       </select>
+
+       <h3>------Dropdown/Select-------</h3>
+       <label for="instruments">What instruments do you play music on?</label>
+       <select name="instruments" id="instruments" multiple size="4" required>
+        <option value="" selected disabled hidden>Please select</option>
+        <option value="guitar">Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="bass">Bass</option>
+       </select>
+    </fieldset>
+       <h3>------File input-------</h3>
+       <label for="song">Upload your song</label>
+       <input type="file" name="song" id="song">
+
+       <h3>------Submit and reset input-------</h3>
+        <input type="submit" value="Subscribe">
+        <input type="reset" value="Reset">
+
+        <h3>------Submit and reset button-------</h3>
+       <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+       <input type="hidden" name="product-code"
+             value="P1234" />
+    </form>
+
+</body>
+</html>
