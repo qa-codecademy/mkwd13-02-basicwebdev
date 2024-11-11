@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 06 - CSS</title>
+    <!-- Way 02 Internal CSS -->
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        body {
+            font-family: cursive;
+        }
+    </style>
+    <!-- Way 03 External CSS file (best way in most cases) -->
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 
 <body>
     <header>
+        <!-- <a href="">Child link</a> -->
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
@@ -22,7 +35,8 @@
     </header>
 
     <main>
-        <h1 id="main-heading">Class 06 - CSS</h1>
+        <!-- Way 01 Inline CSS -->
+        <h1 id="main-heading">Class 06 - <span style="color: goldenrod;">CSS</span></h1>
 
         <section id="section-1">
             <h2>Heading 1</h2>
@@ -31,7 +45,7 @@
                 similique officia sit laboriosam minima, perferendis minus. Nisi rem vel quae amet, libero temporibus
                 beatae!
             </p>
-            <p>
+            <p class="blue-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odio saepe tempore voluptatibus,
                 velit
                 nesciunt cupiditate eaque omnis, aut quia odit, ullam quis laboriosam veritatis nulla. Ducimus
@@ -53,7 +67,7 @@
         </section>
         <section id="section-3">
             <h2>Heading 3</h2>
-            <p>
+            <p class="blue-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam quidem dolor doloribus odit
                 asperiores iure tenetur error obcaecati illum ad necessitatibus ex, nobis blanditiis nulla nihil cumque
                 porro fugit!
@@ -66,7 +80,7 @@
     </main>
 
     <footer>
-        <p>
+        <p id="copyrights-paragraph" class="grey-background">
             <small>Copyrights QA 2024 &copy;</small>
         </p>
     </footer>
