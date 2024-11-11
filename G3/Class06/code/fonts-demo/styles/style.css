@@ -1,0 +1,50 @@
+/* ========== DEFINING FONTS ========== */
+
+/* 1) Import font using the 'import' syntax */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower');
+
+/* 2) Import downloaded font using @font-face */
+/* Poppins - Regular */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Poppins - Bold */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ====================================== */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.doto-font {
+    font-family: 'Doto', sans-serif;
+}
+
+/* NOTE !!!
+    => Font Fallbacks => always specify fallback fonts in the font-family property to cover cases where the custom font fails to load 
+    => in this case any available sans-serif font will be applied if 'Doto' fails to load
+*/
+
+.indie-flower-font {
+    font-family: 'Indie Flower', cursive;
+}
+
+.poppins-regular {
+    font-family: "Poppins";
+    font-weight: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins";
+    font-weight: bold;
+}
