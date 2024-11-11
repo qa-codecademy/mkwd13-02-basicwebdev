@@ -1,0 +1,110 @@
+/* ===== Base Syntax ===== */
+/* 
+    selector {
+        property1: value;
+        property2: value;
+        ... more properties
+    } 
+*/
+
+/* ========== CSS SELECTORS ========== */
+
+/* ===== Universal Selector ===== */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Type (Element) Selector ===== */
+main {
+    background-color: antiquewhite;
+}
+
+h2 {
+    color: darkred;
+    font-size: 20px;
+}
+
+/* ===== Class Selector ===== */
+.blue-text {
+    color: blue;
+}
+
+.grey-background {
+    background-color: rgb(195, 195, 195);
+}
+
+/* ===== Id Selector ===== */
+#main-heading {
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+/* ===== Child Selector ===== */
+#section-1>p {
+    background-color: rgb(255, 210, 97);
+}
+
+/* no direct child <a> in the <header> (no style applied) */
+header>a {
+    color: yellow;
+}
+
+/* ===== Descendant Selector ===== */
+header a {
+    color: green;
+}
+
+/* ===== Adjacent sibling selector ===== */
+.blue-text+p {
+    color: chocolate;
+    font-size: 22px;
+}
+
+/* NOTE: Name the elements class or id attributes using *kebab-case* naming convention (ex. blue-text, first-paragraph etc...). Avoid using '_' or empty spaces when naming. */
+
+/* ========== SPECIFICITY ========== */
+/* CASCADING => how the rules will be applied */
+/* 
+    Inline styles = 1000 points 
+    Ids' = 100 points
+    Classes, pseudo-classes = 10 points
+    Elements, pseudo-elements = 1 point
+*/
+
+/* 
+    Example: Same specificity (the latest css rule written is applied) 
+*/
+footer>p {
+    color: magenta;
+}
+
+footer>p {
+    color: yellow;
+}
+
+/* 
+    Example: Different Specificity (the rule with highest specificity value applies) 
+*/
+/* 1point(footer) + 1point(paragraph) +  10points(.grey-background) = 12*/
+footer p.grey-background {
+    font-size: 40px;
+}
+
+/* 1point(footer) + 1point(p) = 2 */
+footer p {
+    font-size: 20px;
+}
+
+/* 100points(#copyrights-paragraph) */
+#copyrights-paragraph {
+    font-size: 5px;
+}
+
+/* !important overules other css rules */
+/* 
+    IMPORTANT NOTE! 
+    => Should be used with caution and in edge-cases as it can make maintaining styles a headache 
+*/
+footer p {
+    font-size: 16px !important;
+}

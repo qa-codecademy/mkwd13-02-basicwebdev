@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Doto";
+  src: url(Doto-Regular.ttf);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 25px;
+}
+
+html {
+  font-size: 25px;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.doto-font {
+  font-family: "Doto", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  letter-spacing: 3;
+  word-spacing: 5px;
+}
+
+/* this is generally discouraged from using, try to stick to px/em/rem */
+.relative-size {
+  /* font-size: smaller; */
+  font-size: larger;
+  text-transform: capitalize;
+  color: brown;
+  line-height: 2;
+
+  /* used for chinese or japanese fonts, usually unsupported on normal fonts */
+  /* text-transform: full-width; */
+}
+
+.container {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.rem-example {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  text-transform: lowercase;
+  text-decoration: overline dotted red;
+}
+
+.paragraph {
+  font-size: 1.5em;
+  font-weight: 800;
+  font-style: oblique 30deg;
+  text-transform: uppercase;
+}
+
+.color-red {
+  color: red;
+}
+
+.aligned {
+  /* text-align: center; */
+  text-align: left;
+  /* align justify and justify-all will serve its purpose when we learn Flex/Grid */
+}
+
+.vertical-align {
+  font-size: 1.3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.paragraph::first-line {
+  text-decoration: underline dashed red;
+}
+
+.top-aligned {
+  vertical-align: top;
+}
+
+.middle-aligned {
+  vertical-align: middle;
+}
+
+.bottom-aligned {
+  vertical-align: bottom;
+  text-shadow: -9px 4px 5px rgba(255, 12, 12, 0.85);
+}
+
+.middle-aligned::first-letter {
+  color: darkmagenta;
+  font-size: 60px;
+}

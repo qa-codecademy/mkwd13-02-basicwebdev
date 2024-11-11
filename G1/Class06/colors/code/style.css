@@ -1,0 +1,25 @@
+/* rgb values */
+h1 {
+  /* color: rgb(255, 0, 0); */
+  /* color: rgb(0, 255, 0); */
+  /* color: rgb(0, 0, 255); */
+
+  /* if you hover over the color itself, a color picker will pop up */
+  color: rgb(0, 216, 254);
+  background-color: black;
+}
+
+.hex-code {
+  /* color: #c0a718; */
+  color: #44001a;
+  background-color: rgb(212, 22, 50);
+}
+
+#named-color {
+  color: plum;
+  background-color: rgba(230, 9, 9, 0.041);
+}
+
+.hsl-body {
+  background-color: hsla(40, 100%, 50%, 0.469);
+}

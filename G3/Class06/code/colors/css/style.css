@@ -1,0 +1,24 @@
+body {
+    font-family: cursive;
+    background-color: rgb(208, 208, 208);
+}
+
+.color-name {
+    color: tomato;
+}
+
+.rgb-color {
+    color: rgb(255, 252, 71);
+}
+
+.rgba-color {
+    color: rgba(71, 111, 255, 0.2);
+}
+
+.hex-code {
+    color: #b3e864;
+}
+
+.hsl-color {
+    color: hsl(275, 100%, 64%);
+}
