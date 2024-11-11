@@ -57,7 +57,7 @@ project-root/
 
 ## CSS Features
 
-### Custom Font (or embed it directly in the <head>section</head>)
+### Custom Font (or embed it directly in the ```<head></head> section```)
 
 ```css
 @font-face {
