@@ -59,7 +59,7 @@
         <option value="bass">Bass</option>
        </select>
 
-       <h3>------Dropdown/Select-------</h3>
+       <h3>------Dropdown/Select multiple-------</h3>
        <label for="instruments">What instruments do you play music on?</label>
        <select name="instruments" id="instruments" multiple size="4" required>
         <option value="" selected disabled hidden>Please select</option>
@@ -81,6 +81,45 @@
        <button type="reset">Reset</button>
        <input type="hidden" name="product-code"
              value="P1234" />
+    </form>
+
+    <form action="" method="post">
+        <h3>HTML 5 specific elements</h3>
+        <fieldset>
+            <legend>HTML 5 specific elements</legend>
+            <h5>------Email-------</h5>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email">
+
+            <h5>------Url-------</h5>
+            <label for="website">Website url:</label>
+            <input type="url" name="website" id="website" required placeholder="Enter your website url">
+        
+            <h5>------Number-------</h5>
+            <label for="number">Age:</label>
+            <input type="number" name="number" id="number" min="10" required placeholder="Enter your age">
+   
+            <h5>------Date-------</h5>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" required>
+   
+            <h5>------Time-------</h5>
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" required>
+
+            <h5>------Date-time-------</h5>
+            <label for="dateTime">Date time:</label>
+            <input type="datetime-local" name="dateTime" id="dateTime" required>
+
+            <h5>------Color-------</h5>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" required>
+
+            <h5>------Range-------</h5>
+            <label for="range">Range:</label>
+            <input type="range" name="range" id="range" min="0" max="10" required>
+
+        </fieldset>
     </form>
 
 </body>

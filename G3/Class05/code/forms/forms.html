@@ -147,7 +147,34 @@
         ===> it does not mean that it has to have the same value as the id !
     -->
 
-    <!-- TO BE CONTINUED... -->
+    <h3>Search Input</h3>
+    <form action="search-url" method="get">
+        <label for="search-something">Search Input</label>
+        <input type="search" name="searchValue" id="search-something"><br><br>
+        <!-- <button type="button">Submit</button> -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Additional Form Controls</h3>
+    <form action="/submit-form" method="post">
+        <label for="favorite-color">Choose your favorite color:</label>
+        <input type="color" id="favorite-color" name="favoriteColor"><br><br>
+
+        <label for="birth-date">Select your birth date:</label>
+        <input type="date" id="birth-date" name="birthDate"><br><br>
+
+        <label for="profile-picture">Upload your CV</label>
+        <input type="file" id="profile-picture" name="profilePicture" accept=".pdf, .docx"><br><br>
+        <!-- *accept* attribute specifies allowed file types -->
+
+        <label for="website">Your personal website:</label>
+        <input type="url" id="website" name="website" placeholder="https://www.example.com"><br><br>
+
+        <label for="range-input">Range Input</label>
+        <input type="range" name="rangeInput" id="range-input" min="0" max="100"><br><br>
+
+        <button type="submit">Submit Form</button>
+    </form>
 
 </body>
 
