@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <!--Login form (username and password)-->
+    <form action="" method="">
+        <label for="username">Please enter your username: </label>
+        <input type="text" id="username" name="username" placeholder="Username" required />
+        <label for="password">Please enter your password: </label>
+        <input type="password" id="password" name="password" placeholder="Password" required/>
+
+        <!-- It's the same if you use either the button or the input element with type="submit"-->
+        <!-- <input type="submit" value="Submit form"/> -->
+         <button type="submit">Submit form</button>
+    </form>
+
+    <br/>
+    <br/>
+
+    <!--Text area-->
+    <form>
+        <label>Leave your comments here:</label>
+        <br/>
+        <textarea id="comment" name="comment" placeholder="Leave us a comment" cols="40" rows="10" required minlength="5" maxlength="15"></textarea>
+        <br/>
+        <button type="submit">Leave a comment</button>
+    </form>
+
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Radio inputs</legend>
+            <p>Please pick your favorite music genre:</p>
+            <input type="radio" name="music-genre" id="rock" value="Rock"/>
+            <label for="rock">Rock</label>
+            <input type="radio" name="music-genre" id="pop" value="Pop"/>
+            <label for="pop">Pop</label>
+            <input type="radio" name="music-genre" id="jazz" value="Jazz"/>
+            <label for="jazz">Jazz</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Checkbox inputs</legend>
+            <p>Please select your favourite music service</p>
+            <input type="checkbox" name="music-service" id="apple" value="AppleMusic"/>
+            <label for="apple">Apple Music</label>
+            <input type="checkbox" name="music-service" id="spotify" value="Spotify"/>
+            <label for="spotify">Spotify</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Dropdown</legend>
+            <label for="listening-device">What device do you listen music on</label>
+            <select name="device" id="listening-device">
+                <option value="">Please select</option>
+                <option value="Phone" selected>Phone</option>
+                <option value="PC">PC</option>
+                <option value="Tablet">Tablet</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Multiple select box</legend>
+            <label>Do you play any of this instruments</label>
+            <select id="instruments" name="instruments" multiple size="2">
+                <option value="Guitar">Guitar</option>
+                <option value="Drums">Drums</option>
+                <option value="Piano">Piano</option>
+                <option value="Bass">Bass</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <br>
+
+        <!--File upload input-->
+        <label for="photo">Upload your photo:</label>
+        <input type="file" name="photo" id="photo"/>
+
+        <br>
+
+        <!--Hidden input-->
+        <input type="hidden" id="userId" name="userId" value="12345"/>
+
+        <button type="reset">Reset data</button>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <br>
+
+    <form>
+        <label for="mail">Email: </label>
+        <input type="email" name="mail" id="mail" required/>
+
+        <br>
+
+        <label for="website">Your website url</label>
+        <input type="url" id="website" name="website"/>
+
+        <br>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone"/>
+
+        <br>
+
+        <label for="num">Numbers</label>
+        <input type="number" id="num" name="num" min="10" max="30" step="0.01" />
+
+        <br>
+
+        <label for="birthday">Pick a date:</label>
+        <input type="date" id="birthday" name="birthday"/>
+
+        <br>
+
+        <label for="alarm">Pick time:</label>
+        <input type="time" id="alarm" name="alarm"/>
+
+        <br>
+
+        <label for="color">Pick color:</label>
+        <input type="color" id="color" name="color" />
+
+        <br>
+
+        <label for="volume">Pick range:</label>
+        <input type="range" id="volume" name="volume"/>
+
+        <br>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" />
+
+        <br>
+        <button type="submit">Submit</buton>
+    </form>
+
+</body>
+</html>

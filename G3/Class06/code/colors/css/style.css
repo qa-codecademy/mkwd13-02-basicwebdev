@@ -1,0 +1,29 @@
+body {
+    font-family: cursive;
+    background-color: rgb(208, 208, 208);
+}
+
+/* ========== Color Name ========== */
+.color-name {
+    color: tomato;
+}
+
+/* ========== RGB color ========== */
+.rgb-color {
+    color: rgb(255, 252, 71);
+}
+
+/* ========== RGBA color (with opacity) ========== */
+.rgba-color {
+    color: rgba(71, 111, 255, 0.2);
+}
+
+/* ========== Hex Code ==========*/
+.hex-code {
+    color: #b3e864;
+}
+
+/* ========== HSL Code ==========*/
+.hsl-color {
+    color: hsl(275, 100%, 64%);
+}

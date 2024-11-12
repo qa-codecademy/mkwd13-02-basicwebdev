@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms Class</h1>
+    
+    <!-- *** FORM EXAMPLE 1 *** -->
+    <!-- In action => actions refers to the "destination" we would like to send the form data. Destination might be external service/server etc. Might look as: https://my_server_address.com  -->
+    <!-- In method => method refers to how we would like to send the form data to the destination-->
+    <form action="" method="GET">
+        <!-- Form fields goes here -->
+
+        <label for="userName">Enter username:</label>
+        <input type="text" placeholder="Enter username" id="userName"/>
+        <br /> 
+
+        <label for="pwdInput">Enter password:</label>
+        <!-- <input type="password" pattern="(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}" title="Password must be at least 8 characters"> -->
+        <input type="password" placeholder="Enter password" id="pwdInput"/>
+        <br />
+
+        <label for="ageInput">Enter age:</label>
+        <input type="number" placeholder="Enter age" id="ageInput"/> 
+
+        <!-- Input type SUBMIT will create us SUBMIT BUTTON -->
+        <input type="submit" value="Login type submit" />
+
+        <!-- Button acts as input type submit BY DEFAULT -->
+        <button>Login Type Button</button>
+    </form>
+
+    <hr />
+    <!-- *** FORM EXAMPLE 2 *** -->
+    <!-- If all radios for name attribute have the same value, we achieve the behaviour where the user can only select 1 of the 3 -->
+    <form>
+        <p>What does www stands for?</p>
+
+        <label for="weekendWeekWeek">1. Weekend week week</label>
+        <input type="radio" id="weekendWeekWeek" name="questionOne"/>
+
+        <label for="whatWhyWho">2. What why who</label>
+        <input type="radio" id="whatWhyWho" name="questionOne"/>
+
+        <label for="worldWideWeb">3. World Wide Web</label>
+        <input type="radio" id="worldWideWeb" name="questionOne"/>
+    </form>
+    <hr />
+    <!-- *** FORM EXAMPLE 3 *** -->
+    <form>
+        <label for="birthDate">Enter date of birth:</label>
+        <input type="date" id="birthDate"/>
+
+        <br />
+        <label for="colorPicker">Select your fav. color:</label>
+        <input type="color" id="colorPicker"/>
+    </form>
+    <hr />
+    <!-- *** FORM EXAMPLE 4 *** -->
+    <form>
+        <p>Enter the desired flavoures for your pancake</p>
+
+        <input type="checkbox" id="caramela" value="caramela"/>
+        <label for="caramela">Caramela</label>
+
+        <input type="checkbox" id="nutella" value="nutella"/>
+        <label for="nutella">Nutella</label>
+
+        <input type="checkbox" id="blueberry" value="blueberry">
+        <label for="blueberry">Blueberry</label>
+    </form>
+
+    <hr />
+    <!-- *** FORM EXAMPLE 5 *** -->
+    <form>
+        <fieldset>
+            <legend>Thank you for your add itinal feedback</legend>
+
+            <!-- required attribute means that when the form is submitted there must be VALUE in that field -->
+            <label for="email">Provide email:</label>
+            <input type="text" placeholder="Email:" id="email" required/>
+
+            <!-- minlength & maxlength are attributes that apply native validation as same as required -->
+            <textarea minlength="10" maxlength="1000" placeholder="Enter comment here:" cols="40" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enter your country origin</legend>
+
+            <label for="region">Region</label>
+            <select id="region">
+                <!-- Disabled attribute won't allow this option to be SELECTED -->
+                 <!-- Selected means that this option is pre-selected -->
+                <option disabled selected>Please select an option</option>
+                <option>Macedonia</option>
+                <option disabled>USA</option>
+                <option>Japan</option>
+                <option>Germany</option>
+            </select>
+        </fieldset>
+
+        <!-- SUBMITTING THE FORM -->
+        <!-- Example 1: -->
+        <!-- <input type="submit" /> -->
+        <!-- Example 2: -->
+        <button>Submit</button>
+
+        <!-- RESETTING THE FORM -->
+        <!-- Example 1: -->
+        <!-- <input type="reset" /> -->
+
+        <!-- Example 2: -->
+        <button type="reset">Reset </button>
+    </form>
+</body>
+</html>

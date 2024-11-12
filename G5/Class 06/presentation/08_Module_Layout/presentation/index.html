@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>Layout</h3>
+					<p>
+						<small>Trainer: <a href="#">Tijana Stojanovska</a> - stojanovska_tijana@outlook.com</small></br>
+						<small>Assistant: <a href="#">Slave Ivanovski</a> - slaveivanovski028@gmail.com</small></br>
+					    <div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson Overview</h2>
+					<ul>
+						<li>Grouping elements in a block</li>
+						<li>HTML5 layout elements</li>
+						<li>Non-Semantic Elements</li>
+					</ul>
+				</section>
+
+
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>HTML5 layout elements</h1>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Introduction</h2>
+					<ul>
+						<li>Webpages can and will look pretty different from one another, but they all tend to share similar standard components</li>
+						<li>In addition to defining individual parts of your page (such as "a paragraph" or "an image"), HTML5 also boasts a number of
+							block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column")</li>
+					</ul>
+				</section>
+
+
+
+
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/page_layout.png"></div>
+					</div>
+				</section>
+
+
+
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/page_layout_1.png"></div>
+					</div>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Introduction (2)</h2>
+					<ul>
+						<li>In your HTML code, you can mark up sections of content based on their functionality — you can use elements
+							that represent the sections of content described above unambiguously, and assistive technologies like screenreaders
+							can recognise those elements and help with tasks like "find the main navigation", or "find the main content."</li>
+						<li>To implement such semantic mark up, HTML5 provides dedicated tags that you can use to represent such sections</li>
+					</ul>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Headers &amp; Footers </h2>
+						<ul>
+							<li><strong style="color:#007ac9;">&lt;header&gt;</strong> represents a group of introductory content. If it is a child of <b>&lt;body&gt;</b> it defines the global header of a webpage,
+								but if it's a child of an <b>&lt;article&gt;</b> or <b>&lt;section&gt;</b> it defines a specific header for that section</li>
+								<li><strong style="color:#007ac9;">&lt;footer&gt;</strong> represents a group of end content for a page that generally contains fine print, copyright notices, contact info
+								or secondary navigation</li>
+						</ul>
+
+				</section>
+
+
+
+				<section style="text-align: left;">
+						<p><pre><code class="hljs" data-trim contenteditable>
+&lt;header&gt;
+	  &lt;h1&gt;Page main heading&lt;/h1&gt;
+&lt;/header&gt;
+					</code></pre></p>
+				</section>
+
+				<section style="text-align: left;">
+						<p><pre><code class="hljs" data-trim contenteditable>
+&lt;footer&gt;
+	&lt;p&gt; 2024 &copy; QA. All rights Reserved. &lt;/p&gt;
+&lt;/footer&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Navigation </h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">&lt;nav&gt;</strong>  contains the main navigation functionality for the page.
+							Secondary links, etc., would not go in the navigation</li>
+						<li>Links to the site's main sections; usually represented by menu buttons, links, or tabs</li>
+						<li>Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement</li>
+					</ul>
+				</section>
+
+
+
+				<section style="text-align: left;">
+						<p><pre><code class="hljs" data-trim contenteditable>
+&lt;nav&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Our Team&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Projects&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+	&lt;form action="" method=""&gt;
+		&lt;label for="search"&gt;Search: &lt;/label&gt;
+		&lt;input type="search" name="search" placeholder="Search anything"
+		id="search" /&gt;
+		&lt;input type="submit" value="Go!" /&gt;
+	&lt;/form&gt;
+&lt;/nav&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Main Content</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">&lt;main&gt;</strong> is for content unique to this page.
+							Use <b>&lt;main&gt;</b> only once per page, and put it directly inside <b>&lt;body&gt;</b>.</li>
+							<li>Ideally this shouldn't be nested within other elements</li>
+					</ul>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;body&gt;
+	&lt;main&gt;
+
+		&lt;!-- Our page's main content --&gt;
+
+	&lt;/main&gt;
+&lt;/body&gt;
+				</code></pre></p>
+			</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Articles</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">&lt;article&gt;</strong> element encloses a block of related content that makes sense
+							on its own without the rest of the page (e.g., a single blog post)</li>
+					</ul>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Sections</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">&lt;section&gt;</strong> element is similar to <b>&lt;article&gt;</b>, but it is more for grouping together a single part of the page that constitutes one single piece of functionality
+							(e.g., a mini map, or a set of article headlines and summaries), or a theme</li>
+						<li> It's considered best practice to begin each section with a heading</li>
+						<li>Also note that you can break <b>&lt;article&gt;</b>s up into different <b>&lt;section&gt;</b>s, or <b>&lt;section&gt;</b>s up into different <b>&lt;article&gt;</b>s, depending on the context</li>
+					</ul>
+				</section>
+
+
+
+
+				<section style="text-align: left;">
+						<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section&gt;
+	&lt;article&gt;
+		&lt;h2&gt;Japanese Vegetarian&lt;/h2&gt;
+		&lt;h3&gt;Five week course in London&lt;/h3&gt;
+		&lt;p&gt;A five week introduction to traditional Japanese
+		vegetarian meals, teaching you a selection of rice and noodle dishes.&lt;/p&gt;
+	&lt;/article&gt;
+	&lt;article&gt;
+		&lt;h2&gt;Sauces Masterclass&lt;/h2&gt;
+		&lt;h3&gt;One day workshop&lt;/h3&gt;
+		&lt;p&gt;An intensive one-day course looking at how to create the most
+		delicious sauces for use in a range of Japanese cookery.&lt;/p&gt;
+	&lt;/article&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Aside </h2>
+						<ul>
+							<li>The <strong style="color:#007ac9;">&lt;aside&gt;</strong> element contains content that is not directly related to the main content but can provide additional
+								information indirectly related to it (glossary entries, author biography, related links, etc.)</li>
+							<li>Usually, it's contextual to what is contained in the main content</li>
+							<li>The <b>&lt;aside&gt;</b> content can also be nested within the main content</li>
+						</ul>
+				</section>
+
+
+
+				<section style="text-align: left;">
+						<p><pre><code class="hljs" data-trim contenteditable>
+
+&lt;aside&gt;
+	&lt;h2&gt;Popular Recipes&lt;/h2&gt;
+	&lt;a href=""&gt;Yakitori (grilled chicken)&lt;/a&gt;
+	&lt;a href=""&gt;Tsukune (minced chicken patties)&lt;/a&gt;
+	&lt;a href=""&gt;Okonomiyaki (savory pancakes)&lt;/a&gt;
+	&lt;a href=""&gt;Mizutaki (chicken stew)&lt;/a&gt;
+&lt;/aside&gt;
+
+					</code></pre></p>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Non-semantic wrappers</h2>
+						<ul>
+							<li>Sometimes you'll come across a situation where you can't find an ideal semantic element to group some items
+								together or wrap some content</li>
+							<li>For cases like these, HTML provides the <strong style="color:#007ac9;">&lt;div&gt;</strong>
+								and <strong style="color:#007ac9;">&lt;span&gt;</strong> elements</li>
+						</ul>
+				</section>
+
+
+				<section style="text-align: left;">
+					<h2>Non-semantic wrappers (2)</h2>
+						<ul>
+							<li><strong style="color:#007ac9;">&lt;div&gt;</strong> is a block level non-semantic element, which you should only use if you can't
+								think of a better semantic block element to use, or don't want to add any specific meaning</li>
+							<li>As a "pure" container, the <b>&lt;div&gt;</b> element does not inherently represent anything</li>
+							<li><strong style="color:#007ac9;">&lt;span&gt;</strong> is an inline non-semantic element, which you should only use if you can't
+								think of a better semantic text element to wrap your content, or don't want to add any specific meaning</li>
+						</ul>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+&lt;div id="shopping-cart"&gt;
+	&lt;h2&gt;Shopping cart&lt;/h2&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=""&gt;Chicken: &lt;span id="price"&gt;$9.99&lt;span&gt;&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+				</code></pre></p>
+			</section>
+
+
+
+				<!-- Slide 43 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

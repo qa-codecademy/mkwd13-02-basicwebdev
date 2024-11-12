@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 05 - Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <!-- Base Syntax -->
+    <form action="nekoj-endpoint" method="post">
+        <!-- Form Elements (Form Controls) -->
+    </form>
+    <!-- 
+        action => specifies where the form data should be sent
+        method => specifies which HTTP method (get/post) should be used when submiting the form   
+    -->
+
+    <h2>Different types of forms</h2>
+
+    <h3>Text & Password Inputs</h3>
+    <form action="" method="post">
+        <input type="text" name="username" placeholder="Enter username"><br><br>
+        <input type="password" name="password" placeholder="Enter password">
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <h3>Using Labels</h3>
+    <!-- IMPORTANT ! In order to connect the <label> with the coresponding <input> we must match the *for* attribute from the label, with the *id* attribute value from the input -->
+    <form action="" method="post">
+        <!-- One way (better way) -->
+        <label for="username">Username:</label>
+        <input type="text" name="usernameValue" id="username" placeholder="Enter username"><br><br>
+        <!-- Other way -->
+        <label>Password: <input type="password" name="password" placeholder="Enter password"></label>
+
+        <input type="submit" value="Go Go Go">
+    </form>
+
+
+    <h3>Textarea</h3>
+    <form action="" method="post">
+        <label for="comments">Comments:</label>
+        <textarea name="userComments" id="comments" rows="4" cols="30"></textarea>
+    </form>
+
+
+    <h3>Grouping Form Elements</h3>
+    <form action="" method="post">
+        <!-- NOTE: 
+            => Every <fieldset> is typically followed by a <legend> element 
+            => Usage of fieldsets is NOT mandatory
+        -->
+        <fieldset>
+            <legend>Grouping Form Elements</legend>
+
+            <fieldset>
+                <legend><b>Radio Buttons</b></legend>
+                <label for="option-1">Option 1</label>
+                <input type="radio" id="option-1" name="option" value="Option 1">
+                <label for="option-2">Option 2</label>
+                <input type="radio" id="option-2" name="option" value="Option 2">
+                <label for="option-3">Option 3</label>
+                <input type="radio" id="option-3" name="option" value="Option 3">
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Checkboxes</b></legend>
+                <p>Hobbies:</p>
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+                <label for="traveling">Traveling</label>
+            </fieldset>
+
+            <!-- IMPORTANT !!!  
+                ===> Related options are grouped together by adding same value for the 'name' attribute 
+                ===> Typical examples are *radio* and *checkbox* inputs
+            -->
+
+            <fieldset>
+                <legend><b>Dropdown list (Select list)</b></legend>
+                <label for="country">Select Country</label>
+                <select name="userCountry" id="country">
+                    <option value="" selected disabled>--- Please Select ---</option>
+                    <option value="sr">Serbia</option>
+                    <option value="mk">Macedonia</option>
+                    <option value="bu">Burundi</option>
+                    <option value="jp">Japan</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Dropdown list (with multiple select)</b></legend>
+                <label for="country">Select Country</label>
+                <select name="userCountryMultiple" id="country" multiple>
+                    <!-- Create a placeholder-like option -->
+                    <option value="" selected disabled>--- Please Select ---</option>
+                    <option value="sr">Serbia</option>
+                    <option value="mk">Macedonia</option>
+                    <option value="bu">Burundi</option>
+                    <option value="jp">Japan</option>
+                </select>
+            </fieldset>
+        </fieldset>
+    </form>
+
+
+    <h3>Submitting a Form</h3>
+    <form action="register-user" method="post">
+        <fieldset>
+            <legend><b>Register User</b></legend>
+
+            <label for="username-1">Username: </label>
+            <input type="text" name="usernameExample" id="username-1" required><br><br>
+            <!-- We can use *required* attribute to set the form controls mandatory. The user must provide values for these inputs -->
+
+            <label for="password-1">Password: </label>
+            <input type="password" name="password" id="password-1" minlength="8" maxlength="20"><br><br>
+            <!-- *minlength* and *maxlength* set minimum and maximum length of characters allowed for input -->
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"><br><br>
+            <!-- The *email* form control comes with pre-defined rules for email validation -->
+
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" min="18" max="100"><br><br>
+            <!-- *min* and *max* set numerical range for age input -->
+
+            <button type="submit">Submit</button>
+            <!-- <input type="submit" value="Submit Input"> -->
+            <button type="reset">Reset</button>
+            <!-- <input type="reset" value="Reset Input"> -->
+        </fieldset>
+    </form>
+
+
+    <!-- NOTE :
+        ===> *name* attribute is used to associate the input value with the form data, allowing it to be sent to the server under this name when the form is submitted 
+        ===> it does not mean that it has to have the same value as the id !
+    -->
+
+    <h3>Search Input</h3>
+    <form action="search-url" method="get">
+        <label for="search-something">Search Input</label>
+        <input type="search" name="searchValue" id="search-something"><br><br>
+        <!-- <button type="button">Submit</button> -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Additional Form Controls</h3>
+    <form action="/submit-form" method="post">
+        <label for="favorite-color">Choose your favorite color:</label>
+        <input type="color" id="favorite-color" name="favoriteColor"><br><br>
+
+        <label for="birth-date">Select your birth date:</label>
+        <input type="date" id="birth-date" name="birthDate"><br><br>
+
+        <label for="profile-picture">Upload your CV</label>
+        <input type="file" id="profile-picture" name="profilePicture" accept=".pdf, .docx"><br><br>
+        <!-- *accept* attribute specifies allowed file types -->
+
+        <label for="website">Your personal website:</label>
+        <input type="url" id="website" name="website" placeholder="https://www.example.com"><br><br>
+
+        <label for="range-input">Range Input</label>
+        <input type="range" name="rangeInput" id="range-input" min="0" max="100"><br><br>
+
+        <button type="submit">Submit Form</button>
+    </form>
+
+</body>
+
+</html>
