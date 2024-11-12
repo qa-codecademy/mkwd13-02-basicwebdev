@@ -1,0 +1,103 @@
+     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+     /* .container {
+      background-color: green;
+
+     }
+
+     h1 {
+
+      color: yellow;
+     } */
+
+     /* p {
+      color: rgba(100, 100, 90, 0.5);
+
+     } */
+
+     /* hex code */
+     /* h2 {
+      color: #ee3e80;
+      opacity: 0.5;
+     } */
+
+     /* color name */
+     /* h1 {
+      color: DarkCyan;
+     } */
+
+     /* body {
+      background-color: #C8C8C8;
+      background-color: hsl(0, 0%, 78%);
+     }
+
+     p {
+      background-color: #ffffff;
+      background-color: hsla(0, 100%, 100%, 0.5);
+     } */
+
+     /* @font-face {
+      font-family: "Open Sans";
+      src: url("static/OpenSans-Regular.ttf") format("truetype");
+     }
+
+     h1 {
+      font-family: "Open Sans", sans-serif;
+     } */
+
+     /* .container-one {
+      background-color: brown;
+      height: 100vmax;
+     } */
+
+     h2 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 2rem;
+      /* text-transform: uppercase; */
+      /* letter-spacing: 3.5; */
+      /* word-spacing: 20px; */
+      /* text-align: center; */
+      /* width: 50%;
+      margin: 0 auto; */
+
+      text-shadow: 1px 5px 2px black;
+     }
+
+     h2 span {
+      background-color: tomato;
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+     }
+
+     p {
+      font-family: "Noto Sans JP", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      line-height: normal;
+      /* width: 100%;
+      max-width: 40%; */
+     }
+
+     p::first-letter {
+      font-size: 2em;
+      color: red;
+     }
+
+     p::first-line {
+      background-color: yellow;
+      color: seagreen;
+     }
+
+     h1 {
+      /* font-style: oblique 10deg; */
+      text-transform: lowercase;
+      /* text-decoration: blue underline wavy; */
+      text-decoration-style: solid;
+      text-decoration-color: red;
+      text-decoration-thickness: 5px;
+      text-decoration-line: line-through;
+     }
