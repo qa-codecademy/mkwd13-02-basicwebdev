@@ -99,7 +99,7 @@ The style should consist of the following items:
 - **Best Practices**: Use the things that we highlited during the classes as good practices (for example: writing descriptive alt text to images, proper naming for classes and ids, one `<h1>` per page, using semantic markup etc...)
 - **Be creative and enjoy the work 🙂**
 
-<br><br>
+<br>
 
 # Happy Coding ! ☕
  
