@@ -1,0 +1,29 @@
+/* style.css */
+
+/* Color name */
+.color-name {
+    color: rebeccapurple;
+}
+
+/* Hex code */
+.hex-code {
+    color: #80ff80;
+}
+
+/* RGB color */
+.rgb-color {
+    color: rgb(0, 153, 255);
+}
+
+h1 {
+    background-color: #0000ff;
+    color: #fff;
+     /* Opacity values should be between 0 - 1 */
+    opacity: 0.4;
+}
+
+/* hsl / hsla are CSS3 optitons */
+#subtitle {
+    color: hsla(210, 100%, 20%, 0.7);
+    background-color: rgba(255, 153, 102, 0.5);
+}

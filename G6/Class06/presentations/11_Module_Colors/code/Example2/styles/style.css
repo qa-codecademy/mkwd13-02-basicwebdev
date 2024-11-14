@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+/* google fonts - using import at-rule */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@400;700&display=swap');
+
+h1 {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+h2 {
+    font-family: 'Comforter', cursive;
+}
+.small-size-font {
+    font-size: x-small;
+}
+.first-paragraph {
+    text-align: left;
+}
+.second-paragraph {
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+}
+.second-paragraph::first-letter {
+    font-size: 40px;
+    font-family: 'Comforter', cursive;
+}
+.third-paragraph {
+    font-weight: bold;
+    word-spacing: 8px;
+    text-align: center;
+}
+.third-paragraph::first-line {
+    color: red;
+}
+.fourth-paragraph {
+    text-align: justify;
+}
+.font-weight-bold {
+    font-weight: bolder;
+    font-style: oblique;
+}
+h3 {
+    text-transform: uppercase;
+    text-decoration-style: dotted;
+    text-decoration-line: underline overline line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+
+    /* shorthand */
+    text-decoration: red dotted underline overline line-through 3px;
+
+    line-height: 3.5;
+    letter-spacing: 3px;
+}
+
+.bird-image-text {
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+    background-color: rosybrown;
+    font-weight: bold;
+}
+
+.bird-image {
+    vertical-align: bottom;
+}

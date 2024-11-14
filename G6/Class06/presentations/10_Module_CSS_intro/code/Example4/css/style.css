@@ -1,0 +1,12 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color:yellow;
+}
+
+h1, h2 {
+   color:rgb(0,0,255);
+}
+
+i{
+    color:greenyellow;
+}

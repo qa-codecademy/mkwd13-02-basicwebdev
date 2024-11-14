@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first CSS</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <style type="text/CSS">
+        *{
+            text-align: left;
+        }
+
+        body{
+             font-family: Arial, Helvetica, sans-serif;
+             background-color:beige;
+        }
+        
+        h1, h2 {
+            color:rgb(0,255,0);
+        }
+
+        .background{
+            text-align: center;
+            color:rgb(255,0,0);
+        }
+        
+        #WWF{
+            color:blue;
+        }
+
+        #WWF+p{
+            color:springgreen;
+        }
+
+        li>a{
+            color:brown;
+            text-align: centar;
+        }
+
+        a{
+            color:slateblue;
+            text-decoration: none;
+        }
+
+        p b{
+            color:darkblue;
+        }
+
+        h6+p{
+            color:goldenrod
+        }
+
+        h6~p{
+            color:greenyellow
+        }
+
+        i{
+            color:blue !important;
+        }
+
+        i{
+            color:violet;
+        }
+
+        </style>
+
+        <!--<link href="css/style2.css" type="text/css" rel="stylesheet"/>-->
+    </head>
+
+    <body>
+        <h1>My first CSS execise</h1>
+        <p style="color:red">This is my first HTML page using CSS</p>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Out team</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+
+        <form action="" method="">
+            <label for="search">Search:</label>
+            <input type="search" name="search" id="search" placeholder="Search something"/>
+            <input type="submit" value="Go"/>
+        </form>
+
+        <a href="https:www.time.mk">Time</a>
+
+        <h2>My first web page</h2>
+        <p>My first web page. I am learning HTML and CSS</p>
+
+        <h3 id="WWF">WWF</h3>
+        <p id="param1" class="background">The World Wide Fund for Nature is an international organization for enviromental issues</p>
+        
+        <h4>WWF's Panda</h4>
+        <p id="param2" class="background color">The <i style="color:yellow">Panda</i> has become the <b>symbol</b> of WWF</p>
+        <p>The well-known panda logo is from a Panda named Chi Chi</p>
+
+        <div>
+            <h6 class="page">Potatoes</h6>
+            <p>There are different types of potatoes</p>
+            <p>Sweet potato is my favourite</p>
+        </div>
+
+
+    </body>
+
+
+
+</html>

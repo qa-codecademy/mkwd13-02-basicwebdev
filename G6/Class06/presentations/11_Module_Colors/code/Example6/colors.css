@@ -1,0 +1,72 @@
+/* * {
+  font-size: 28px;
+}
+
+.test {
+  color: blue;
+}
+
+#secondParagraph {
+  color: green;
+}
+
+div > p {
+  font-size: 48px;
+}
+/* #div2 > h2 {
+  color: yellow;
+} */
+
+/* .div div h2 {
+  color: violet;
+}
+
+#second ~ p {
+  color: tomato;
+} */
+/* .test {
+  color: red;
+} */
+body > h1 {
+  color: green;
+}
+h1 {
+  color: #ff4dff !important;
+}
+
+/* * {
+  color: tomato;
+} */
+
+#firstDiv {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(100, 100, 90);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#firstDiv > div {
+  width: inherit;
+  height: 500px;
+  border: inherit;
+}
+
+#one {
+  padding: 20px;
+  font-size: 48px;
+  font-family: cursive;
+  border: 1px solid rgb(250, 37, 37);
+  color: rgb(135, 238, 101);
+  background-color: rgb(21, 94, 202, 0);
+}
+
+#one > span {
+  border: inherit;
+}
+
+#hsl {
+  width: 300px;
+  height: 300px;
+  background-color: hsl(172, 44%, 20%);
+}

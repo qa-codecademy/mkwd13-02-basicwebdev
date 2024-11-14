@@ -1,0 +1,43 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article {
+    color: darkred !important;
+}
+
+article {
+    color: gold;
+}
+
+.blue-background {
+    color: blue;
+}
+
+#contact-first-paragraph {
+    color: fuchsia;
+}
+
+li > a {
+    font-weight: bold;
+}
+
+li a {
+    font-weight: bold;
+}
+
+.last-aside-home > h4+p {
+    font-style: italic;
+}
+
+.last-aside-home > h4~p {
+    font-size: 10px;
+}
+
+nav {
+    color: indigo;
+}
+
+input {
+    color: inherit;
+}

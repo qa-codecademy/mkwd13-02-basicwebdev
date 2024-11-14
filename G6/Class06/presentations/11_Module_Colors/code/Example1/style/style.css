@@ -1,0 +1,81 @@
+/* font-face using relative URL */
+@font-face{
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Regular.ttf") format("ttf");
+}
+
+/* Using Google Fonts - using import rule with absolute URL */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+
+/* universal selector */
+*{
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+body{
+    font-size: 20px;
+}
+
+/* type selector */
+main{
+    background-color: antiquewhite;
+}
+
+section{
+    font-size: 20px;
+}
+
+p{
+    font-size: 2em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* class selector */
+.yellow-background{
+   background-color: yellow; 
+}
+
+.blue-text{
+    color: hsla(229, 77%, 46%, 0.8);
+}
+
+span{
+    color: rgba(201, 45, 24, 0.5) !important;
+    text-transform: uppercase;
+
+    text-decoration-style: dotted;
+    text-decoration-line: underline overline;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 3px;
+
+    text-decoration: dotted underline overline blueviolet 3px;
+}
+
+/* ID selector */
+#links{
+    font-size: large;
+}
+
+/* child selector */
+section > p{
+    background-color: darkcyan;
+}
+
+/* descendant selector */
+main li{
+    color: violet;
+}
+
+/* adjacent sibling selector */
+h1 + span{
+    font-size: 18px;
+}
+
+/* general sibling slector */
+h1 ~ ul{
+    background-color: yellowgreen;
+}
