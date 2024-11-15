@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.red-box {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  padding: 10px 10px;
+  margin: 0px auto;
+}
+
+.blue-box {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border: 2px solid yellow;
+  overflow: auto;
+}
+
+.green-box {
+  width: 25%;
+  height: 25%;
+  background-color: green;
+  margin: 10px;
+  border: 15px #ffd000 ridge;
+  position: relative;
+  border-radius: 20px 0px 20px 0px;
+  padding: 1%;
+
+  /* overflow: auto; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+}
+
+.navbar {
+  position: fixed;
+  height: 30px;
+  width: 100vw;
+  background-color: rgb(67, 67, 67);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.yellow-box {
+  width: 25%;
+  height: 25%;
+  background-color: yellow;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-top: 10px dashed rebeccapurple;
+}
+
+.purple-box {
+  width: 25%;
+  height: 25%;
+  background-color: purple;
+}
+
+span {
+  width: 80px;
+  height: 50px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  display: inline-block;
+}
