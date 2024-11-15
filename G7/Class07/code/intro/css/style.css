@@ -1,0 +1,68 @@
+/* This is a css comment */ 
+
+/* Univrsal selector */
+
+* {
+    font-family: Arial;
+}
+
+/* Tag (type) selector  */
+
+p {
+    color: lightcoral;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Id selector */
+
+#paragraph01 {
+    font-weight: 22px;
+    background-color: yellow;
+    color: green;
+}
+
+/* p {
+    color: lightcoral;
+} */
+
+/* You cannot overide an inline style even with an id selector, in order to do that you would need to use !important */
+/* #heading02 {
+    color: yellow !important;
+} */
+
+
+/* child selector */
+
+p > span {
+    color: black;
+}
+
+/* descendent selector */
+
+nav a {
+    color: palevioletred;
+}
+
+nav li {
+    color:aquamarine;
+}
+
+/* Adjesent Sibling selector */
+
+h2 + p {
+    font-family: Georgia;
+}
+
+/* General sibling */
+
+h1 ~ p {
+    margin-bottom: 100px;
+}

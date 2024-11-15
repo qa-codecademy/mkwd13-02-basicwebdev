@@ -1,0 +1,18 @@
+.color-name {
+    color: red;
+}
+
+
+.rgb-color {
+    color: rgb(20, 58, 207);
+    background-color: rgba(197, 219, 53, 0.7);
+}
+
+.hex-color {
+    color: #22e3cc;
+    opacity: 0.2;
+}
+
+.hsl-color {
+    color: hsla(136, 78%, 51%, 0.9);
+}
