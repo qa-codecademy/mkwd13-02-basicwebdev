@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 1s, font-size 1s;
+
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: yellow;
+  font-size: 200%;
+
+}
+a:focus {
+  outline: 2px solid red;
+}
+a:active {
+  color: red;
+}

@@ -1,0 +1,56 @@
+/* universal selector */
+*{
+    background-color:rgba(201, 201, 188, 0.773);
+}
+
+/* TYPE Selector*/
+h2{
+    color:#eead3e;
+    background-color: aqua !important;
+}
+
+footer{
+    background-color: bisque;
+    color: brown;
+}
+
+/* class selector */
+.firstParagraph{
+    color: aquamarine;
+}
+
+/* ID selector */
+#section-one{
+    background-color:brown;
+}
+
+/* Child selector */
+li>a{
+    color: hsla(120, 71%, 33%,0.5);
+}
+
+/* nav>ul>li{
+    background-color:black
+} */
+
+/* descendant selector */
+nav li{
+    background-color:azure;
+}
+
+/* adjacent sibling selector */
+h3+p{
+    background-color: coral;
+}
+
+/* general sibling selector */
+h3~p{
+    background-color:yellowgreen
+}
+/*  */
+h2{
+    background-color: yellow;
+}
+.color-dark-red{
+    color: #cc2e53;
+}

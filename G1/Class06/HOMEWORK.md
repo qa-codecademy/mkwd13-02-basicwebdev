@@ -3,6 +3,7 @@
 ## Project Overview
 
 This project is a beginner-friendly website that demonstrates fundamental HTML and CSS concepts. The website includes multiple pages, semantic HTML tags, custom styling, and a contact form.
+The purpose of this project is to create a website for your favorite heroes. It can be an existing movie/cartoon/anime hero or anything you like.
 
 ## Project Structure
 
@@ -25,6 +26,8 @@ project-root/
 ```
 
 ## Features Implemented
+
+You should implement all of the following:
 
 - Semantic HTML5 tags
 - Multi-page navigation
@@ -57,7 +60,7 @@ project-root/
 
 ## CSS Features
 
-### Custom Font (or embed it directly in the ```<head></head> section```)
+### Custom Font (or embed it directly in the `<head></head> section`)
 
 ```css
 @font-face {
@@ -96,9 +99,7 @@ project-root/
 
 ### Gallery Page (gallery.html)
 
-- Image grid layout
 - Image captions
-- Thumbnail hover effects
 
 ### Contact Page (contact.html)
 
@@ -118,6 +119,6 @@ project-root/
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [Google Fonts](https://fonts.google.com/)
 - [CSS-Tricks](https://css-tricks.com/)
-- [Coolors](https://coolors.co/)
+- [Colors](https://coolors.co/)
 - [Text Shadow Generator](https://cssgenerator.org/text-shadow-css-generator.html)
 - [px to em/rem converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)

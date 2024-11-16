@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>Audio, Video, iFrames &amp; meta tags</h3>
+					<p>
+						<small>Trainer: <a href="#">Panche Manaskov</a> - panemanaskov@gmail.com</small></br>
+						<small>Assistant: <a href="#">Aleksandar Milovski</a> - aleksandarmilovski1@gmail.com</small></br>
+						<div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson Overview</h2>
+					<ul>
+						<li>Video</li>
+						<li>Audio</li>
+						<li>iFrames</li>
+						<li>meta tags</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Video</h1>
+				</section>
+
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h2>HTML 5: Adding Video to Your Pages</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">&lt;video&gt;</strong> element has a number of attributes which allow you to control video playback:</li>
+						<li><strong style="color:#007ac9">src</strong> - This attribute specifies the path to the video.</li>
+						<li><strong style="color:#007ac9">type</strong> - This attribute allows you to specify type of the video.</li>
+						<li><strong style="color:#007ac9">poster</strong> - This attribute allows you to specify an image to show while the video is downloading or until the user tells the video to play.</li>
+						<li><strong style="color:#007ac9">width, height</strong> - These attributes specify the size of the player in pixels.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>HTML 5: Adding Video to Your Pages (2)</h2>
+					<ul>
+						<li><strong style="color:#007ac9">controls</strong> - When used, this attribute indicates that the browser should supply its own controls for playback.</li>
+						<li><strong style="color:#007ac9">autoplay</strong> - When used, this attribute specifies that the file should play automatically.</li>
+						<li><strong style="color:#007ac9">loop</strong> - When used, this attribute indicates that the video should start playing again once it has ended.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;">
+					<h2>HTML 5: Adding Video to Your Pages (3)</h2>
+					<ul>
+						<li><strong style="color:#007ac9">preload</strong> - This attribute tells the browser what to do when the page loads. It can have one of three values:
+							<ul>
+								<li><strong style="color:#007ac9">none</strong> - The browser should not load the video until the user presses play.</li>
+								<li><strong style="color:#007ac9">auto</strong> - The browser should download the video when the page loads.</li>
+								<li><strong style="color:#007ac9">metadata</strong> - The browser should just collect information such as the size, first frame, track list, and duration.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+				<h4>Adding HTML5 Video</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Adding HTML5 Video&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;video src="video/puppy.mp4"
+	type="video/mp4"
+	poster="images/puppy.jpg"
+	width="400" height="300"
+	preload="auto" controls loop&gt;
+	&lt;p&gt;A video of a puppy playing in the grass&lt;/p&gt;
+	&lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Audio</h1>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>HTML5: Adding Audio to Your Pages</h2>
+					<ul>
+						<li>HTML5 introduced the <strong style="color:#007ac9">&lt;audio&gt;</strong> element to include audio files in your pages.</li>
+						<li>The <strong style="color:#007ac9">&lt;audio&gt;</strong> element has a number of attributes which allow you to control audio playback:</li>
+						<li><strong style="color:#007ac9">src</strong> - This attribute specifies the path to the audio file.</li>
+						<li><strong style="color:#007ac9">type</strong> - This attribute allows you to specify type of the audio.</li>
+					</ul>
+				</section>
+
+
+				<section style="text-align: left;">
+					<h2>HTML 5: Adding Audio to Your Pages (2)</h2>
+					<ul>
+						<li><strong style="color:#007ac9">controls</strong> - This attribute indicates whether the player should display controls. If you do not use this attribute, no controls will be shown by default.</li>
+						<li><strong style="color:#007ac9">autoplay</strong> - When used, this attribute specifies that the file should play automatically.</li>
+						<li><strong style="color:#007ac9">loop</strong> - When used, this attribute indicates that the audio should start playing again once it has ended.</li>
+					</ul>
+				</section>
+
+
+
+
+				<section style="text-align: left;">
+					<h2>HTML 5: Adding Audio to Your Pages (3)</h2>
+					<ul>
+						<li><strong style="color:#007ac9">preload</strong> - This attribute tells the browser what to do when the page loads. It can have one of three values:
+							<ul>
+								<li><strong style="color:#007ac9">none</strong> - The browser should not load the audio until the user presses play.</li>
+								<li><strong style="color:#007ac9">auto</strong> - The browser should download the audio when the page loads.</li>
+								<li><strong style="color:#007ac9">metadata</strong> - The browser should just collect information such as the size, track list, and duration.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+
+				<section style="text-align: left;">
+				<h4>Adding HTML5 Video</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Adding HTML5 Audio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;audio src="audio/lucid-dreaming.mp3" type="audio/mp3"
+	controls autoplay&gt;
+	&lt;p&gt;This browser does not support our audio
+	format.&lt;/p&gt;
+	&lt;/audio&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>iFrame</h1>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>iframe</h2>
+					<ul>
+						<li>An <strong style="color:#007ac9">&lt;iframe&gt;</strong> is like a little window that has been cut into your page — and in that window you can see another page.</li>
+						<li>The term iframe is an abbreviation of inline frame.</li>
+						<li>One common use of iframes (that you may have seen on various websites) is to embed a Google Map into a page.</li>
+						<li>The content of the iframe can be any html page (either located on the same server or anywhere else on the web).</li>
+					</ul>
+				</section>
+
+
+				<section style="text-align: left;">
+					<h2>iframe (2)</h2>
+					<p>There are a few attributes that you will need to know to use it:</p>
+					<ul>
+						<li><strong style="color:#007ac9">src</strong> - The src attribute specifies the URL of the page to show in the frame.</li>
+						<li><strong style="color:#007ac9">height</strong> - The height attribute specifies the height of the iframe in pixels.</li>
+						<li><strong style="color:#007ac9">width</strong> - The width attribute specifies the width of the iframe in pixels.</li>
+					</ul>
+				</section>
+
+
+
+
+
+				<section style="text-align: left;">
+				<h4>Adding an iframe to your page</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+&lt;iframe
+src="http://maps.google.co.uk/maps?q=moma+new+york
+&amp;output=embed"
+width="450"
+height="350"&gt;
+&lt;/iframe&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>meta tags</h1>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h2>Information About Your Pages</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">&lt;meta&gt;</strong> element lives inside the &lt;head&gt; element and contains information about that web page.</li>
+						<li>The &lt;meta /&gt; element is a self closing element so it does not have a closing tag. It uses attributes to carry the information.</li>
+					</ul>
+				</section>
+
+
+				<section style="text-align: left; font-size:32px;">
+					<h2>meta</h2>
+					<p>Some defined values for this attribute that are commonly used are:</p>
+					<ul>
+						<li><strong style="color:#007ac9">description</strong> - This contains a description of the page. This description is commonly used by search engines to understand what the page is about and should be a maximum of 155 characters.</li>
+						<li><strong style="color:#007ac9">keywords</strong> - This contains a list of comma-separated words that a user might search on to find the page.</li>
+						<li><strong style="color:#007ac9">robots</strong> - This indicates whether search engines should add this page to their search results or not. A value of noindex can be used if this page should not be added. A value of nofollow can be used if search engines should add this page in their results but not any pages that it links to.</li>
+					</ul>
+				</section>
+
+
+
+				<section style="text-align: left; font-size:32px;">
+					<h2>meta (2)</h2>
+					<p>The &lt;meta&gt; element also uses the http-equiv and content attributes in pairs. Each one has a different purpose:</p>
+					<ul>
+						<li><strong style="color:#007ac9">author</strong> - This defines the author of the web page.</li>
+						<li><strong style="color:#007ac9">pragma</strong> - This prevents the browser from caching the page. (That is, storing it locally to save time downloading it on subsequent visits.)</li>
+						<li><strong style="color:#007ac9">expires</strong> - Because browsers often cache the content of a page, the expires option can be used to indicate when the page should expire (and no longer be cached).</li>
+					</ul>
+				</section>
+
+
+
+
+
+				<section style="text-align: left;">
+				<h4>Adding meta information to your page</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+&lt;head&gt;
+	&lt;title&gt;Information About Your Pages&lt;/title&gt;
+	&lt;meta name="description"
+	content="An Essay on Installation Art" /&gt;
+	&lt;meta name="keywords"
+	content="installation, art, opinion" /&gt;
+	&lt;meta name="robots"
+	content="nofollow" /&gt;
+	&lt;meta http-equiv="author"
+	content="Jon Duckett" /&gt;
+	&lt;meta http-equiv="pragma"
+	content="no-cache" /&gt;
+	&lt;meta http-equiv="expires"
+	content="Fri, 04 Apr 2014 23:59:59 GMT" /&gt;
+&lt;/head&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<section style="text-align: left; font-size:32px;">
+					<h2>meta (3)</h2>
+					<p>&lt;meta&gt; info for responsive sites:</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;meta name="viewport" content="width=device-width" /&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 42 -->
+			<section style="text-align: left;" data-transition="slide" data-background="#222222" data-background-transition="slide">
+				<h3>Homework #5</h3>
+				<p><strong>Title:</strong> Working with HTML5</p>
+				<p><strong>Description:</strong> Choose a subject or topic you are interested in professionally or personally and conceive a website around this subject.
+					The purpose of this home exercise is to demonstrate the concepts you have learned throughout the lectures and homework to create a valid HTML5 website.</p>
+				<p style="font-size: 24px;"><strong>MDN recource:</strong> <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">
+					https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure</a></p>
+			</section>
+
+
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

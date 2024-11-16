@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+html {
+  font-size: 24px;
+}
+
+p {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.oblique-font {
+  font-style: oblique 60deg;
+}
+
+.italic-font {
+  font-style: italic;
+}
+
+.font-pt-serif {
+  font-family: "PT Serif";
+}
+
+.size {
+  font-size: 2rem;
+}
+
+.text-decoration {
+  text-decoration: line-through wavy black;
+  line-height: 2;
+  letter-spacing: 0.5rem;
+  word-spacing: 10px;
+}
+
+.paragraph-text-align{
+    text-align: justify;
+}
+
+.text-shadow{
+    text-shadow: 5px 5px 5px rebeccapurple
+}
+
+p::first-line{
+    color: red;
+}
+
+p::first-letter{
+    font-size: 500%;
+}
