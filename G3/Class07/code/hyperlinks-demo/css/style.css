@@ -1,0 +1,37 @@
+/* 
+    *Pseudo-class* is used in CSS to define the style of a specific state of an element. 
+    It targets elements based on their state or position.
+*/
+
+/* Styling unvisited links (default) */
+.styled-link {
+    font-size: 1.2rem;
+    color: #36c5c5;
+    text-decoration: none;
+}
+
+/* Styling for hover state */
+.styled-link:hover {
+    color: #1010c0;
+}
+
+h1:hover {
+    color: red;
+    background-color: rgb(208, 110, 110);
+}
+
+/* Styling for active (clicked) state */
+.styled-link:active {
+    color: chocolate;
+    font-style: italic;
+}
+
+/* Styling for focus state */
+.styled-link:focus {
+    text-decoration: dotted 2px underline magenta;
+}
+
+/* Styling for visited links */
+/* .styled-link:visited {
+    color: yellow;
+} */
