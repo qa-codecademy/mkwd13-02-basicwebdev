@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="SEDC">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>CSS</h3>
+					<p>
+						<small>Trainer: <a href="#">Kliment Sidorov</a> - sidorov_kliment@live.com</small></br>
+						<small>Assistant: <a href="#">Robert Blazevski</a> - robert_blazevski@outlook.com</small></br>
+						<img src="https://qinshiftacademy.com/wp-content/uploads/2023/11/Asset-1.png" alt="logo"
+							style="border:none; box-shadow:none; background-color: #27404d; padding: 10px;" />
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Working with fonts</li>
+						<li>Formating text using CSS</li>
+					</ul>
+				</section>
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Working with fonts</h1>
+				</section>
+
+
+
+				<!-- Slide 4 -->
+				<section>
+					<h2>Typeface Terminology</h2>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/text1.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<section>
+					<h2>Typeface Terminology</h2>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/text2.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 6 -->
+				<section>
+					<h2>Choosing a Typeface</h2>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/text3.png"></div>
+					</div>
+				</section>
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">font-family</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">font-family</strong> property allows you to specify the font that should be used for any text inside the element(s) to which a CSS rule applies.</li>
+						<li>The value of this property is the name of the font you want to use.</li>
+						<li>Values are separated by commas to indicate that they are alternatives.</li>
+						<li>The browser will select the first font in the list that is installed or that can be downloaded using a 
+							<strong style="color:#007ac9;">@font-face</strong> at-rule.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">font-family</strong> property values</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">font-family</strong> property lists one or more font families, separated by commas.</li>
+						<li>ach font family is specified as either a <strong style="color:#007ac9;">family-name</strong> or a 
+							<strong style="color:#007ac9;">generic-name</strong> value.
+						</li>
+						<li><b>family-name</b> - The name of a font family. <small>*Font family names containing whitespace should be quoted.</small></li>
+						<li><b>generic-name</b> - Generic font families are a fallback mechanism, a means of preserving some of the style sheet author's intent 
+							when none of the specified fonts are available. <small>*Generic family names are keywords and must not be quoted.</small></li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+body {
+	font-family: Times, Georgia, serif;
+}
+h1, h2 {
+	font-family: Arial, Verdana, sans-serif;
+}
+.credits {
+	font-family: "Courier New", Courier,
+	monospace;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">@font-face</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">@font-face</strong>  CSS at-rule specifies a custom font with which to display text; the font can be 
+							loaded from either a remote server or a locally-installed font on the user's own computer.
+							<br /><small>*At-rules are CSS statements that instructs CSS how to behave. There are several at-rules, 
+								designated by their identifiers, each with a different syntax.</small>
+						</li>
+						<li>Because this technique allows a version of the font to be downloaded to the user's computer, 
+							it is important that the license for the font permits it to be used in this way.
+						</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+@font-face {
+	font-family: "Open Sans";
+	src: url("fonts/OpenSans.woff2") format("woff2");
+}
+h1, h2 {
+	font-family: "Open Sans", Arial, sans-serif;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>Different Font Formats</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">TrueType Fonts (TTF)</strong> TrueType is a font standard developed in the late 1980s, by Apple and Microsoft. TrueType is the most common font format for both the Mac OS and Microsoft Windows operating systems.</li>
+						<li><strong style="color:#007ac9;">OpenType Fonts (OTF)</strong> OpenType is a format for scalable computer fonts. It was built on TrueType, and is a registered trademark of Microsoft. OpenType fonts are used commonly today on the major computer platforms.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>Different Font Formats (2)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">The Web Open Font Format (WOFF)</strong> WOFF is a font format for use in web pages. It was developed in 2009, and is now a W3C Recommendation. WOFF is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from a server to a client over a network with bandwidth constraints.</li>
+						<li><strong style="color:#007ac9;">The Web Open Font Format (WOFF 2.0)</strong> TrueType/OpenType font that provides better compression than WOFF 1.0.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>Different Font Formats (3)</h2>
+					<ul>
+						<li><strong style="color:#007ac9;">SVG Fonts/Shapes</strong> SVG fonts allow SVG to be used as glyphs when displaying text. The SVG 1.1 specification define a font module that allows the creation of fonts within an SVG document. You can also apply CSS to SVG documents, and the @font-face rule can be applied to text in SVG documents.</li>
+						<li><strong style="color:#007ac9;">Embedded OpenType Fonts (EOT)</strong> EOT fonts are a compact form of OpenType fonts designed by Microsoft for use as embedded fonts on web pages.</li>
+					</ul>
+				</section>
+
+
+
+				
+				<!-- Slide 14 -->
+				<section>
+					<h2>Web Fonts Libraries</h2>		
+					<ul>
+						<li>Google Fonts</li>
+						<li><b>DEMO: </b><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<h2>Google Fonts Demo</h2>
+					<p>HTML:</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" 
+rel="stylesheet" /&gt;
+					</code></pre></p>
+					<p>CSS:</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Formating Text using CSS</h1>
+				</section>
+
+
+
+				
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">font-size</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">font-size</strong> property sets the size of the font.</li>
+						<li>There are several ways to specify the size of a font using:
+							<ul>
+								<li><b>absolute-size</b> values</li>
+								<li><b>relative-size</b> values</li>
+								<li><b>&lt;length&gt;</b> values</li>
+								<li><b>&lt;percentage&gt;</b> values</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* &lt;absolute-size&gt; values */
+
+font-size: xx-small;
+font-size: x-small;
+font-size: small;
+font-size: medium;
+font-size: large;
+font-size: x-large;
+font-size: xx-large;
+font-size: xxx-large;
+					</code></pre></p>
+					<p><small><b>*xx-small, x-small, small, medium, large, x-large, xx-large, xxx-large</b>
+						<br />Absolute-size keywords, based on the user's default font size (which is <b>medium</b>)</small></p>
+				</section>
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* &lt;relative-size&gt; values */
+
+font-size: smaller;
+font-size: larger;
+					</code></pre></p>
+					<p><small><b>*larger, smaller</b>
+						<br />Relative-size keywords. The font will be larger or smaller relative to the parent element's font size, 
+						roughly by the ratio used to separate the absolute-size keywords above.</small></p>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<p>The <strong style="color:#007ac9;">&lt;length&gt;</strong> <b>CSS data type</b> represents a distance value.</p>
+					<p>Lengths can be used in numerous CSS properties, such as <b>width, height, margin, padding, border-width, font-size,</b> and <b>text-shadow.</b></p>
+					<p>The <b>&lt;length&gt;</b> data type consists of a <b>number</b> followed by one of the <b>units</b> listed on the next slide.</p>
+				</section>
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<h3>Relative length units</h3>
+					<ul>
+						<li><strong style="color:#007ac9;">Font-Relative lengths</strong></li>
+						<li><b>cap, ch, em, ex, ic, lh, rem, rlh</b></li>
+						<li><strong style="color:#007ac9;">Viewport-pecentage lengths</strong></li>
+						<li><b>vh, vw, vi, vb, vmin, vmax</b></li>
+					</ul>
+					<br /><br />
+					<h3>Absolute length units</h3>
+					<ul>
+						<li><b>px, cm, mm, Q, in, pc, pt</b></li>
+					</ul>
+					<p><small>*Absolute lengths can cause accessibility problems, since they are fixed and do not scale according to user settings. 
+						For this reason, prefer relative lengths (such as <b>em</b> or <b>rem</b>) when setting font-size.</small>
+					</p>
+					<p><small>Learn more about the <b>&lt;length&gt;</b> data types in CSS 
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" target="_blank">here</a>.</small></p>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<p>The <strong style="color:#007ac9;">&lt;percentage&gt;</strong> <b>CSS data type</b> represents a percentage value.</p>
+					<p>It is often used to define a size as relative to an element's parent object.</p>
+					<p>Numerous properties can use percentages, such as <b>width, height, margin, padding,</b> and <b>font-size.</b></p>
+					<p>The <b>&lt;percentage&gt;</b> data type consists of a <b>number</b> followed by the <b>percentage sign (%)</b>.</p>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section>
+					<h3>Most used units for font-size</h3>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/units.png"></div>
+					</div>
+					<p><a href="http://www.w3schools.com/tags/ref_pxtoemconversion.asp" target="_blank">px to em Converter</a></p>
+				</section>
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+body {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 1.3em;
+}
+h3{
+	font-size: 1.2rem;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">font-weight</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">font-weight</strong> CSS property sets the weight (or boldness) of the font.</li>
+						<li>The weights available depend on the font-family that is currently set.</li>
+						<li>There are 3 different types of values that you can use with the <b>font-weight</b> property:</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword values */
+
+font-weight: normal;
+font-weight: bold;
+					</code></pre></p>
+				</section>
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword values relative to the parent */
+
+font-weight: lighter;
+font-weight: bolder;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Numeric keyword values */
+
+font-weight: 100;
+font-weight: 200;
+font-weight: 300;
+font-weight: 400;// normal
+font-weight: 500;
+font-weight: 600;
+font-weight: 700;// bold
+font-weight: 800;
+font-weight: 900;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<p>If the exact weight given is unavailable, then the following rule is used to determine the weight actually rendered:</p>
+					<ul>
+						<li>
+							If a weight less than <b>400</b> is given, look for available weights less than the target, in descending order. 
+							If no match is found, look for available weights greater than the target, in ascending order.
+						</li>
+						<li>
+							If a weight greater than <b>500</b> is given, look for available weights greater than the target, in ascending order. 
+							If no match is found, look for available weights less than the target, in descending order.
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">font-style</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">font-style</strong> CSS property sets whether a font should be styled with a <b>normal</b>, 
+							<b>italic</b>, or <b>oblique</b> face from its <b>font-family.</b>
+						</li>
+					</ul>
+					<p><small>*Italic font faces are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, 
+						while oblique faces are usually just sloped versions of the regular face.</small>
+					</p>
+					<p>
+						<small>*When the specified style is not available, both italic and oblique faces are simulated by artificially 
+							sloping the glyphs of the regular face</small>
+					</p>
+				</section>
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword values */
+
+font-style: normal;
+font-style: italic;
+font-style: oblique;
+font-style: oblique 10deg;
+					</code></pre></p>
+					<p><small>*The <b>font-style</b> property is specified as a single keyword chosen from the list of values, 
+						which can optionally include an <b>angle</b> if the keyword is <b>oblique.</b></small></p>
+				</section>
+
+
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">text-transform</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">text-transform</strong>  CSS property specifies how to capitalize an element's text.</li>
+						<li>It can be used to make text appear in <b>all-uppercase</b> or <b>all-lowercase</b>, or with <b>each word capitalized.</b></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword values */
+
+text-transform: none;
+text-transform: capitalize;
+text-transform: uppercase;
+text-transform: lowercase;
+
+/* Used for East-Asian scripts like Chinese or Japanese */
+
+text-transform: full-width;
+text-transform: full-size-kana;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">text-decoration</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">text-decoration</strong> shorthand CSS property sets the 
+							appearance of decorative lines on text. 
+						</li>
+					</ul>
+					<p><small>*Shorthand properties are CSS properties that let you set the values of multiple other CSS properties simultaneously.</small></p>
+					<p><small>*It is a shorthand for <b>text-decoration-style</b>, <b>text-decoration-line</b>, 
+						<b>text-decoration-color</b>, and the newer <b>text-decoration-thickness</b> property.</small></p>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* text-decoration-style values */
+
+/* Keyword values */
+text-decoration-style: solid;
+text-decoration-style: double;
+text-decoration-style: dotted;
+text-decoration-style: dashed;
+text-decoration-style: wavy;
+					</code></pre></p>
+				</section>
+
+
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* text-decoration-line values */
+
+/* Single keyword */
+text-decoration-line: none;
+text-decoration-line: underline;
+text-decoration-line: overline;
+text-decoration-line: line-through;
+text-decoration-line: blink;
+
+/* Multiple keywords */
+text-decoration-line: underline overline;               /* Two decoration lines */
+text-decoration-line: overline underline line-through;  /* Multiple decoration lines */
+					</code></pre></p>
+				</section>
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* text-decoration-color values */
+
+/* &lt;color&gt; values */
+text-decoration-color: red;
+text-decoration-color: #00ff00;
+text-decoration-color: rgba(255, 128, 128, 0.5);
+text-decoration-color: hsla(339, 96%, 45%);
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* text-decoration-thickness values */
+
+/* Single keyword */
+text-decoration-thickness: auto;
+text-decoration-thickness: from-font;
+
+/* length */
+text-decoration-thickness: 0.1em;
+text-decoration-thickness: 3px;
+
+/* percentage */
+text-decoration-thickness: 10%;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* demonstration of text-decoration values */
+
+.under {
+	text-decoration: underline red;
+  }
+  
+  .over {
+	text-decoration: wavy overline lime;
+  }
+  
+  .line {
+	text-decoration: line-through;
+  }
+  
+  .plain {
+	text-decoration: none;
+  }
+  
+  .underover {
+	text-decoration: dashed underline overline;
+  }
+  
+  .thick {
+	text-decoration: solid underline purple 4px;
+  }
+  
+  .blink {
+	text-decoration: blink;
+  }
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">line-height</strong> property</h2>
+					<ul>
+						<li>Leading (pronounced ledding) is a term typographers use for the vertical space between lines of text.</li>
+						<li>The <strong style="color:#007ac9;">line-height</strong> CSS property sets the height of a line box.</li>
+						<li>It's commonly used to set the distance between lines of text.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword value */
+line-height: normal;
+
+/* Unitless values: use this number multiplied
+by the element's font size */
+line-height: 3.5;
+
+/* &lt;length&gt; values */
+line-height: 3em;
+
+/* &lt;percentage&gt; values */
+line-height: 34%;
+					</code></pre></p>
+				</section>
+
+
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">letter-spacing</strong> &amp; <strong style="color:#007ac9;">word-spacing</strong> properties</h2>
+					<ul>
+						<li><strong>Kerning</strong> is the term typographers use for the space between each letter.</li>
+						<li>You can control the space between each letter with the <strong>letter-spacing</strong> property.</li>
+						<li>You can also control the gap between words using the <strong>word-spacing</strong> property.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword value */
+letter-spacing: normal;
+
+/* &lt;length&gt; values */
+letter-spacing: 0.3em;
+letter-spacing: 3px;
+letter-spacing: .3px;
+					</code></pre></p>
+				</section>
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword value */
+word-spacing: normal;
+
+/* &lt;length&gt; values */
+word-spacing: 3px;
+word-spacing: 0.3em;
+
+/* &lt;percentage&gt; values */
+word-spacing: 50%;
+word-spacing: 200%;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">text-align</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">text-align</strong>  CSS property sets the horizontal alignment of a block element or table-cell box.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword values */
+
+text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;
+text-align: justify-all;
+text-align: start;
+text-align: end;
+text-align: match-parent;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">vertical-align</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">vertical-align</strong> CSS property sets vertical alignment of an <b>inline</b>, 
+							<b>inline-block</b> or <b>table-cell</b> box.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;">
+					<ul>
+						<li>The <b>vertical-align</b> property can be used in two contexts:
+							<ul>
+								<li>To vertically align an inline element's box inside its containing line box. For example, 
+									it could be used to vertically position an &lt;img /&gt; in a line of text</li>
+								<li>To vertically align the content of a cell in a table</li>
+							</ul>
+						</li>
+					</ul>
+					<p><small>*Note: You can't use it to vertically align block-level elements.</small></p>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword values */
+vertical-align: baseline;
+vertical-align: sub;
+vertical-align: super;
+vertical-align: text-top;
+vertical-align: text-bottom;
+vertical-align: middle;
+vertical-align: top;
+vertical-align: bottom;
+
+/* &lt;length&gt; values */
+vertical-align: 10em;
+vertical-align: 4px;
+
+/* &lt;percentage&gt; values */
+vertical-align: 20%;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<h2>CSS3 <strong style="color:#007ac9;">text-shadow</strong> property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">text-shadow</strong> CSS property adds shadows to text.</li>
+						<li>It accepts a comma-separated list of shadows to be applied to the text and any of its decorations.</li>
+						<li>Each shadow is described by some combination of <b>X</b> and <b>Y offsets</b> from the element, <b>blur radius</b>, and <b>color.</b></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;">
+					<h2>CSS3 <strong style="color:#007ac9;">text-shadow</strong> property (2)</h2>
+					<ul>
+						<li>The first value indicates how far to the left or right the shadow should fall.</li>
+						<li>The second value indicates the distance to the top or bottom that the shadow should fall.</li>
+						<li>The third value is optional and specifies the amount of blur that should be applied to the drop shadow.</li>
+						<li>The fourth value is optional and it's the color of the drop shadow.</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px black; 
+
+/* color | offset-x | offset-y | blur-radius */
+text-shadow: #fc0 1px 0 10px; 
+
+/* offset-x | offset-y | color */
+text-shadow: 5px 5px #558abb;
+
+/* color | offset-x | offset-y */
+text-shadow: white 2px 5px;
+
+/* offset-x | offset-y */
+text-shadow: 5px 10px;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<h2><strong style="color:#007ac9;">::first-letter</strong> &amp; <strong style="color:#007ac9;">::first-line</strong></h2>
+					<h3>pseudo-elements</h3>
+					<p>A <b>CSS pseudo-element</b> is a keyword added to a selector that lets you style a specific part of the selected element(s).</p>
+					<ul>
+						<li>You can specify different values for the first letter or first line of text inside an element using the pseudo-elements <strong>:first-letter</strong> and <strong>:first-line.</strong></li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Selects the first line of a &lt;p&gt; */
+
+p::first-line {
+	color: red;
+}
+
+/* Selects the first letter of a &lt;p&gt; */
+
+p::first-letter {
+	font-size: 200%;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

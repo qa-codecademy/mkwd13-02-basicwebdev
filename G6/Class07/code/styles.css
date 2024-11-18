@@ -1,0 +1,147 @@
+#firstTitle {
+    background-color: blanchedalmond;
+    height: 50px;
+}
+
+/* BORDER */
+#secondTitle {
+    /* LONG WAY */
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+img {
+    width: 150px;
+
+}
+
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.dimensions {
+    width: 60px;
+    height: 60px;
+}
+
+.horizontalAligned {
+    /* Elements that are inline DOES NOT RESPECT WIDTH AND HEIGHT RULES */
+    /* display: inline; */
+
+    /* Elements that are INLINE-BLOCK RESPECT WIDTH AND HEIGHT RULES */
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+#boxesWrapper {
+    /* SHORT WAY */
+    /* border-width; border-style; border-color */
+    border: 1px solid red;
+
+    /* We can use negative values also */
+    /* margin-left: -50px; */
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    border: 1px dashed black;
+}
+
+/* Margin => is the invisible "RESERVED" space that the elements adds on it's OUTSIDE borders */
+.marginBox {
+    /* USE-CASE when we apply margin to each side */
+    /* margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px; */
+
+
+    /* USE-CASE when we apply same margin on all sides */
+    /* margin: 20px */
+
+    /* USE-CASE same as top but shorter */
+    /* the flow is clock-wise */
+    /* top right bottom left */
+    margin: 20px 20px 15px 35px;
+}
+
+/* Padding => is the invisible "RESERVED" space that the elements add on it's INSIDE borders */
+.paddingBox {
+    /* USE-CASE when we apply padding on each side */
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px; */
+
+    /* USE-CASE when we apply padding on all sides */
+    padding: 20px;
+
+    /* USE-CASE same as top but shorter CLOCK-WISE */
+    /* padding: 20px 15px 10px 20px; */
+
+    /* We are allowed to combine padding and margin on same selector */
+    margin-bottom: 20px;
+}
+
+
+/* STANDARD BOX MODEL */
+#contentBox {
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+
+    /* content-box is the default value even if we do not set it */
+    box-sizing: content-box;
+    padding: 20px;
+    border: 1px solid red;
+
+    /* for the width: 200px + padding left 20px + padding right 20px + border left 1px + border right 1px = 242 px */
+    /* for the height: 200px + padding top 20px + padding bottom 20px + border top 1px + border bottom 1px = 242 px */
+}
+
+/* ALTERNATE BOX MODEL */
+#borderBox {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+
+#overflow {
+    /* border-style: dotted; */
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    height: 150px;
+
+    /* overflow: auto; */
+    overflow-y: scroll;
+    overflow-x: auto;
+
+    padding: 20px;
+}
