@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.example {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Static positioning */
+.static-box {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  /* position: static; */
+}
+
+.relative-box {
+  width: 200px;
+  height: 100px;
+  background-color: lightgreen;
+  border: 2px solid green;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+
+/* Absolute positioning */
+.absolute-container {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background-color: lightyellow;
+  border: 2px dashed orange;
+}
+
+.absolute-box {
+  width: 150px;
+  height: 60px;
+  background-color: coral;
+  border: 2px solid red;
+  position: absolute;
+  /* top: 20px; */
+  /* left: 20px; */
+  top: 0;
+  right: 20px;
+  /* Positioned relative to the nearest positioned ancestor (.relative container) */
+}
+
+/* Fixed positioning */
+.fixed-box {
+  width: 200px;
+  height: 100px;
+  background-color: lightpink;
+  border: 2px solid hotpink;
+  position: fixed;
+  top: 10px;
+  /* bottom: 10px; */
+  right: 10px;
+  /* Stays fixed to the viewport, regardless of scrolling */
+}
+
+/* Sticky positioning */
+.sticky-container {
+  height: 200px;
+  padding: 10px;
+  background-color: lightgray;
+  border: 2px dotted gray;
+  overflow: auto;
+}
+
+.sticky-box {
+  width: 200px;
+  height: 100px;
+  background-color: lightcoral;
+  border: 2px solid darkred;
+  position: sticky;
+  top: 10px;
+}

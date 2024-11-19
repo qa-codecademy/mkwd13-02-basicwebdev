@@ -1,0 +1,49 @@
+/*  Block Box (block level elements)
+    => The box will break onto a new line
+    => The box will extend in the inline direction to fill the space available in its container
+    => The width and height properties are respected
+*/
+h2 {
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+}
+
+/*  Inline Box  (inline elements)
+    => The box will not break onto a new line
+    => The width and height properties will not apply
+*/
+a {
+    background-color: rgb(199, 208, 37);
+    /* width & height not applied */
+    width: 100px;
+    height: 100px;
+}
+
+/* Standard Box Model (default) */
+/* 
+    In the Standard Box Model (default), the width and height define only the content. Padding, border, and margin are added outside the width and height.
+*/
+.standard-box {
+    box-sizing: content-box;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 10px solid blue;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+/* Alternative Box Model */
+/* 
+    In the Alternative Box Model, the width and height include the content, padding, and border. The size of the box remains fixed, and padding and border are calculated inside the defined dimensions.
+*/
+.alternative-box {
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 10px solid green;
+    margin: 10px;
+    background-color: lightgreen;
+}

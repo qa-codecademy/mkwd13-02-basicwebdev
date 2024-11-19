@@ -1,0 +1,39 @@
+h1{
+    color:blueviolet;
+    background-color: antiquewhite;;
+}
+
+span{
+    background-color: burlywood;
+}
+
+.color-name{
+    background-color: cadetblue;
+    width: fit-content;
+    padding: 10px;
+}
+
+.color-name::first-letter{
+    font-size: 30px;
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+.hex-color{
+    color: #5c5589
+}
+
+.hex-color:hover{
+    background-color: #8678dc;
+    color: antiquewhite;
+    width: fit-content;
+}
+
+.rgb-color{
+    color: rgb(23, 195, 29);
+    background-color: rgba(92, 85, 137, 0.5);
+}
+
+.hsl-color{
+    color: hsl(188, 83%, 45%);
+}

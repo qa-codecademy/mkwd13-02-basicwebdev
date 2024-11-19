@@ -1,0 +1,143 @@
+/* ========== font-size ========== */
+
+/* => Absolute Units */
+/* 
+    Absolute units provide a fixed, exact size regardless of the user’s display settings or parent element styles. 
+    Example: px, cm, mm, inch, s, m, l, xl..
+*/
+header li {
+    /* font-size: x-large; */
+    /* font-size: 2cm; */
+    font-size: 30px;
+    /* most common absolute unit (px-pixel) */
+}
+
+/* => Relative Units */
+/* 
+    Relative units scale based on the parent element’s font size.
+    Typically used in modern web pages with responsive designs.
+    Example: em, rem, %, vh, vw..
+*/
+#section-2>ul {
+    font-size: 12px;
+}
+
+#section-2>ul>li {
+    /*1em = the font size of the parent element (12px in this case) */
+    /*2rem = 2x12 = 24px*/
+    font-size: 2em;
+    /* 1rem = the root element (<html>) font-size (default => 16px) */
+    /* font-size: 1.5rem; */
+    /* font-size: 70%; */
+    /* font-size: 30vw; */
+}
+
+
+/* =========== font-style ===========  */
+.italic-text {
+    font-style: italic;
+}
+
+
+/* =========== font-weight ===========  */
+/* .bold-list>.normal-bold {
+    font-weight: normal;
+    font-weight: 400;
+} */
+
+/* .bold-list>.bold-text {
+    font-weight: bold;
+    font-weight: 600;
+} */
+
+/* 
+    :nth-child(n) => pseudo-class that selects elements based on their position
+*/
+
+.bold-list>li:nth-child(1) {
+    font-weight: normal;
+    font-weight: 400;
+}
+
+.bold-list>li:nth-child(2) {
+    font-weight: bold;
+    font-weight: 600;
+}
+
+
+/* =========== text-decoration ===========  */
+.decorated-text {
+    /* text-decoration-style: wavy; */
+    /* text-decoration-thickness: 2px; */
+    /* text-decoration-line: underline; */
+    /* text-decoration-line: underline overline; */
+    /* text-decoration-color: red; */
+    text-decoration: dotted underline 3px red;
+}
+
+
+/* =========== text-transform ===========  */
+.uppercased-text {
+    text-transform: uppercase;
+}
+
+
+/* =========== line-height ===========  */
+/* =========== letter-spacing ===========  */
+
+.text-spacing {
+    /* line-height: 10px; */
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+
+/* =========== word-spacing ===========  */
+.word-spacing {
+    word-spacing: 2rem;
+}
+
+
+/* =========== text-align ===========  */
+.text-center,
+h2 {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+
+/* =========== vertical-align ===========  */
+/* applies only to inline elements and table cells */
+table,
+tr,
+td {
+    border: 1px solid black;
+    height: 50px;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+.align-bottom {
+    vertical-align: bottom;
+}
+
+
+/* =========== text-shadow ===========  */
+.red-shadow {
+    /* x offset | y offset | blur radius | color */
+    text-shadow: 3px -4px 1px red;
+}

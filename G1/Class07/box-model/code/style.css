@@ -1,0 +1,65 @@
+.padding-example {
+  background-color: lightblue;
+  border: 2px solid blue;
+  padding: 20px;
+}
+
+.margin-example {
+  background-color: violet;
+  border: 2px solid blue;
+  margin: 20px;
+}
+
+.regular-box {
+  border: 20px solid purple;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  margin: 40px;
+}
+
+.border-box {
+  border: 0px solid purple;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  margin: 20px;
+
+  box-sizing: border-box;
+}
+
+.inline-example {
+  background-color: lightgray;
+  padding: 5px;
+  /* All these shorthand properties also apply for margin */
+  /* padding: 0 5px; */
+  /* padding: 5px 5px 5px 5px; */
+  /* padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; */
+  margin: 0 15px;
+  border: 5px solid black;
+  /* border-top: 5px solid black; */
+}
+
+.border-examples {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid black; */
+  border-width: 15px 15px 10px 5px;
+  /* border-style: double; */
+  /* border-style: dotted; */
+  border-style: groove;
+  border-color: red green blue purple;
+}
+
+.overflow {
+  margin-top: 15px;
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  /* overflow: hidden; */
+  overflow: auto;
+}
