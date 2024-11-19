@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>CSS</h3>
+					<p>
+						<small>Trainer: <a href="#">Tijana Stojanovska</a> - stojanovska_tijana@outlook.com</small></br>
+						<small>Assistant: <a href="#">Slave Ivanovski</a> - slaveivanovski028@gmail.com</small></br>
+					    <div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Introduction</li>
+						<li>Understand the rules in CSS</li>
+						<li>Specifying CSS styles</li>
+						<li>Add CSS comments</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Introduction</h1>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;">
+					<h2>Cascading Style Sheets - CSS</h2>
+					<ul>
+						<li><strong>Cascading Style Sheets (CSS)</strong> - are what you use to apply style to your HTML documents</li>
+						<li><strong>CSS</strong> allows you to create rules that control the way that each individual element (and the contents of that element) is presented</li>
+						<li>E.g. background of the page is cream, all paragraphs should appear in gray using the Arial font...</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>CSS Rules</h1>
+				</section>
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;">
+					<h2>CSS Rules</h2>
+					<ul>
+						<li>A <strong><em>rule </em></strong>consists of a <strong style="color:#A54E35;"> selector</strong> that specifies the element to which to apply a style and a <strong style="color:#668E75;">declaration</strong> that declares which style to apply </li>
+						<li>A declaration consists of a property and a value</li>
+						<li>You can use many properties in CSS such as properties for positioning, sizing as well as setting element font family and colors</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/css_selector.png"></div>
+					</div>
+				</section>
+
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<h2>CSS Rules</h2>
+					<ul>
+						<li>The <strong style="color:#A54E35;">selector</strong> indicates which element the rule applies to</li>
+						<li>The same rule can apply to more than one element if you separate the element names with commas.</li>
+						<li>The <strong style="color:#668E75;">declaration</strong> indicates how the elements referred to in the selector should be styled </li>
+						<li>Declarations sit inside curly brackets and each is split into two parts (a <strong style="color:#A6385B;">property</strong> and a <strong style="color:#F4B959;">value</strong> separated by a colon), each separated by a semi-colon.</li>
+
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 9 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/css.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;">
+					<h2>CSS Properties</h2>
+					<ul>
+						<li><strong style="color:#A6385B;">Properties </strong> indicate the aspects of the element you want to change. For example, color, font, width, height and border</li>
+						<li><strong style="color:#F4B959;">Values</strong> specify the settings you want to use for the chosen properties. For example, red color, 100px width, and 1px border</li>
+
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Using CSS</h1>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>Using CSS</h2>
+					<ul>
+						<li>Two ways of using <strong>CSS:</strong>
+						<ul>
+						    <li>Internal CSS</li>
+						    	<ul>
+						    		<li>Inline</li>
+						    		<li>Embedded</li>
+						    	</ul>
+						    <li>External CSS</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<h2>Using internal CSS</h2>
+					<ul>
+						<li>You can also include CSS rules within an HTML page by placing them inside a <strong style="color:#007ac9;">&lt;style&gt;</strong> element, which usually sits inside the <strong style="color:#007ac9;">&lt;head&gt;</strong> element of the page</li>
+						<li>The <strong style="color:#007ac9;">&lt;style&gt;</strong> element should use the <strong style="color:#007ac9;">type="text/css"</strong> attribute to indicate that the styles are specified in CSS</li>
+						<li>You can also use inline css by using the <strong style="color:#007ac9;">style</strong> attribute on most of the elements</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;style type="text/css"&gt;
+
+body {
+
+	font-family: arial;
+	background-color: rgb(185,179,175);
+}
+h1 {
+	color: rgb(255,255,255);
+}
+
+&lt;/style&gt;
+
+					</code></pre></p>
+
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;p style="color:red;"&gt;&lt;/p&gt;
+
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;">
+					<h2>Using external CSS</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">&lt;link&gt;</strong> element can be used in an HTML document to tell the browser where to find the CSS file used to style the page</li>
+						<li>The <strong style="color:#007ac9;">href </strong> attribute specifies the path to the CSS file </li>
+						<li>The <strong style="color:#007ac9;">type="text/css"</strong> specifies the type of document being linked to </li>
+						<li>The <strong style="color:#007ac9;">rel="stylesheet"</strong> specifies the relationship between the HTML page and the file it is linked to</li>
+						<li>An HTML page can use more than one CSS style sheet</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;link href="css/styles.css" type="text/css"  rel="stylesheet" &gt;
+
+					</code></pre></p>
+
+				</section>
+
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>CSS Selectors</h1>
+				</section>
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<h2>CSS Selectors</h2>
+					<ul>
+						<li>There are many different types of CSS selector that allow you to target rules to specific elements in an HTML document</li>
+						<li>CSS selectors are case sensitive</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<h2>Understanding ID's and CLASS names</h2>
+					<ul>
+						<li>Before we start understanding CSS selectors, we must first understand the HTML <strong style="color:#007ac9;">id</strong> and HTML <strong style="color:#007ac9;">class</strong> attributes </li>
+						<li>Every HTML element can have an <strong style="color:#007ac9;">id</strong> attribute. ID should be unique </li>
+						<li>Every HTML element can have a <strong style="color:#007ac9;">class</strong>. Class shouldn’t be unique and can be used to group set of elements by class (group) </li>
+
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+
+    &lt;p id="paragpaph1" class="blue-background" &gt; ... &lt;/p&gt;
+&lt;p id="paragpaph2" class="blue-background" &gt; ... &lt;/p&gt;
+
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: center;">
+					<div class="sl-block" data-block-type="image" style="width: 60%; height: 60%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/css_selectors.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 16 -->
+				<section class="font80" style="text-align: left;">
+					<h2>How css rules cascade?</h2>
+						<ul>
+							<li>If there are two or more rules that apply to the same element, it is important to understand which will take precedence. </li>
+							<li><strong style="color:#FF6347;">Last rule</strong> If the two selectors are identical, the latter of the two will take precedence. Here you can  see the second i selector takes precedence over the first</li>
+							<li><strong style="color:#FF6347;">Specificity</strong> If one selector is more specific than the others, the more specific rule will take precedence over more general ones. E.g. <strong>h1</strong> is more specific than <strong>*</strong>, <strong>p b</strong> is more specific than <strong>p</strong>, <strong>p#intro</strong> is more specific than <strong>p</strong></li>
+							<li><strong style="color:#FF6347;">Important</strong> You can add <strong>!important</strong> after any property value to indicate that it should be considered more important than other rules that apply to the same element.</li>
+						</ul>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/css_precedence.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 18 -->
+				<section class="font80" style="text-align: left;">
+					<h2>Inheritance</h2>
+						<ul>
+							<li>Some properties can be <strong>inherited</strong></li>
+							<li>Specify property on the parent element, they will apply to most child elements.</li>
+							<li>Saves you from having to apply these properties to as many elements </li>
+							<li>E.g. font-family</li>
+							<li>Some properties are not <strong>inherited</strong></li>
+							<li>E.g. background-color or border properties</li>
+							<li>Explicitly saying that some element will <em>inherit</em> values from their parent elements by using <em>inherit</em> for the value of the properties. </li>
+						</ul>
+				</section>
+
+
+
+
+				<!-- Slide 19 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/css_inheritance.png"></div>
+					</div>
+				</section>
+
+
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

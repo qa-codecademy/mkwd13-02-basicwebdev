@@ -1,0 +1,21 @@
+/* a {
+  color: red;
+  text-decoration: none;
+} */
+
+a:visited {
+  color: gold;
+}
+
+a:hover {
+  color: black;
+}
+
+a:focus {
+  text-decoration: underline black;
+  color: deeppink;
+}
+
+a:active {
+  font-size: 32px;
+}

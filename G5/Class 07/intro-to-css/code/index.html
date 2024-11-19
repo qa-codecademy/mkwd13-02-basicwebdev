@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+
+    <style>
+        p{
+            color:burlywood;
+        }
+
+        div{
+            border: 5px solid red;
+        }
+
+        .blue-background{
+            background-color: lightblue;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Inline styling -->
+    <h1 style="color:brown; font-size: 45px;">Intro to CSS</h1>
+    <article style="background-color: yellow;">
+        <h2>Welocme...</h2>
+        <p style="color: magenta; font-size: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quibusdam perferendis, ipsa nisi officia doloribus totam similique voluptate maiores beatae, quia quidem aspernatur minima obcaecati itaque in sunt numquam. Molestias?</p>
+    </article>
+    <hr>
+   
+    <!-- Embeded CSS Example -->
+
+    <div>
+        <p class="blue-background">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur cupiditate aspernatur minima voluptate, impedit error quibusdam fugiat quidem minus aperiam esse voluptatibus. Pariatur possimus non ipsam minus ratione praesentium?
+        </p>
+        <p> Hello world!</p>
+        <p>I'm a paragraph too!</p>
+    </div>
+    <hr>
+
+    <!-- External CSS -->
+     <article>
+        <h3>Movies list</h3>
+        <ol>
+            <li>Fantasy
+                <ol id="fantasyList">
+                    <li class="fantasyMovie" id="harryPotter">Harry Potter</li>
+                    <li class="fantasyMovie">Lord of the rings</li>
+                    <li class="fantasyMovie">Star wars</li>
+                </ol>
+            </li>
+            <li>Actions
+                <ol id="actionList"> Test
+                    <li class="actionMovie">Bad boys.........</li>
+                    <li class="actionMovie">1911</li>
+                    <li>Example</li>
+                </ol>
+            </li>
+        </ol>
+     </article>
+     <section>
+        <h4>Football news..</h4>
+        <h4 id="customHeadingStyle">Football matches this weekend...</h4>
+        <h4>Goals this week...</h4>
+     </section>
+</body>
+</html>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>CSS</h3>
+					<p>
+						<small>Trainer: <a href="#">Tijana Stojanovska</a> - stojanovska_tijana@outlook.com</small></br>
+						<small>Assistant: <a href="#">Slave Ivanovski</a> - slaveivanovski028@gmail.com</small></br>
+					    <div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson overview</h2>
+					<ul>
+						<li>Using CSS to assign color</li>
+						<li>Different ways of assigning color</li>
+					</ul>
+				</section>
+
+
+				<!-- COLOR -->
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Color</h1>
+				</section>
+
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">color</strong> &amp; <strong style="color:#007ac9;">background-color</strong> properties</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9;">color</strong> property allows you to specify the color of text inside an element.</li>
+						<li>The <strong style="color:#007ac9;">background-color</strong> property sets the color of the background for the element box.</li>
+						<li>You can specify any color in CSS in one of three ways:</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<ul>
+						<li><strong style="color:#007ac9;">rgb values</strong>
+							<ul>
+								<li>These express colors in terms of how much red, green and blue are used to make it up. For example: <strong>rgb(100,100,90)</strong></li>
+							</ul>
+						</li>
+						<li><strong style="color:#007ac9;">hex codes</strong>
+							<ul>
+								<li>These are six-digit codes that represent the amount of red, green and blue in a color, preceded by a pound or hash # sign. For example: <strong>#ee3e80</strong></li>
+							</ul>
+						</li>
+						<li><strong style="color:#007ac9;">color names</strong>
+							<ul>
+								<li>There are <a href="http://www.w3schools.com/cssref/css_colornames.asp" target="_blank">147 predefined color names</a> that are recognized by browsers. For example: <strong>DarkCyan</strong></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+/* rgb value */
+p {
+	color: rgb(100,100,90);
+}
+/* hex code */
+h2 {
+	color: #ee3e80;
+}
+/* color name */
+h1 {
+	color: DarkCyan;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;">
+					<h2>HTML Color Picker</h2>
+					<p><a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">https://www.w3schools.com/colors/colors_picker.asp</a></p>
+				</section>
+
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9;">opacity</strong> &amp; <strong style="color:#007ac9;">rgba</strong> properties</h2>
+					<ul>
+						<li>CSS3 introduces the <strong style="color:#007ac9;">opacity</strong> property which allows you to specify the opacity of an element and any of its child elements.</li>
+						<li>The value is a number between <strong>0.0</strong> and <strong>1.0</strong> (so a value of 0.5 is 50% opacity and 0.15 is 15% opacity).</li>
+						<li>The CSS3 <strong style="color:#007ac9;">rgba</strong> allows you to specify a color, just like you would with an RGB value, but adds a fourth value to indicate opacity.</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+/* rgba value */
+p {
+	color: rgba(100,100,90,0.5);
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>CSS3: HSL &amp; HSLA Colors</h2>
+					<ul>
+						<li>CSS3 introduces an entirely new and intuitive way to specify colors using hue, saturation, and lightness values.</li>
+						<li>HSL - Hue, Saturation, Lightness</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/hsl.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+body {
+	background-color: #C8C8C8;
+	background-color: hsl(0,0%,78%);
+}
+p {
+	background-color: #ffffff;
+	background-color: hsla(0,100%,100%,0.5);
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
