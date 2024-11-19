@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="SEDC">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>CSS</h3>
+					<p>
+						<small>Trainer: <a href="#">Kliment Sidorov</a> - sidorov_kliment@live.com</small></br>
+						<small>Assistant: <a href="#">Robert Blazevski</a> - robert_blazevski@outlook.com</small></br>
+						<img src="https://qinshiftacademy.com/wp-content/uploads/2023/11/Asset-1.png" alt="logo"
+							style="border:none; box-shadow:none; background-color: #27404d; padding: 10px;" />
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson Overview</h2>
+					<ul>
+						<li>Basic concepts of Grid</li>
+						<li>Two-dimensional layout system</li>
+						<li><b>display: grid</b></li>
+						<li>Grid containers, grid items, rows, columns, and grid lines</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h2>Basic concepts of CSS Grid</h2>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;">
+					<h2>Introduction to CSS Grid</h2>
+					<ul>
+						<li>Definition: CSS Grid is a <b>two-dimensional</b> layout system for the web.</li>
+						<li>Purpose: Simplifies layout design, replacing float and flexbox layouts.</li>
+						<li>Key Features: Grid containers, grid items, rows, columns, and grid lines.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;">
+					<h2>What is CSS Grid Layout</h2>
+					<p>
+						The grid means 2-dimensional layout which can handle both rows and columns simultaneously.
+					</p>
+					<p>
+						CSS grid layout is two-dimensional layout whereas flexbox used single-dimensional layout.
+					</p>
+				</section>
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;">
+					<h2>Grid rows</h2>
+					<p>CSS grid rows are the same as in the table or spreadsheet if you are familiar with that. Basically, rows are the horizontal lines in the grid, left-to-right.</p>
+					<div class="sl-block-content"><img src="assets/img/rows.png" /></div>
+				</section>
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;">
+					<h2>Grid columns</h2>
+					<p>CSS grid columns are the vertical lines in the grid, top-to-bottom. As in the below example, vertical lines are grid columns.</p>
+					<div class="sl-block-content"><img src="assets/img/columns.png" /></div>
+				</section>
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>Grid gap</h2>
+					<p>With CSS grid, most of the time we want some space between rows and columns to manage the clean look of the layout. It is known as grid-gap or gutter.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/gap.png" /></div>
+				</section>
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<h1>Grid lines</h1>
+					<p>CSS grid lines are those lines who draw the basic layout of the page. Like, row lines which draws horizontally between the grid rows and column lines which draws vertically between grid columns.</p>
+					<div class="sl-block-content"><img src="assets/img/lines.png" /></div>
+				</section>
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+					<h2>Grid cell</h2>
+					<p>CSS grid cell is a basic block of grid. We can understand it as a single unit of grid. Like rows and columns joint together to create a cell and collection of cells is known as grid.</p>
+					<div class="sl-block-content"><img src="assets/img/cell.png" /></div>
+				</section>
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;">
+					<h2>Grid areas</h2>
+					<p>CSS grid area is a collection of one or more than one cell. We will basically use grid area to define the portion of one template like header, sidebar, footer etc. We will understand it in detail later.</p>
+					<div class="sl-block-content"><img src="assets/img/areas.png" /></div>
+				</section>
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;">
+					<h2>Grid tracks</h2>
+					<p>CSS grid tracks are simply rows and columns. Like total cells of one column is a single track and total cells of one row is also a track. We will use tracks to define the width and height of rows and columns.</p>
+					<div class="sl-block-content"><img src="assets/img/tracks.png" /></div>
+				</section>
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>The unit fr</h2>
+					<p>The fr is a fractional unit which means a flexible unit. It is basically used in CSS grids. Actually, fr uses the part of available space, like if there are three columns with 1fr unit then all three columns will take equal space out of available free space.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.grid {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 2fr;
+}
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/unit-fr.png" /></div>
+				</section>
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<p>The fr unit – width 500px</p>
+					<p>Let’s assume about the grid which is 500px wide and 10px of grid-gap or gutter. So, we have 490px for width. As we have defined the grid-template-columns 1fr+2fr = 3fr. Now divide the 490px into 3 parts.</p>
+					<div class="sl-block-content"><img src="assets/img/fr2.png" /></div>
+				</section>
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<p>The fr unit – 1fr = 163.333px</p>
+					<p>Now 1fr = 163.333px because 163.333 X 3 = 490 that’s it. It means 2fr = 326.667px.</p>
+					<div class="sl-block-content"><img src="assets/img/fr3.png" /></div>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;">
+					<h2>The implicit and explicit grid</h2>
+					<p>When we define the CSS grid rows and columns via grid-template-column and grid-template-rows, it is known as the explicit grid.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+   }
+
+  .item {
+      border: 1px solid #008000;
+      padding: 20px;
+ }
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/explicit-implicit-grid.png" /></div>
+				</section>
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;">
+					<h2>Grid Container or parent element</h2>
+					<p>It is a wrapper element which wrap its items into a single box. To create a container element, we need to defined the property display to grid.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.container {
+    display: grid;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;">
+					<h2>Grid Items or child elements</h2>
+					<p>Grid items are direct child of grid container not nested children, only direct children element. When we defined an element with display grid, it becomes a grid container and its direct child immediately become grid items.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.container {
+    display: grid;
+}
+.item {
+    padding: 20px;
+    border: 1px solid;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+<div class="container">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+    <div class="item">item 4</div>
+</div>
+					</code></pre></p>
+				</section>
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;">
+					<h2>Grid Items or child elements</h2>
+					<div class="sl-block-content"><img src="assets/img/items.png" /></div>
+				</section>
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;">
+					<h2>Grid container properties</h2>
+					<p>The first property of CSS grid container is a display property that convert an element into the grid container. We can use grid or inline-grid for display property. </p>
+					<h3>Grid VS inline-grid</h3>
+					<p>CSS Grid is a block-level element and inline-grid is an inline-level element, which allows other elements to take place next to it.</p>
+					<div class="sl-block-content"><img src="assets/img/inline-vs-grid.png" /></div>
+				</section>
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;">
+					<h2>grid-template-columns</h2>
+					<p>This property defines the number of columns in the grid. With the help of grid-template-columns, we defined the width of the columns.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.container {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+}
+					</code></pre></p>
+					<p>As we can see in the above example, the space-separated list of values is used to define the number of columns and the width of each column.</p>
+					<p>Here we can use any kind of CSS unit like %, rem, em, px, etc. to define the value of this property. Even we can use the fr unit which is enough flexible to adapt the window size or device size.  </p>
+				</section>
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h2>grid-template-rows</h2>
+					<p>The grid-template-rows defines the number of rows in the grid. Here we use this property to define the height of the rows and a total number of rows.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.container {
+     display: grid;
+     grid-template-rows: 1fr 2fr;
+}
+					</code></pre></p>
+					<p>The above example shows the space-separated list of values. These values are used to defined the number of rows and height of individual row.</p>
+					<p>We can use fr unit, auto, %, rem, em, px, etc. to define the height of each row.</p>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section style="text-align: left;">
+					<h2>repeat () function</h2>
+					<p>This function can help us to define the grid-template-columns when all columns need to be same width. Same way, we can also use this function for grid-template-rows when all rows need to be same height.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+ }
+					</code></pre></p>
+				</section>
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;">
+					<h2>justify-content property</h2>
+					<p>Justify-content is used to align the grid items, as per available space inside the grid container.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+justify-content: start | end | center | space-around | space-evenly | space-between
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/justify.png" /></div>
+				</section>
+
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;">
+					<h2>align-content property</h2>
+					<p>Align-content property is used to align the all grid items vertically inside the grid container. Following are the possible values of align-content property:</p>
+					<ul>
+						<li>Center</li>
+						<li>End</li>
+						<li>Start</li>
+						<li>Space-evenly</li>
+						<li>Space-around</li>
+						<li>Space-between</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+align-content: start | end | center | space-around | space-evenly | space-between
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/align-content.png" /></div>
+				</section>
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;">
+					<h2>grid-column property</h2>
+					<p>As we know this is grid-item based property. So, we can use it to place the item in the single or multiple columns.</p>
+					<p>The grid-column property is a shorthand property of grid-column-start and grid-column-end.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.item1 {
+      grid-column: 1/4;
+ }
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/grid-column.png" /></div>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;">
+					<h2>grid-column property</h2>
+					<p>grid-column 1/ span 4</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.item1 {
+      grid-column: 1/ span 4;
+ }
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/grid-column2.png" /></div>
+					<p>As the above example, we have defined the start column line and end column line to place the item.</p>
+				</section>
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<h2>grid-row property</h2>
+					<p>It is a shorthand property of grid-row-start and grid-row-end. It also behaves as grid-column does. The grid-row property is used to place the item inside the row.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.item2 {
+   grid-row: 1/ 4;
+}
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/grid-row.png" /></div>
+				</section>
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;">
+					<h2>grid-row property</h2>
+					<p>grid rows span 4</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.item2 {
+    grid-row: 1/ span 4;
+}
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/grid-row2.png" /></div>
+				</section>
+
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;">
+					<h2>grid-template-areas</h2>
+					<p>This property is used to placing the grid items as per their area name inside the grid layout.</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.grid {
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 2fr 1fr;
+	grid-template-areas: 'header header'
+			     'navbar navbar'
+			     'sidebar content'
+			     'sidebar content'
+			     'footer footer';
+}
+.item {
+	border: 1px solid #008000;
+	padding: 20px;
+}
+
+.item1 {
+	grid-area: header;
+}
+.item2 {
+	grid-area: navbar;
+}
+.item3 {
+	grid-area: content;
+}
+.item4 {
+	grid-area: sidebar;
+}
+.item5 {
+	grid-area: footer;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;">
+					<h2>grid-template-areas</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+<div class="grid">
+            <div class="item item1"> item 1</div>
+            <div class="item item2"> item 2</div>
+            <div class="item item3"> item 3</div>
+            <div class="item item4"> item 4</div>
+            <div class="item item5"> item 5</div>
+ </div>
+					</code></pre></p>
+					<div class="sl-block-content"><img src="assets/img/template-areas.png" /></div>
+				</section>
+
+				<!-- Slide 43 -->
+				<section style="text-align: left;">
+					<h3>Useful links</h3>
+					<ul>
+						<li><a href="https://cssgridgarden.com/" target="_blank">Grid garden (a grid game)</a></li>
+						<li><a href="https://cssgrid.io/" target="_blank">CSS grid (free course)</a></li>
+						<li><a href="https://scrimba.com/learn/cssgrid" target="_blank">Scrimba CSS grid (free course)</a></li>
+						<li><a href="https://grid.layoutit.com/">Grid generator (web app)</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 44 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
