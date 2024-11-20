@@ -1,0 +1,20 @@
+h1 {
+  background-color: darkred;
+  color: white;
+}
+
+/* Mobile-first */
+/* @media screen and (min-width: 480px) {
+  h1 {
+    background-color: aqua;
+    color: black;
+  }
+} */
+
+/* Deskop first */
+@media screen and (max-width: 440px) {
+  body {
+    background-color: darkcyan;
+    color: goldenrod;
+  }
+}
