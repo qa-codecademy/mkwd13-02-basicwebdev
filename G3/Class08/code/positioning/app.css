@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #00003e;
+  color: whitesmoke;
+  padding: 10px;
+  border-bottom: 5px solid hotpink;
+}
+
+.container {
+  background-color: lightyellow;
+  border-bottom: 4px solid gold;
+  padding: 10px;
+  position: relative;
+}
+
+.container h2 {
+  font-size: 2rem;
+}
+
+.container p {
+  background-color: lightgreen;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.5rem;
+  border: 2px solid darkgreen;
+  width: 50%;
+}
+
+.container .relative-paragraph {
+  background-color: lightblue;
+  border: 2px solid blue;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+.container .absolute-paragraph {
+  background-color: lightblue;
+  border: 2px solid blue;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.container .fixed-paragraph {
+  background-color: lightcoral;
+  border: 2px solid darkred;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  z-index: 2;
+}
+
+.container .sticky-paragraph {
+  background-color: gold;
+  border: 2px solid darkgoldenrod;
+  font-size: 2.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.float-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  border: 2px solid magenta;
+}
+
+.float-box:nth-child(1) {
+  float: left;
+}
+
+.float-box:nth-child(2) {
+  float: left;
+}
+
+.float-box:nth-child(3) {
+  float: right;
+}

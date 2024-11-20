@@ -1,0 +1,37 @@
+/* 
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .some-box {
+    background-color: green;
+  }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+main {
+  background-color: blanchedalmond;
+  width: 100%;
+}
+nav {
+  width: 100vw;
+  height: 5vh;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width:1200px){
+    main{
+        width: 70%;
+        margin: 0px auto;
+    }
+    nav{
+        background-color: red;
+    }
+}

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>HTML and CSS</title>
+
+	<meta name="description" content="HTML and CSS Presentation">
+	<meta name="author" content="QA">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="assets/css/reveal.css">
+	<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'assets/text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>CSS Pseudo-elements</h3>
+					<p>
+						<small>
+							Trainer: <a href="#">Ilija Mitev</a> - ilija.mitev3@gmail.com
+						</small></br>
+						<small>
+							Assistant: <a href="#">Frosina Stamenkovska</a> - stamenkovskaf@gmail.com
+						</small></br>
+					<div
+						style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+						<img src="./assets/img/lg.png" alt="logo"
+							style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+					</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson Overview</h2>
+					<ul>
+						<li>What are Pseudo-Elements?</li>
+						<li>::first-line</li>
+						<li>::first-letter</li>
+						<li>::before</li>
+						<li>::after</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>Pseudo-Elements?</h1>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;">
+					<h2>What are Pseudo-Elements?</h2>
+					<ul>
+						<li>A CSS pseudo-element is used to style specified parts of an element.</li>
+						<li>For example, it can be used to:
+							<ul>
+								<li>Style the first letter, or line, of an element</li>
+								<li>Insert content before, or after, the content of an element</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;">
+					<h2>The syntax of pseudo-elements</h2>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
+selector::pseudo-element {
+    property:value;
+}
+					</code></pre>
+					</p>
+				</section>
+
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>::first-line</h1>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9">::first-line</strong> Pseudo-element</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">::first-line</strong> pseudo-element is used to add a
+							special style to the first line of a text.</li>
+						<p>
+						<pre><code class="hljs" data-trim contenteditable>
+p::first-line {
+    color: #ff0000;
+    text-transform: uppercase;
+}
+					</code></pre>
+						</p>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9">::first-line</strong> Pseudo-element (2)</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">::first-line</strong> pseudo-element can only be applied
+							to block-level elements.</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+					<ul>
+						<li>The following properties apply to the <strong style="color:#007ac9">::first-line</strong>
+							pseudo-element:
+							<ul>
+								<li>font properties</li>
+								<li>color properties</li>
+								<li>background properties</li>
+								<li>word-spacing</li>
+								<li>letter-spacing</li>
+								<li>text-decoration</li>
+								<li>vertical-align</li>
+								<li>text-transform</li>
+								<li>line-height</li>
+								<li>clear</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>::first-letter</h1>
+				</section>
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9">::first-letter</strong> Pseudo-element</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">::first-letter</strong> pseudo-element is used to add a
+							special style to the first letter of a text.</li>
+						<p>
+						<pre><code class="hljs" data-trim contenteditable>
+p::first-letter {
+    color: #ff0000;
+    font-size: 26px;
+}
+					</code></pre>
+						</p>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9">::first-letter</strong> Pseudo-element (2)</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">::first-letter</strong> pseudo-element can only be applied
+							to block-level elements.</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<ul>
+						<li>The following properties apply to the <strong style="color:#007ac9">::first-letter</strong>
+							pseudo-element:
+							<ul>
+								<li>font properties</li>
+								<li>color properties</li>
+								<li>background properties</li>
+								<li>margin properties</li>
+								<li>padding properties</li>
+								<li>border properties</li>
+								<li>text-decoration</li>
+								<li>vertical-align (only if "float" is "none")</li>
+								<li>text-transform</li>
+								<li>line-height</li>
+								<li>float</li>
+								<li>clear</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>::before</h1>
+				</section>
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9">::before</strong> Pseudo-element</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">::before</strong> pseudo-element can be used to insert
+							some content before the content of an element.</li>
+						<li>The following example inserts an image before the content of each &lt;h1&gt; element:</li>
+						<p>
+						<pre><code class="hljs" data-trim contenteditable>
+h1::before {
+    content: url('smiley.gif');
+}
+					</code></pre>
+						</p>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>::after</h1>
+				</section>
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9">::after</strong> Pseudo-element</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">::after</strong> pseudo-element can be used to insert some
+							content after the content of an element.</li>
+						<li>The following example inserts an image after the content of each &lt;h1&gt; element:</li>
+						<p>
+						<pre><code class="hljs" data-trim contenteditable>
+h1::after {
+    content: url('smiley.gif');
+}
+					</code></pre>
+						</p>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9"
+					data-background-transition="slide">
+					<h1>::selection</h1>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<h2>The <strong style="color:#007ac9">::selection</strong> Pseudo-element</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">::selection</strong> pseudo-element matches the portion of
+							an element that is selected by a user.</li>
+						<li>The following CSS properties can be applied to <strong
+								style="color:#007ac9">::selection</strong>:
+							<ul>
+								<li>color</li>
+								<li>background</li>
+								<li>cursor</li>
+								<li>outline</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;">
+					<h2>Example</h2>
+					<p>
+					<pre><code class="hljs" data-trim contenteditable>
+::selection {
+    color: red;
+    background: yellow;
+}
+					</code></pre>
+					</p>
+				</section>
+
+
+
+
+
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+
+		</div>
+
+	</div>
+
+	<script src="assets/lib/js/head.min.js"></script>
+	<script src="assets/js/reveal.js"></script>
+
+	<script>
+
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+			// Transition speed
+			transitionSpeed: 'default', // default/fast/slow
+
+			// Enable slide navigation via mouse wheel
+			mouseWheel: true,
+
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'assets/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'assets/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+				{ src: 'assets/plugin/notes/notes.js', async: true }
+			]
+		});
+
+	</script>
+
+</body>
+
+</html>

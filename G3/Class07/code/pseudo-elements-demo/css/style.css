@@ -1,0 +1,33 @@
+/* 
+    Pseudo-elements are used in CSS to style specific parts of an element
+*/
+
+/* Styling the first letter */
+#paragraph-1::first-letter {
+    font-size: 2em;
+    color: rgb(55, 55, 165);
+    font-weight: bold;
+}
+
+/* Styling the first line */
+#paragraph-2::first-line {
+    color: palevioletred;
+    font-style: italic;
+}
+
+/* Styling text when highlighted or selected */
+#paragraph-2::selection {
+    background-color: rgb(201, 138, 21);
+    color: magenta;
+}
+
+/* Adding content before and after elements */
+#paragraph-3::before {
+    content: "BEFORE";
+    font-size: 2em;
+}
+
+#paragraph-3::after {
+    content: "AFTER";
+    color: hotpink;
+}
