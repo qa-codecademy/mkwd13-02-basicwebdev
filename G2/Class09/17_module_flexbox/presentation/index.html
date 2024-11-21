@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="QA">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>CSS Flexible Box Layout</h3>
+					<p>
+						<small>Trainer: <a href="#">Ivan Jamandilovski</a> - jamandilovski@gmail.com</small></br>
+						<small>Assistant: <a href="#">Hristina Bozhinova</a> - hristina.bozhinova93@gmail.com</small></br>
+						<div style="background-color: #3F4A5C; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+							<img src="./assets/img/lg.png" alt="logo" style="border:none; box-shadow:none; padding: 0; margin: 0; display: inline; background-color: transparent;" />
+						</div>
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson Overview</h2>
+					<ul>
+						<li>Basic concepts of flexbox</li>
+						<li>The two axes of flexbox</li>
+						<li><b>flex-flow</b> CSS shorthand property</li>
+						<li>Properties applied to flex items</li>
+						<li><b>flex</b> CSS shorthand property</li>
+						<li>Aligning Items in a Flex Container</li>
+						<li>Typical use cases of Flexbox</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h2>Basic concepts of flexbox</h2>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;">
+					<h2>Basic concepts of flexbox</h2>
+					<ul>
+						<li>The <b>Flexible Box Module</b>, usually referred to as flexbox, was designed as a <b>one-dimensional layout model</b>,
+							and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.</li>
+						<li>When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout
+							in <b>one dimension at a time</b> — either as a <b>row</b> or as a <b>column</b>.
+						<br /><br /><small>*This can be contrasted with the two-dimensional model of <b>CSS Grid Layout</b>, which controls columns and rows together.</small>
+						</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;">
+					<h2>The two axes of flexbox</h2>
+					<ul>
+						<li>When working with flexbox you need to think in terms of <b>two axes</b> — the <b>main axis</b> and the <b>cross axis.</b></li>
+					</ul>
+					<p><small>*The main axis is defined by the <b>flex-direction</b> property, and the cross axis runs perpendicular to it.</small></p>
+					<p><small>*Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.</small></p>
+				</section>
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;">
+					<h2>The main axis</h2>
+					<p>The main axis is defined by <strong style="color:#007ac9">flex-direction</strong>, <br />which has four possible values:</p>
+					<ul>
+						<li>row</li>
+						<li>row-reverse</li>
+						<li>column</li>
+						<li>column-reverse</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<p>Should you choose <b>row</b> or <b>row-reverse</b>, your <i><u>main axis</u></i> will run along the row in the <b>inline direction</b>.</p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/Basics1.png"></div>
+					</div>
+				</section>
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<p>Should you choose <b>column</b> or <b>column-reverse</b>, <br />your <i><u>main axis</u></i> will run from the top of the page to the bottom — in the <b>block direction.</b></p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/Basics2.png"></div>
+					</div>
+				</section>
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+					<h2>The cross axis</h2>
+					<p>The cross axis runs <b>perpendicular</b> to the <b><i><u>main axis</u></i></b></p>
+				</section>
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;">
+					<p>If your <b>flex-direction</b> <i>(main axis)</i> is set to <b>row</b> or <b>row-reverse</b> the <i><u>cross axis</u></i> runs down the columns.</p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/Basics3.png"></div>
+					</div>
+				</section>
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;">
+					<p>If your <i>main axis</i> is <b>column</b> or <b>column-reverse</b> <br />then the <i><u>cross axis</u></i> runs along the rows.</p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/Basics4.png"></div>
+					</div>
+				</section>
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+					<h2>Start and end lines</h2>
+					<p>Another vital area of understanding is how flexbox makes no assumption about the writing mode of the document.</p>
+					<p><small>*In the past, CSS was heavily weighted towards horizontal and left-to-right writing modes.
+						Modern layout methods encompass the range of writing modes and so we no longer assume that a line of text will start
+						at the top left of a document and run towards the right hand side, with new lines appearing one under the other.</small>
+					</p>
+				</section>
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<p><small>If the <b>flex-direction</b> is <b>row</b> and I am working in English, <br />then the
+						<b>start edge</b> of the <i><u>main axis</u></i> will be on the left, the <b>end edge</b> on the right.</small></p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/Basics5.png"></div>
+					</div>
+					<p><small>If I were to work in Arabic, then the <b>start edge</b> of my <i><u>main axis</u></i> <br />would be on the right
+						and the <b>end edge</b> on the left.</small></p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/Basics6.png"></div>
+					</div>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left;">
+					<p>In both cases the <b>start edge</b> of the <i><u>cross axis</u></i> is at the <b>top</b> of the flex container and the <b>end edge</b> at the <b>bottom</b>,
+						as both languages have a horizontal writing mode.</p>
+				</section>
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;">
+					<h2>The flex container</h2>
+					<p>An area of a document laid out using <b>flexbox</b> is called a <b>flex container</b>.</p>
+					<p><small>*To create a <i>flex container</i>, we set the value of the area's container's
+						<br /><b>display</b> property to <b>flex</b> or <b>inline-flex</b>.</small>
+					</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+					<p><small>As soon as we do this the <i><u>direct children</u></i> of that container become <b>flex items</b>.</small></p>
+				</section>
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;">
+					<p><small>As with all properties in CSS, some initial values are defined,
+						so when creating a flex container all of the contained flex items will behave in the following way:</small></p>
+					<ul>
+						<li>Items display in a row (the <b>flex-direction</b> property's default is <b>row</b>)</li>
+						<li>The items start from the <b>start edge</b> of the <i><u>main axis</u></i></li>
+						<li>The items <b>do not stretch</b> on the main dimension, <br />but <b>can shrink</b></li>
+						<li>The items will <b>stretch</b> to fill the size of the <i><u>cross axis</u></i></li>
+						<li>The <b>flex-basis</b> property is set to <b>auto</b></li>
+						<li>The <b>flex-wrap</b> property is set to <b>nowrap</b></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;">
+					<p>The result of this is that your items will all line up in a <b>row</b>,
+						using the size of the content as their size in the <i><u>main axis</u></i>.
+					</p>
+					<p>If there are more items than can fit in the container, they will <b>not wrap</b> but will instead <b>overflow</b>.
+					</p>
+					<p>If some items are taller than others,
+						<b>all items</b> will <b>stretch</b> along the <i><u>cross axis</u></i> to fill its full size.
+					</p>
+				</section>
+
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;">
+					<h2>Changing flex-direction</h2>
+					<p>Adding the <strong style="color:#007ac9">flex-direction</strong> property to the <i>flex container</i> allows us to change the <b>direction</b>
+						 in which our flex items display.</p>
+					<p><small>*Setting <b>flex-direction: row-reverse</b> will keep the items displaying along the row,
+						<br />however the <b>start</b> and <b>end</b> lines are switched.</small>
+					</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+	flex-direction: row-reverse;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+					<p><small>*If we change <b>flex-direction</b> to <b>column</b> the <i><u>main axis</u></i> switches and our items now display in a <b>column</b>.
+						Set <b>column-reverse</b> and the <b>start</b> and <b>end</b> lines are again switched.</small></p>
+				</section>
+
+
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;">
+					<h2>Multi-line flex containers</h2>
+					<p>While flexbox is a <i>one dimensional model</i>, it is possible to cause our flex items to <b>wrap onto multiple lines</b>.</p>
+					<p><small>*In doing so, you should consider each line as a new flex container.</small></p>
+					<p><small>*To cause wrapping behaviour add the property <strong style="color:#007ac9">flex-wrap</strong> with a value of <b>wrap</b>.
+						Now, should your items be too large to all display in one line, they will wrap onto another line. </small></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+	flex-wrap: wrap;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;">
+					<p>As <b>flex-wrap</b> is set to <b>wrap</b>, the items wrap. Set it to <b>nowrap</b>, <i>which is also the initial value</i>,
+						and they will instead <b>shrink</b> to fit the container because they are using <i>initial flexbox values</i> that allows items to <i>shrink</i>.
+					</p>
+					<p>Using <b>nowrap</b> would cause an <b><i>overflow</i></b> if the items were not able to shrink, or could not shrink small enough to fit.</p>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h2>The flex-flow shorthand</h2>
+					<p>You can combine the two properties <b>flex-direction</b> <br />and <b>flex-wrap</b> into the <strong style="color:#007ac9">flex-flow</strong> shorthand.</p>
+					<p><small>*The first value specified is <b>flex-direction</b> and the second value is <b>flex-wrap</b>.</small></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+	flex-flow: row wrap;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section style="text-align: left;">
+					<h2>Properties applied to flex items</h2>
+					<p>To have more control over flex items we can target them directly. We do this by way of three properties:</p>
+					<ul>
+						<li><strong style="color:#007ac9">flex-grow</strong>
+							<br /><small>*How much of the positive free space does this item get?</small>
+						</li>
+						<li><strong style="color:#007ac9">flex-shrink</strong>
+							<br /><small>*How much negative free space can be removed from this item?</small>
+						</li>
+						<li><strong style="color:#007ac9">flex-basis</strong>
+							<br /><small>*What is the size of the item before growing and shrinking happens?</small>
+						</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;">
+					<h3>Positive and negative free space</h3>
+					<p>To talk about these properties we need to understand the concept of <b>positive</b> and <b>negative</b> <i>free (available) space</i>.</p>
+					<p><small>*What we are doing when we change the value of these flex properties is to change the way that available space is distributed amongst our items.</small></p>
+				</section>
+
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;">
+					<p>When a flex container has <b><u>positive free space</u></b>,
+						it has <b>more space than is required</b> to display the <i>flex items</i> inside the container.</p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/Basics7.png"></div>
+					</div>
+					<p><small>*The available positive space <b>could be distributed between the items</b><br /> if I wanted them to fill the container.</small></p>
+				</section>
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;">
+					<p>We have <b><u>negative free space</u></b>,
+						when the natural size of the items adds up to <b>larger than the available space</b> in the <i>flex container</i>.</p>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/ratios1.png"></div>
+					</div>
+					<p><small>*The available negative space <b>could be removed from the items</b><br /> in order to make them fit the container.</small></p>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;">
+					<p>It is this <b>distribution of positive free space</b> and <b>removal of negative free space</b>
+						that we need to understand in order to understand the <b>flex</b> properties.</p>
+				</section>
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<h3>The flex-basis property</h3>
+					<p>The <strong style="color:#007ac9">flex-basis</strong> property specifies the initial size of the flex item before any space distribution happens.</p>
+					<p><small>*The default value for this property is <b>auto</b>.</small></p>
+					<p><small>*If <b>flex-basis</b> is set to <b>auto</b> then to work out the initial size of the item the browser first checks
+						if the <i>main size</i> of the item has an <i>absolute size</i> set. This would be the case if you had given your item a <b>width</b> of <b>200 pixels</b>.
+						In that case <b>200px</b> would be the <b>flex-basis</b> for this item.</small>
+					</p>
+					<p><small>*If your item is instead <i>auto-sized</i>, then auto resolves to the <b>size of its content</b>.</small></p>
+					<p><small>*If you want flexbox to <i>completely ignore the size of the item</i> when doing space distribution then set <b>flex-basis</b> to <b>0</b>.
+						This essentially tells flexbox that all the space is up for grabs, and to share it out in proportion.</small></p>
+				</section>
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;">
+					<h2>The flex-basis property</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+}
+
+.box:first-child {
+	width: 150px;
+}
+
+.box > * {
+	/* flex-basis is auto */
+	flex: 0 0 auto;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;">
+					<h3>The flex-grow property</h3>
+					<p>The <strong style="color:#007ac9">flex-grow</strong> property specifies the <b>flex grow factor</b>,
+						which determines how much the <i>flex item will grow</i> relative to the rest of the flex items in the flex container
+						when the <b>positive free space</b> is distributed.</p>
+					<p><small>*If all of your items have the <b>same flex-grow factor</b> then space will be <b>distributed evenly</b> between all of them.</small></p>
+					<p><small>*The <b>flex-grow</b> property can be used to distribute space <b>in proportion</b>. If we give our first item a <i>flex-grow value</i> of <b>2</b> and
+						the other items a <i>value</i> of <b>1</b>, 2 parts will be given to the first item, 1 part each the other two.</small></p>
+				</section>
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;">
+					<h2>The flex-grow property</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+}
+
+.box > * {
+	/* flex-grow is 1 */
+	flex: 1 1 auto;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 31 -->
+				<section style="text-align: left;">
+					<h3>The flex-shrink property</h3>
+					<p>The <strong style="color:#007ac9">flex-shrink</strong> property specifies the <b>flex shrink factor</b>,
+						which determines how much the <i>flex item will shrink</i> relative to the rest of the flex items in the flex container
+						when the <b>negative free space</b> is distributed.</p>
+					<p><small>*This property deals with situations where the browser calculates the <b>flex-basis</b> values of the flex items, and finds that they are too large to fit into the flex container.</small></p>
+					<p><small>*As long as <b>flex-shrink</b> has a positive value the items will shrink in order that they do not <i>overflow</i> the container.</small></p>
+					<p><small>*So where <b>flex-grow</b> deals with adding available space, <b>flex-shrink</b> manages taking away space to make boxes fit into their container without overflowing.</small></p>
+				</section>
+
+
+
+				<!-- Slide 32 -->
+				<section style="text-align: left;">
+					<h2>The flex-shrink property</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+}
+
+.box > * {
+	/* flex-shrink is 0 */
+	flex: 0 0 auto;
+	width: 200px;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 31 -->
+				<section style="text-align: left;">
+					<h3>Shorthand values for the flex properties</h3>
+					<p>You will very rarely see the <b>flex-grow</b>, <b>flex-shrink</b>, <br />and <b>flex-basis</b> properties used individually;
+						instead they are combined into the <strong style="color:#007ac9">flex</strong> shorthand.
+					</p>
+					<p><small>*The flex shorthand allows you to set the three values in this order
+						 — <b>flex-grow</b>, <b>flex-shrink</b>, <b>flex-basis</b>.</small>
+					</p>
+					<p><small>*As long as <b>flex-shrink</b> has a positive value the items will shrink in order that they do not <i>overflow</i> the container.</small></p>
+					<p><small>*The flex property may be specified using <b>one</b>, <b>two</b>, or <b>three</b> values.</small></p>
+					<p><small>To learn more about the flex shorthand property read <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">here</a>.</small></p>
+				</section>
+
+
+
+				<!-- Slide 32 -->
+				<section style="text-align: left;">
+					<h3>Alignment, justification and distribution of free space between items</h3>
+					<p>A key feature of flexbox is the ability to <b>align</b> and <b>justify</b>
+						items on the <i><u>main-</u></i> and <i><u>cross-axes</u></i>, and to distribute space between flex items.
+					</p>
+				</section>
+
+
+
+				<!-- Slide 33 -->
+				<section style="text-align: left;">
+					<h3>align-items</h3>
+					<p>The <strong style="color:#007ac9">align-items</strong> property will align the items<br /> on the <i><u>cross axis</u></i>.</p>
+					<p><small>*The initial value for this property is <b>stretch</b> and this is why flex items stretch to the height of the tallest one by default.
+						They are in fact stretching to fill the flex container — the tallest item is defining the height of that.</small></p>
+					<p>Other values for <b>align-items</b> when working with flexbox are:</p>
+					<ul>
+						<li>stretch</li>
+						<li>flex-start</li>
+						<li>flex-end</li>
+						<li>center</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 34 -->
+				<section style="text-align: left;">
+					<h2>align-items</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+	align-items: flex-start;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 35 -->
+				<section style="text-align: left;">
+					<h3>justify-content</h3>
+					<p>The <strong style="color:#007ac9">justify-content</strong> property is used to align the items on the <i><u>main-axis</u></i>,
+						the direction in which <i>flex-direction</i> has set the flow.</p>
+					<p><small>*The initial value for this property is <b>flex-start</b> which will line the items up at the <b>start edge</b> of the container
+						</small></p>
+				</section>
+
+
+
+				<!-- Slide 36 -->
+				<section style="text-align: left;">
+					<p>Other values for <b>justify-content</b> <br />when working with flexbox are:</p>
+					<ul>
+						<li>flex-start</li>
+						<li>flex-end</li>
+						<li>center</li>
+						<li>space-around</li>
+						<li>soace-between</li>
+						<li>space-evenly</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 37 -->
+				<section style="text-align: left;">
+					<h2>justify-content</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+	display: flex;
+	justify-content: flex-start;
+}
+					</code></pre></p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+&lt;section class="box"&gt;
+	&lt;div&gt;One&lt;/div&gt;
+	&lt;div&gt;Two&lt;/div&gt;
+	&lt;div&gt;Three&lt;/div&gt;
+&lt;/section&gt;
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 38 -->
+				<section style="text-align: left;">
+					<h3>align-content</h3>
+					<p>The <strong style="color:#007ac9">align-content</strong> property sets the distribution of space between and
+						around content items along a flexbox's<br /> <i><u>cross-axis</u></i>,
+					</p>
+					<p><small>*This property has no effect on single line flex containers (i.e. ones with <b>flex-wrap: nowrap</b>).
+						</small></p>
+				</section>
+
+
+
+				<!-- Slide 39 -->
+				<section style="text-align: left;">
+					<h2>justify-content</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Basic positional alignment */
+/* align-content does not take left and right values */
+align-content: center;     /* Pack items around the center */
+align-content: start;      /* Pack items from the start */
+align-content: end;        /* Pack items from the end */
+align-content: flex-start; /* Pack flex items from the start */
+align-content: flex-end;   /* Pack flex items from the end */
+
+/* Normal alignment */
+align-content: normal;
+
+/* Baseline alignment */
+align-content: baseline;
+align-content: first baseline;
+align-content: last baseline;
+
+/* Distributed alignment */
+align-content: space-between; /* Distribute items evenly
+									The first item is flush with the start,
+									the last is flush with the end */
+align-content: space-around;  /* Distribute items evenly
+									Items have a half-size space
+									on either end */
+align-content: space-evenly;  /* Distribute items evenly
+									Items have equal space around them */
+align-content: stretch;       /* Distribute items evenly
+									Stretch 'auto'-sized items to fit
+									the container */
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 40 -->
+				<section style="text-align: left;">
+					<h3>align-self</h3>
+					<p>The <strong style="color:#007ac9">align-self</strong> property overrides a grid or flex item's<br />
+						<b>align-items</b> value.</p>
+					<p><small>*In Flexbox, it aligns the item on the <i><u>cross axis</u></i>.</small></p>
+					<p><small>*The property doesn't apply to block-level boxes, or to table cells. If a flexbox item's
+						cross-axis margin is <b>auto</b>, then <b>align-self</b> is ignored.</small></p>
+				</section>
+
+
+
+
+				<!-- Slide 41 -->
+				<section style="text-align: left;">
+					<h2>align-slef</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+/* Keyword values */
+align-self: auto;
+align-self: normal;
+
+/* Positional alignment */
+/* align-self does not take left and right values */
+align-self: center; /* Put the item around the center */
+align-self: start; /* Put the item at the start */
+align-self: end; /* Put the item at the end */
+align-self: self-start; /* Align the item flush at the start */
+align-self: self-end; /* Align the item flush at the end */
+align-self: flex-start; /* Put the flex item at the start */
+align-self: flex-end; /* Put the flex item at the end */
+
+/* Baseline alignment */
+align-self: baseline;
+align-self: first baseline;
+align-self: last baseline;
+align-self: stretch; /* Stretch 'auto'-sized items to fit the container */
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 42 -->
+				<section style="text-align: left;">
+					<h3>order</h3>
+					<p>The <strong style="color:#007ac9">order</strong> property sets the <b>order</b> to lay out an <b>item</b>
+						in a flex or grid container.</p>
+					<p><small>*Items in a container are sorted by ascending order value and then by their source code order.</small></p>
+					<p><small>*Since order is only meant to affect the visual order of elements and not their logical or tab order,
+						<b>order</b> must not be used on non-visual media such as <b>speech</b>.</small></p>
+					<p>It needs and <b>&lt;integer&gt;</b> as a value. Represents the ordinal group to be used by the item.</p>
+				</section>
+
+
+				<!-- Slide 43 -->
+				<section style="text-align: left;">
+					<h3>Useful links</h3>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">Basic Concepts of Flexbox</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">flex shorthand property</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container" target="_blank">Aligning Items in a Flex Container</a></li>
+						<li><a href="https://rachelandrew.co.uk/css/cheatsheets/box-alignment" target="_blank">Box Alignment Cheatsheet</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox" target="_blank">Typical use cases of Flexbox</a></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 44 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
