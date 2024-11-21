@@ -1,0 +1,87 @@
+*{
+    box-sizing:border-box;
+    margin: 0px;
+}
+
+.box{
+    background-color: pink;
+    width: 300px;
+    height: 100px;
+    /* padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+    padding-left: 10px; */
+    padding: 32px 64px 10px 20px; /*clockwise (top, right, bottom, left*/
+    border: 5px solid black;
+    margin-top:10px;
+    margin-right:15px;
+    margin-bottom: 32px;
+    margin-left:20px;
+  }
+
+  .div{
+    background-color: lightcoral;
+    width: 150px;
+    height: 150px;
+    /* display: inline; */
+    display: inline-block;
+  }
+
+  .span{
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+    /* display: block; */
+    display: inline-block;
+  }
+
+  .button{
+    border:3px dotted red;
+    padding: 5px;
+    width: 50px;
+    height: 30px;
+    border-radius: 60%;
+  }
+
+  /*We specify the header*/
+  header {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 10px;
+}
+
+/* We specify that we don't want our ul to have any circles, signs */
+.navigation-menu {
+    list-style-type: none;
+}
+
+/* :link */
+a:link {
+    color: lightcoral;
+}
+
+/* :visited */
+a:visited {
+    color: rgb(220, 67, 67);
+}
+
+/* :visited */
+a.google:visited {
+    color: yellow;
+}
+
+/* :hover */
+.search-button:hover {
+    background-color: rgb(96, 80, 80);
+    cursor: pointer;
+}
+
+/* :active */
+.search-button:active {
+    background-color: purple
+}
+
+/* :focus */
+.search-input:focus {
+    border: 10px solid lightcoral;
+}

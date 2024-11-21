@@ -1,0 +1,44 @@
+body {
+  color: red;
+}
+
+.title {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 4rem;
+}
+
+/* This style will apply only when the width of the screen is below or equals to 400px */
+/* If we want this style to apply to all types (screen, speech and print), we can remove the types and it will apply to all */
+@media screen and (max-width: 400px) {
+  body {
+    color: blue;
+  }
+}
+
+/* This style will apply only when the user will print the content */
+/* Anytime we try to print the content the text color will be tomato */
+@media print {
+  body {
+    color: tomato;
+  }
+}
+
+/* Media queries work just as any other selector. So if we change the styling to any element put in the media query after it, it will override all the media query styles applied before */
+body {
+  color: magenta;
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: aquamarine;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: lightcoral;
+  }
+}

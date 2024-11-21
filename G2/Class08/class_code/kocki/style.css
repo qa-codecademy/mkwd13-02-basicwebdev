@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent-div {
+  width: 500px;
+  height: 500px;
+  border: 3px solid black;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+#element1 {
+  width: 25%;
+  border: 10px solid black;
+  height: 33%;
+}
+#element2 {
+  width: 75%;
+  border: 10px solid black;
+  height: 75%;
+  background-color: red;
+  float: right;
+}
+#element3 {
+  width: 25%;
+  height: 42%;
+  border: 10px solid black;
+}

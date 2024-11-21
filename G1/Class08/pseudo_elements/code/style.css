@@ -1,0 +1,46 @@
+.title::after {
+  content: url("./images/like.png");
+}
+
+.title::before {
+  content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOa4daOlSmJsBgnQyLIyuF0g6yDdlQdeY_-hVTNbIKLjQ0LdsYVyqO5zoeACpAU42uOgM&usqp=CAU");
+}
+
+#second-paragraph::first-line {
+  color: aqua;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#third-paragraph::first-letter {
+  color: chocolate;
+  font-size: xx-large;
+  font-family: cursive;
+}
+
+#first-paragraph::selection {
+  background-color: chartreuse;
+}
+
+/* The selection style will not apply to the first letter */
+#first-paragraph::first-letter {
+  font-size: xx-large;
+  color: blue;
+}
+
+h2::before {
+  content: "Web Development";
+  background-color: forestgreen;
+  padding-right: 10px;
+}
+
+h2::after {
+  content: "(G1)";
+  background-color: darkorchid;
+  padding-left: 10px;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+}

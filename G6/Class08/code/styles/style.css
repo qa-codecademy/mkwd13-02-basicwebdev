@@ -1,0 +1,146 @@
+/* @font-face {
+    font-family: "Doto";
+    src: url("../fonts/Doto-VariableFont_ROND\,wght.ttf");
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Doto:wght@100..900&display=swap'); */
+
+*{
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    /* font-family: "Agbalumo"; */
+    box-sizing: border-box;
+}
+html{
+    background-color: lightseagreen;
+}
+header{
+    background-color: aquamarine;
+}
+h1{
+    display: inline-block;
+}
+nav{
+    display: inline-block;
+}
+li{
+    display: inline-block;
+}
+ul{
+    text-transform: uppercase;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    background-color: antiquewhite;
+    color:aqua;
+}
+a:visited{
+    background-color:burlywood;
+    color: rgb(95, 160, 96);
+}
+a:focus{
+    background-color: brown;
+    color: white;
+}
+a:active{
+    background-color:yellow;
+    color: rgb(255, 0, 0);
+}
+a:hover{
+    text-decoration: dashed underline blue;
+    background-color: crimson;
+    color:white;
+}
+
+p{
+    /* font-size: xxx-large;  */
+    /* font-size: smaller; */
+    font-size: small;
+    /* word-spacing: 20px; */
+    /* line-height: 20px; */
+}
+.firstLorem{
+    /*font-weight: bolder;
+    */
+    /*font-weight: 700;
+    bold*/
+    font-weight: 800;
+    /*font-style: italic;
+    */
+    font-style: oblique 10deg;
+    /* text-decoration-style: dotted;
+    text-decoration-line:underline;
+    text-decoration-color: rgb(71, 16, 123); */
+    text-decoration: underline dotted rgb(71, 16, 123);
+    /* letter-spacing: 20px; */
+    text-shadow: 6px 2px 2px rgb(172, 29, 29);
+
+
+    /* float: right */
+    float: right;
+}
+.secondParagraph::first-letter{
+    font-size: xxx-large;
+    color: cadetblue;
+}
+.secondParagraph::first-line{
+    text-decoration: underline blueviolet dotted;
+}
+/* position */
+section{
+    /* text-align: center; */
+    position: static; 
+    background-color:rgb(216, 228, 228);
+    border: 2px dashed rgb(120, 145, 154);
+    margin: 60px 0px;
+    padding: 20px 50px;
+}
+
+span{
+    display: inline-block;
+    border: 2px solid lightcoral;
+    padding: 20px;
+}
+/* position: relative; */
+.relative{
+    position: relative;
+    top: 0px;
+    left: 200px;
+}
+/*  position: absolute; */
+.absolute-parent{
+    position: relative;
+    padding: 80px 50px;
+}
+
+.absolute-child{
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    right: 0px;
+}
+/* position: fixed; */
+.fixed{
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    background-color: coral;
+    z-index: 999;
+}
+/* position: sticky; */
+.sticky h2{
+    position: sticky;
+    background-color: aquamarine;
+    padding: 20px;
+    top: 0px;
+}
+
+/* float */
+.item{
+    /* padding-left: 10px; */
+    float:right;
+}

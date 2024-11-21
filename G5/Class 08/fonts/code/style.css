@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("imported-fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Doto";
+    src: url("imported-fonts/Doto-VariableFont_ROND\,wght.ttf");
+}
+
+#first-h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#second-h1 {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+#first-h2 {
+    font-family: "Doto";
+}
+
+.small-size-font {
+    font-size: smaller;
+}
+
+.parahraph-2 {
+    font-size: 2em;
+    text-align: right;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+}
+
+.parahraph-4::first-letter {
+    color: red
+}
+
+.parahraph-4::first-line {
+    color: green
+}
+
+#span {
+    color: blue;
+}
+
+#decorated-text {
+    text-transform: uppercase;
+    text-decoration: underline dotted red;
+}
+
+.last-paragraph {
+    line-height: 80px;
+}
