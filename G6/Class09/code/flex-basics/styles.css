@@ -1,0 +1,133 @@
+.exampleOne {
+    background-color: beige;
+    display: flex;
+
+    /* FLEX-DIRECTION */
+    /* Defines on which AXIS we are positioning the FLEX ITEMS */
+    /* This is the default value */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    
+    /* JUSTIFY-CONTENT */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start;  */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* GAP */
+    gap: 10px;
+
+    height: 250px;
+
+    /* ALIGN-ITEMS */
+    /* IMPORTANT: In order to use align-items, the flex container should have positive/remaining HEIGHT */
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+
+/* EXAMPLE 2 */
+
+.exampleTwo {
+    background-color: beige;
+    display: flex;
+
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+
+    gap: 10px;
+
+    /* Only when we use flex-direction: column, and we want to center the items on the X axis we use align items; opposite of the flex-direction: row usecase */
+    align-items: center;
+
+    height: 600px;
+
+    /* Only when we use flex-direction: column, and we want to center the items on the Y axis we use justify-content; opposite of the flex-direction: row usecase */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+}
+
+.exampleThree {
+    background-color: beige;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+/* Example 4 */
+.adsSection {
+    /* border: 1px solid red; */
+    background-color: whitesmoke;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+
+.adsSection div {
+    border: 1px solid blue;
+}
+
+/* Making the flex item to be flex container */
+#firstAd {
+    display: flex;
+}
+
+/* Example 5 */
+#colorsDiv {
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+
+    width: 450px;
+}
+
+/* FLEX-BASIS IS PROP FOR THE FLEX ITEMS */
+#colorsDiv div {
+    flex-basis: 100px;
+}
+
+#redColor {
+    background-color: red;
+
+    /* ORDER => Change the order of the flex item */
+    order: 2;
+
+    /* FLEX-GROW */
+    flex-grow: 3;
+
+    /* flex shrink will shrink the element when the parent (flex container) has fixed width */
+    flex-shrink: 50;
+}
+
+#yellowColor {
+    background-color: yellow;
+    order: 1;
+    flex-grow: 2;
+}
+
+#blueColor {
+    background-color: blue;
+    flex-grow: 1;
+    order: 4;
+}
+
+#orangeColor {
+    background-color: orange;
+    order: 3;
+}
+
+#pinkColor {
+    background-color: pink;
+    order: 5;
+}
