@@ -87,3 +87,58 @@ article {
     display: flex;
     flex-flow: row wrap;
 }
+
+/* ======== Justify Content ======== */
+.example-justify .item {
+    width: 50px;
+}
+
+.example-justify {
+    display: flex;
+    flex-flow: row wrap;
+    /*  flex-start | flex-end | center | space-between | space-around | space-evenly  */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+
+.example-justify-column .item {
+    width: 50px;
+}
+
+.example-justify-column {
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/* ======== Align Items ======== */
+.example-align-items .item {
+    width: 50px;
+    height: 50px;
+}
+
+.example-align-items {
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+    /* stretch | flex-start | flex-end | center | baseline  */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* ======== Align Content ======== */
+.example-align-content .item {
+    width: 200px;
+    height: 50px;
+}
+
+.example-align-content {
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    /* flex-start | flex-end | center | space-between | space-around | space-evenly | stretch */
+    align-content: center;
+    align-content: space-evenly;
+    /* gap: 20px 10px; */
+}
