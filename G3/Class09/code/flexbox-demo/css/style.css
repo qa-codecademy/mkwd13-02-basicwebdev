@@ -52,17 +52,23 @@ article {
     margin: 5px;
 }
 
-/*================== Properties for the Parent (Flex Container)================== */
+
+/* ================== Properties for the Parent (Flex Container) ================== */
+
 
 /* ======== Display Flex ======== */
 .example-flex {
     display: flex;
+    /* children elements take only the width they need (if no width is explicitly set to them) */
 }
 
+
 /* ======== Flex Direction ======== */
+/* => sets the direction of the flex container's main axis */
 .example-direction {
     display: flex;
     /* row | row-reverse | column | column-reverse */
+    /* flex-direction: column; */
     flex-direction: row-reverse;
 }
 
@@ -70,7 +76,9 @@ article {
     width: 50px;
 }
 
+
 /* ======== Flex Wrap ======== */
+/* => controls whether the flex container is single-line or multi-line */
 .example-wrap .item {
     width: 150px;
 }
@@ -82,13 +90,18 @@ article {
     flex-wrap: wrap;
 }
 
+
 /* ======== Flex Flow ======== */
+/* => Shorthand for <flex-direction> & <flex-wrap> */
 .example-wrap {
     display: flex;
     flex-flow: row wrap;
 }
 
+
 /* ======== Justify Content ======== */
+/* => Aligns flex items along the *main-axis* (the one defined with flex-direction/flex flow property) */
+
 .example-justify .item {
     width: 50px;
 }
@@ -105,6 +118,7 @@ article {
     width: 50px;
 }
 
+/* => Example with column as main axis */
 .example-justify-column {
     height: 400px;
     display: flex;
@@ -112,7 +126,9 @@ article {
     justify-content: center;
 }
 
+
 /* ======== Align Items ======== */
+/* => Aligns flex items along the *cross* axis */
 .example-align-items .item {
     width: 50px;
     height: 50px;
@@ -127,7 +143,9 @@ article {
     align-items: center;
 }
 
+
 /* ======== Align Content ======== */
+/* => aligns a flex container’s lines within when there is extra space in the cross-axis */
 .example-align-content .item {
     width: 200px;
     height: 50px;
@@ -142,3 +160,8 @@ article {
     align-content: space-evenly;
     /* gap: 20px 10px; */
 }
+
+
+/* ================ Properties for the Children (Flex Items) ================ */
+
+/* TO BE CONTINUED... */
