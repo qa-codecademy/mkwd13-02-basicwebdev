@@ -1409,5 +1409,3 @@ p.example { position: relative; top: 10px; left: 100px;}
 .example_fixed { position: fixed; top: -100px; left: 50px}
 
 blockquote {    float: right;    width: 275px;    font-size: 130%;    font-style: italic;    font-family: Georgia, Times, serif;    margin: 0px 0px 10px 10px;    padding: 10px;    border-top: 1px solid #665544;    border-bottom: 1px solid #665544;}
-
-
