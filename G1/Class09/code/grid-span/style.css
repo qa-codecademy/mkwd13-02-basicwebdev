@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 8px;
+  gap: 8px;
+}
+
+.btn.one {
+  /* Starts at line 1, ends at line 4 (spans 3 columns) */
+  grid-column: 1/4;
+  /* Same as above */
+  /* grid-column: 1 / span 3; */
+  grid-row: 1;
+}
+
+.btn.two {
+  /* Starts at line 1, and spans 3 more lines */
+  grid-row: 1 / span 3;
+}
+
+.btn.three {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+/* .btn.four {
+  grid-column: 5;
+  grid-row: 3;
+} */
+
+.btn.five {
+  grid-column: 1 / span 2;
+}
+
+.btn.six {
+  grid-column: 2;
+  grid-row: 5;
+}
