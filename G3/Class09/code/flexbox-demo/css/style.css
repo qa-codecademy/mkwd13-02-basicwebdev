@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    padding: 2em 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin: 50px;
+    color: white;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 18px;
+    color: #B3B3B3;
+    text-transform: uppercase;
+    padding: 2em 0;
+}
+
+article {
+    background-color: white;
+    padding: 5em;
+    margin: 20px 0;
+}
+
+.parent {
+    border: 5px solid lightcoral;
+}
+
+.item {
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 5px;
+}
+
+/*================== Properties for the Parent (Flex Container)================== */
+
+/* ======== Display Flex ======== */
+.example-flex {
+    display: flex;
+}
+
+/* ======== Flex Direction ======== */
+.example-direction {
+    display: flex;
+    /* row | row-reverse | column | column-reverse */
+    flex-direction: row-reverse;
+}
+
+.example-direction .item {
+    width: 50px;
+}
+
+/* ======== Flex Wrap ======== */
+.example-wrap .item {
+    width: 150px;
+}
+
+.example-wrap {
+    display: flex;
+    flex-direction: row;
+    /* nowrap | wrap | wrap-reverse */
+    flex-wrap: wrap;
+}
+
+/* ======== Flex Flow ======== */
+.example-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* ======== Justify Content ======== */
+.example-justify .item {
+    width: 50px;
+}
+
+.example-justify {
+    display: flex;
+    flex-flow: row wrap;
+    /*  flex-start | flex-end | center | space-between | space-around | space-evenly  */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+
+.example-justify-column .item {
+    width: 50px;
+}
+
+.example-justify-column {
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/* ======== Align Items ======== */
+.example-align-items .item {
+    width: 50px;
+    height: 50px;
+}
+
+.example-align-items {
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+    /* stretch | flex-start | flex-end | center | baseline  */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* ======== Align Content ======== */
+.example-align-content .item {
+    width: 200px;
+    height: 50px;
+}
+
+.example-align-content {
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    /* flex-start | flex-end | center | space-between | space-around | space-evenly | stretch */
+    align-content: center;
+    align-content: space-evenly;
+    /* gap: 20px 10px; */
+}

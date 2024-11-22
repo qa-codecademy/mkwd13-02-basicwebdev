@@ -1,0 +1,50 @@
+.box {
+ color: #fff;
+ background: #2db34a;
+ border-radius: 6px;
+ height: 95px;
+ width: 505px;
+ line-height: 95px;
+ text-align: center;
+ position: relative;
+}
+
+
+.box {
+ animation: slide 2s ease-in-out .5s infinite alternate;
+}
+
+
+
+/* 
+.box:hover {
+ -webkit-transform: scale(1.5, 1.5);
+ -moz-transform: scale(1.5, 1.5);
+ -o-transform: scale(1.5, 1.5);
+ transform: scale(1.5, 1.5);
+} */
+
+@keyframes slide {
+ 0% {
+  left: 0;
+  top: 0;
+ }
+
+ 25% {
+  left: 144px;
+  top: 600px;
+  background-color: orchid;
+ }
+
+ 50% {
+  left: 244px;
+  top: 100px;
+  background-color: red;
+ }
+
+ 100% {
+  left: 488px;
+  top: 0;
+  background-color: blue;
+ }
+}

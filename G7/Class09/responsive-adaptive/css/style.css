@@ -1,0 +1,142 @@
+/* Desktop first approach */
+
+/* .layout-example {
+    height: 300px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+
+.layout-example > div:nth-child(1) {
+    width: 20%;
+    background-color: lime;
+    height: 100%;
+    float: left;
+}
+
+.layout-example > div:nth-child(2) {
+    width: 40%;
+    background-color: orange;
+    height: 100%;
+    float: left;
+}
+
+.layout-example > div:nth-child(3) {
+    width: 40%;
+    background-color: purple;
+    height: 100%;
+    float: left;
+}
+
+@media screen and (max-width: 750px) {
+    .layout-example {
+        height: 600px;
+    }
+
+    .layout-example > div:nth-child(1) {
+        width: 40%;
+        height: 50%;
+    }
+
+    .layout-example > div:nth-child(2) {
+        width: 60%;
+        height: 50%;
+    }
+
+    .layout-example > div:nth-child(3) {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .layout-example {
+        height: 900px;
+    }
+
+    .layout-example > div:nth-child(1) {
+        width: 33%;
+    }
+
+    .layout-example > div:nth-child(2) {
+        width: 33%;
+    }
+
+    .layout-example > div:nth-child(3) {
+        width: 33%;
+    }
+} */
+
+
+/* Mobile first approach */
+
+.layout-example {
+    height: 900px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.layout-example > div:nth-child(1) {
+    width: 100%;
+    background-color: lime;
+    height: 33%;
+}
+
+.layout-example > div:nth-child(2) {
+    width: 100%;
+    background-color: orange;
+    height: 33%;
+}
+
+.layout-example > div:nth-child(3) {
+    width: 100%;
+    background-color: purple;
+    height: 33%;
+}
+
+
+@media screen and (min-width: 400px) {
+    .layout-example {
+        height: 600px;
+    }
+
+    .layout-example > div:nth-child(1) {
+        width: 40%;
+        height: 50%;
+        float: left;
+    }
+
+    .layout-example > div:nth-child(2) {
+        width: 60%;
+        height: 50%;
+        float: left;
+    }
+
+    .layout-example > div:nth-child(3) {
+        width: 100%;
+        height: 50%;
+        float: left;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    .layout-example {
+        height: 300px;
+    }
+
+    .layout-example > div:nth-child(1) {
+        width: 20%;
+        height: 100%;
+    }
+
+    .layout-example > div:nth-child(2) {
+        width: 40%;
+        height: 100%;
+    }
+
+    .layout-example > div:nth-child(3) {
+        width: 40%;
+        height: 100%;
+    }
+} 

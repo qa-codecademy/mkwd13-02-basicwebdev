@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML and CSS</title>
+
+		<meta name="description" content="HTML and CSS Presentation">
+		<meta name="author" content="SEDC">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+			<section>
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h1>HTML5 &amp; CSS3</h1>
+					<h3>Transitions &amp; Animations</h3>
+					<p>
+						<small>Trainer: <a href="#">Kliment Sidorov</a> - sidorov_kliment@live.com</small></br>
+						<small>Assistant: <a href="#">Robert Blazevski</a> - robert_blazevski@outlook.com</small></br>
+						<img src="https://qinshiftacademy.com/wp-content/uploads/2023/11/Asset-1.png" alt="logo"
+							style="border:none; box-shadow:none; background-color: #27404d; padding: 10px;" />
+
+					</p>
+					<small style="font-size: 15px;">© 2024/2025 Qinshift Academy</small>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lesson Overview</h2>
+					<ul>
+						<li>Introduction</li>
+						<li>Transitions</li>
+						<li>Shorthand Transitions</li>
+						<li>Animations</li>
+						<li>Customizing Animations</li>
+						<li>Shorthand Animations</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 1 -->
+				<section style="text-align: left;">
+					<h2>Introduction</h2>
+					<ul>
+						<li>One evolution with CSS3 was the ability to write behaviors for transitions and animations.</li>
+						<li>With CSS3 transitions you have the potential to alter the appearance and behavior of an element whenever a state change occurs, such as when it is hovered over, focused on, active, or targeted.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Introduction (2)</h2>
+					<ul>
+						<li>Animations within CSS3 allow the appearance and behavior of an element to be altered in multiple keyframes.</li>
+						<li>Transitions provide a change from one state to another, while animations can set multiple points of transition upon different keyframes.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Transitions</h1>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<section style="text-align: left;">
+					<h2>Transitions</h2>
+					<ul>
+						<li>As mentioned, for a transition to take place, an element must have a change in state, and different styles must be identified for each state.</li>
+						<li>The easiest way for determining styles for different states is by using the <strong style="color:#007ac9">:hover, :focus, :active,</strong> and <strong style="color:#007ac9">:target</strong> pseudo-classes.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 5 -->
+				<section style="text-align: left;">
+					<h2>Transitions (2)</h2>
+					<ul>
+						<li>There are four transition related properties in total, including <strong style="color:#007ac9">transition-property, transition-duration, transition-timing-function,</strong> and <strong style="color:#007ac9">transition-delay.</strong></li>
+						<li>Not all of these are required to build a transition.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 6 -->
+				<section style="text-align: left;">
+				<h4>HTML</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+&lt;div class="box"&gt;Box&lt;/div&gt;
+					</code></pre></p>
+				<h4>CSS</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+  background: #2db34a;
+  border-radius: 6px;
+  height: 95px;
+  width: 95px;
+  line-height: 95px;
+  text-align: center;
+  
+  /* Transition properties */
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.box:hover {
+  background: #ff7b29;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 7 -->
+				<section style="text-align: left;">
+					<h2>Vendor Prefixes</h2>
+					<ul>
+						<li>Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties, so developers can experiment but changes in browser behavior don't break the code during the standards process.</li>
+						<li>Developers should wait to include the unprefixed property until browser behavior is standardized.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 8 -->
+				<section style="text-align: left;">
+					<h2>Vendor Prefixes (2)</h2>
+					<p>Most used:</p>	
+					<ul>
+						<li><strong style="color:#007ac9">-webkit-</strong> (Chrome, Safari, newer versions of Opera)</li>
+						<li><strong style="color:#007ac9">-moz- </strong>(Firefox)</li>
+						<li><strong style="color:#007ac9">-o- </strong>(Old versions of Opera)</li>
+						<li><strong style="color:#007ac9">-ms- </strong>(Internet Explorer, Edge)</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 9 -->
+				<section style="text-align: left;">
+				<h4>CSS</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+    background: #2db34a;
+
+     /* Transition properties */
+    -webkit-transition-property: background;
+       -moz-transition-property: background;
+         -o-transition-property: background;
+            transition-property: background;
+
+    -webkit-transition-duration: 1s;
+       -moz-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+.box:hover {
+  background: #ff7b29;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 10 -->
+				<section style="text-align: left;">
+					<h2>Transitional Property</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">transition-property</strong> property determines exactly what properties will be altered in conjunction with the other transitional properties.</li>
+						<li>By default, all of the properties within an element’s different states will be altered upon change. However, only the properties identified within the transition-property value will be affected by any transitions.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 11 -->
+				<section style="text-align: left;">
+					<h2>Transitional Property (2)</h2>
+					<ul>
+						<li>If multiple properties need to be transitioned they may be comma separated within the <strong>transition-property</strong> value. </li>
+						<li>Additionally, the keyword value <strong style="color:#007ac9">all</strong> may be used to transition all properties of an element.</li>
+					</ul>
+				</section>
+
+
+				<!-- Slide 12 -->
+				<section style="text-align: left;">
+				<h4>HTML</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+&lt;div class="box2"&gt;Box&lt;/div&gt;
+					</code></pre></p>
+				<h4>CSS</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+.box2 {
+  color: #fff;
+  background: #2db34a;
+  border-radius: 6px;
+  height: 95px;
+  width: 95px;
+  line-height: 95px;
+  text-align: center;
+
+  /* Transition properties */
+  transition-property: background, border-radius;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+}
+.box2:hover {
+  background: #ff7b29;
+  border-radius: 50%;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 13 -->
+				<section style="text-align: left;">
+					<h2>Transition Properties</h2>
+					<ul>
+						<li>It is important to note, not all properties may be transitioned, only properties that have an identifiable halfway point.</li>
+						<li>Colors, font sizes, and the alike may be transitioned from one value to another as they have recognizable values in-between one another.</li>
+						<li>The display property, for example, may not be transitioned as it does not have any midpoint.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 14 -->
+				<section style="text-align: left; font-size: 28px;">
+					<h2>Transition Properties (2)</h2>
+					<ul>
+						<li>background-color, background-position</li>
+						<li>border-color, border-width, border-spacing</li>
+						<li>left, rigth, top, bottom</li>
+						<li>color, opacity</li>
+						<li>font-size, font-weight, letter-spacing, word-spacing, line-height, text-indent</li>
+						<li>width, height, max-width, max-heaight, min-width, min-height</li>
+						<li>padding, margin</li>
+						<li>text-shadow</li>
+						<li>visibility</li>
+						<li>z-index</li>
+						<li>vertical-align</li>
+						<li>outline-color, outline-offset, outline-width</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 15 -->
+				<section style="text-align: left;">
+					<h2>Transition Duration</h2>
+					<ul>
+						<li>The duration in which a transition takes place is set using the <strong style="color:#007ac9">transition-duration</strong> property.</li>
+						<li>The value of this property can be set using general timing values, including <strong style="color:#007ac9">seconds (s)</strong> and <strong style="color:#007ac9">milliseconds (ms).</strong></li>
+						<li>These timing values may also come in fractional measurements, .2s for example.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;">
+					<h2>Transition Duration (2)</h2>
+					<ul>
+						<li>When transitioning multiple properties you can set multiple durations, one for each property using <strong>comma</strong> separated values.</li>
+						<li>The order of these values when identifying individual properties and durations does matter.</li>
+						<li>For example, the first property identified within the transition-property property will match up with the first time identified within the transition-duration property, and so forth.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;">
+					<h2>Transition Timing Function</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">transition-timing-function</strong> property is used to set the speed in which a transition will move.</li>
+						<li>Knowing the duration from the transition-duration property a transition can have multiple speeds within a single duration.</li>
+						<li>A few of the more popular keyword values for the <strong>transition-timing-function</strong> property include <strong style="color:#007ac9">linear, ease-in, ease-out,</strong> and <strong style="color:#007ac9">ease-in-out.</strong></li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;">
+					<h2>Transition Timing Function (2)</h2>
+					<ul>
+						<li><strong style="color:#007ac9">ease</strong> - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
+						<li><strong style="color:#007ac9">linear</strong> - specifies a transition effect with the same speed from start to end</li>
+						<li><strong style="color:#007ac9">ease-in</strong> - specifies a transition effect with a slow start</li>
+						<li><strong style="color:#007ac9">ease-out</strong> - specifies a transition effect with a slow end</li>
+						<li><strong style="color:#007ac9">ease-in-out</strong> - specifspecifies a transition effect with a slow start and end</li>
+						<li><strong style="color:#007ac9">cubic-bezier(n,n,n,n)</strong> - lets you define your own values in a cubic-bezier function <a href="http://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">See here</a></li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 16 -->
+				<section style="text-align: left;">
+					<h2>Transition Delay</h2>
+					<ul>
+						<li>On top of declaring the transition property, duration, and timing function, you can also set a delay with the <strong style="color:#007ac9">transition-delay</strong> property.</li>
+						<li>The delay sets a time value, <strong>seconds</strong> or <strong>milliseconds</strong>, that determines how long a transition should be stalled before executing.</li>
+						<li>As with all other transition properties, to delay numerous transitions, each delay can be declared as <strong>comma</strong> separated values.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 17 -->
+				<section style="text-align: left;">
+					<h2>Shorthand Transitions</h2>
+					<ul>
+						<li>Declaring every transition property individually can become quite intensive, especially with vendor prefixes.</li>
+						<li>Fortunately there is a shorthand property, <strong style="color:#007ac9">transition</strong>, capable of supporting all of these different properties and values.</li>
+						<li>Using the transition value alone, you can set every transition value in the order of <strong style="color:#007ac9">transition-property, transition-duration, transition-timing-function,</strong> and lastly <strong style="color:#007ac9">transition-delay.</strong></li>
+						<li>Do not use commas with these values unless you are identifying numerous transitions.</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 18 -->
+				<section style="text-align: left;">
+				<h4>CSS</h4>
+				<p><pre><code class="hljs" data-trim contenteditable>
+.box {
+  color: #fff;
+  background: #2db34a;
+  border-radius: 6px;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  /* Shorthand Transition properties */
+  transition: background .2s linear .5s, border-radius 1s ease-in 1s;
+}
+.box:hover {
+  color: #ff7b29;
+  border-radius: 50%;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 19 -->
+				<section style="text-align: left;">
+					<h2>Transforms</h2>
+					<ul>
+						<li>With CSS3 came new ways to position and alter elements.</li>
+						<li>Now general layout techniques can be revisited with alternative ways to size, position, and change elements.</li>
+						<li>All of these new techniques are made possible by the <strong style="color:#007ac9">transform</strong> property.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 20 -->
+				<section style="text-align: left;">
+					<h2>Transforms (2)</h2>
+					<ul>
+						<li>The transform property comes in two different settings, two-dimensional and three-dimensional.</li>
+						<li>Each of these come with their own individual properties and values.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 21 -->
+				<section style="text-align: left;">
+					<h2>Transform Syntax</h2>
+					<ul>
+						<li>The actual syntax for the <strong style="color:#007ac9">transform</strong> property is quite simple, including the transform property followed by the value.</li>
+					</ul>
+				<p><pre><code class="hljs" data-trim contenteditable>
+div {
+  -webkit-transform: scale(1.5, 1.5);
+     -moz-transform: scale(1.5, 1.5);
+       -o-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 22 -->
+				<section style="text-align: left;">
+					<h2>Property Values</h2>
+					<ul>
+						<li>translate(x,y), translate3d(x,y,z), translateX(x), translateY(y), translateZ(z)</li>
+						<li>scale(x,y), scale3d(x,y,z), scaleX(x), scaleY(y), scaleZ(z)</li>
+						<li>rotate(angle), rotate3d(x,y,z,angle), rotateX(angle), rotateY(angle), rotateZ(angle)</li>
+						<li>skew(x-angle,y-angle), skewX(angle), skewY(angle)</li>
+						<li>perspective(n)</li>
+						<li>initial, inherit</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 23 -->
+				<section style="text-align: left;">
+					<p>More about the transform property here: </p>
+					<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a></p>
+					<p><a href="http://learn.shayhowe.com/advanced-html-css/css-transforms/" target="_blank">http://learn.shayhowe.com/advanced-html-css/css-transforms/</a></p>
+				</section>
+
+
+
+
+				<!-- Slide 24 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Animations</h1>
+				</section>
+
+
+
+				<!-- Slide 25 -->
+				<section style="text-align: left;">
+					<h2>Animations</h2>
+					<ul>
+						<li>Transitions do a great job of building out visual interactions from one state to another, and are perfect for these kinds of single state changes.</li>
+						<li>However, when more control is required, transitions need to have multiple states.</li>
+						<li>In return, this is where <strong style="color:#007ac9">animations</strong> pick up where transitions leave off.</li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 26 -->
+				<section style="text-align: left;">
+					<h2>Animation Keyframes</h2>
+					<ul>
+						<li>To set multiple points at which an element should undergo a transition, use the <strong style="color:#007ac9">@keyframes</strong> rule.</li>
+						<li>The @keyframes rule includes the <strong>animation name, any animation breakpoints,</strong> and <strong>the properties intended to be animated.</strong></li>
+					</ul>
+				</section>
+
+
+
+				<!-- Slide 27 -->
+				<section style="text-align: left;">
+					<h2>Animation</h2>
+				<p><pre><code class="hljs" data-trim contenteditable>
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 28 -->
+				<section style="text-align: left;">
+					<h2>Animation Name</h2>
+					<ul>
+						<li>Once the keyframes for an animation have been declared they need to be assigned to an element.</li>
+						<li>To do so, the <strong style="color:#007ac9">animation-name</strong> property is used with the animation name, identified from the <strogn>@keyframes</strogn> rule, as the property value.</li>
+						<li>The animation-name declaration is applied to the element in which the animation is to be applied to.</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation-name: slide;
+}
+					</code></pre></p>
+				</section>
+
+
+				<!-- Slide 29 -->
+				<section style="text-align: left;">
+					<p>Using the <strong style="color:#007ac9">animation-name</strong> property alone isn’t enough though. You also need to declare an <strong style="color:#007ac9">animation-duration</strong> property and value so that the browser knows how long an animation should take to complete.</p>
+				</section>
+
+
+
+
+				<!-- Slide 30 -->
+				<section style="text-align: left;">
+					<h2>Animation Duration, Timing Function, &amp; Delay</h2>
+					<ul>
+						<li>Once you have declared the animation-name property on an element, animations behave similarly to transitions.</li>
+						<li>They include a <strong>duration, timing function,</strong> and <strong>delay</strong> if desired. </li>
+						<li>To start, animations need a duration declared using the <strong style="color:#007ac9">animation-duration</strong> property.</li>
+						<li>As with transitions, the duration may be set in <strong>seconds</strong> or <strong>milliseconds.</strong></li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 31 -->
+				<section style="text-align: left;">
+					<h2>Animation Duration, Timing Function, &amp; Delay (2)</h2>
+					<ul>
+						<li>A timing function and delay can be declared using the <strong style="color:#007ac9">animation-timing-function</strong> and <strong style="color:#007ac9">animation-delay</strong> properties respectively.</li>
+						<li>The values for these properties mimic and behave just as they do with transitions.</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 32 -->
+				<section style="text-align: left;">
+					<h2>Customizing Animations</h2>
+					<p>Animations also provide the ability to further customize an element’s behavior, including the ability to declare the number of times an animation runs, as well as the direction in which an animation completes.</p>
+					<ul>
+						<li>Animation Iteration</li>
+						<li>Animation Direction</li>
+						<li>Animation Play State</li>
+						<li>Animation Fill Mode</li>
+					</ul>
+				</section>
+
+
+
+
+				<!-- Slide 33 -->
+				<section style="text-align: left;">
+					<h2>Animation Iteration</h2>
+					<ul>
+						<li>By default, animations run their cycle once from beginning to end and then stop.</li>
+						<li>To have an animation repeat itself numerous times the <strong style="color:#007ac9">animation-iteration-count</strong> property may be used.</li>
+						<li>Values for the animation-iteration-count property include either an <strong style="color:#007ac9">integer</strong> or the <strong style="color:#007ac9">infinite</strong> keyword.</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 34 -->
+				<section style="text-align: left;">
+					<h2>Animation Direction</h2>
+					<ul>
+						<li>On top of being able to set the number of times an animation repeats, you may also declare the direction an animation completes using the <strong style="color:#007ac9">animation-direction</strong> property.</li>
+						<li>Values for the <strong>animation-direction</strong> property include  <strong style="color:#007ac9">normal, reverse, alternate,</strong> and  <strong style="color:#007ac9">alternate-reverse.</strong></li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 35 -->
+				<section style="text-align: left;">
+					<h2>Animation Play State</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">animation-play-state</strong> property allows an animation to be played or paused using the <strong style="color:#007ac9">running</strong> and <strong style="color:#007ac9">paused</strong> keyword values respectively.</li>
+						<li>When you play a paused animation, it will resume running from its current state rather than starting from the very beginning again.</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+					</code></pre></p>
+				</section>
+
+
+
+				<!-- Slide 36 -->
+				<section style="text-align: left;">
+					<h2>Animation Fill Mode</h2>
+					<ul>
+						<li>The <strong style="color:#007ac9">animation-fill-mode</strong> property identifies how an element should be styled either before, after, or before and after an animation is run.</li>
+						<li>The animation-fill-mode property accepts four keyword values, including none, forwards, backwards, and both.</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+					</code></pre></p>
+				</section>
+
+
+
+
+				<!-- Slide 37 -->
+				<section style="text-align: left; font-size: 35px;">
+					<h2>Shorthand Animations</h2>
+					<ul>
+						<li>Fortunately animations, just like transitions, can be written out in a shorthand format.</li>
+						<li>This is accomplished with one <strong>animation</strong> property, rather than multiple declarations.</li>
+						<li>The order of values within the animation property should be <strong style="color:#007ac9">animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode,</strong> and lastly <strong style="color:#007ac9">animation-play-state.</strong></li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+.stage:hover .ball {
+  animation: slide 2s ease-in-out .5s infinite alternate;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+					</code></pre></p>
+				</section>
+
+
+				<!-- Slide 38 -->
+				<section>	
+					<h2>Homework</h2>	
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/homework.gif"></div>
+					</div>
+				</section>
+
+
+
+
+				<!-- Slide 39 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
