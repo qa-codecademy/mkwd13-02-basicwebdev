@@ -1,5 +1,7 @@
 # Homework :paintbrush:
 
+## Deadline: 01.12.2024
+
 # Objective:
 Create a fully styled, responsive webpage using HTML and CSS. The page will consist of multiple sections, including a navigation bar, hero section, content areas with images, and a footer. You will implement Flexbox for layout and media queries for responsiveness.
 
