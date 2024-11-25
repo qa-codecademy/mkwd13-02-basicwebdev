@@ -1,3 +1,8 @@
+html {
+    --custom-bg-color: #333;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,8 @@
 }
 
 body {
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: var(--custom-bg-color);
     text-align: center;
     font-family: Arial, sans-serif;
 }
@@ -164,4 +170,76 @@ article {
 
 /* ================ Properties for the Children (Flex Items) ================ */
 
-/* TO BE CONTINUED... */
+/* ========== Flex Order ==========*/
+.example-order {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.example-order .item {
+    width: 50px;
+}
+
+.example-order>.item:nth-child(1) {
+    order: 5;
+}
+
+.example-order>.item:nth-child(2) {
+    order: 1;
+}
+
+.example-order>.item:nth-child(3) {
+    order: 4;
+}
+
+.example-order>.item:nth-child(4) {
+    order: 2;
+}
+
+.example-order>.item:nth-child(5) {
+    order: 3;
+}
+
+
+/* ========== Flex Grow ==========*/
+.example-grow {
+    display: flex;
+}
+
+.example-grow .item {
+    flex-grow: 1;
+}
+
+.example-grow .item:nth-child(2) {
+    flex-grow: 2;
+}
+
+.example-grow .item:nth-child(5) {
+    flex-grow: 3;
+}
+
+
+/* ========== Flex Shrink ==========*/
+.example-shrink {
+    display: flex;
+}
+
+.example-shrink .item {
+    width: 150px;
+    flex-shrink: 1;
+}
+
+.example-shrink .item:nth-child(2) {
+    flex-shrink: 3;
+}
+
+
+/* ========== Flex Basis ==========*/
+
+.example-basis {
+    display: flex;
+}
+
+.example-basis .item {
+    flex-basis: 70px;
+}

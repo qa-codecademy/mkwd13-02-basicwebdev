@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: darkred;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+section,
+article {
+    margin: 20px 0;
+}
+
+.item {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item-1 {
+    background-color: lightblue;
+}
+
+.item-2 {
+    background-color: lightcoral;
+}
+
+.item-3 {
+    background-color: lightgreen;
+}
+
+.item-4 {
+    background-color: lightseagreen;
+}
+
+.item-5 {
+    background-color: lightsalmon;
+}
