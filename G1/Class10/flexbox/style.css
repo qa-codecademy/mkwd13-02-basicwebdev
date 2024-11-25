@@ -126,3 +126,59 @@ button:hover {
 #grow-demo .grow-2 {
   flex-grow: 2;
 }
+
+#shrink-demo {
+  min-width: 100%;
+}
+
+#shrink-demo .flex-item {
+  width: 200px;
+}
+
+#shrink-demo .shrink-1 {
+  flex-shrink: 1;
+}
+
+#shrink-demo .shrink-2 {
+  flex-shrink: 2;
+}
+
+#shrink-demo .shrink-3 {
+  flex-shrink: 3;
+}
+
+#basis-demo .basis-auto {
+  flex-basis: auto;
+}
+
+#basis-demo .basis-100 {
+  flex-basis: 100px;
+}
+
+#basis-demo .basis-200 {
+  flex-basis: 200px;
+}
+
+#shorthand-demo {
+  flex-wrap: wrap;
+}
+
+#shorthand-demo .flex-1 {
+  flex: 1;
+  /* grow: 1, shrink: 1, basis 0% */
+}
+
+#shorthand-demo .flex-2 {
+  flex: 2;
+  /* grow: 2, shrink: 1, basis: 0% */
+}
+
+#shorthand-demo .initial {
+  flex: initial;
+  /* grow: 0, shrink: 1, basis: auto */
+}
+
+#shorthand-demo .none {
+  flex: none;
+  /* grow: 0, shrink: 0, basis: auto */
+}
