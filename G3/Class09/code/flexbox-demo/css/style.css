@@ -1,7 +1,8 @@
+/* ======== Defining variables in CSS ======== */
 html {
     --custom-bg-color: #333;
+    --our-font-family: "Arial", sans-serif;
 }
-
 
 * {
     margin: 0;
@@ -11,9 +12,10 @@ html {
 
 body {
     /* background-color: #333; */
+    /* Applying color using predefined color-variable */
     background-color: var(--custom-bg-color);
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: var(--our-font-family);
 }
 
 .container {
