@@ -1,0 +1,43 @@
+.grandparent{
+    background-color: rgb(134, 151, 20);
+    padding: 10px;
+    /* position: sticky; */
+    height: 200vh;
+}
+
+.parent{
+    background-color: rgb(31, 107, 189);
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.child-one{
+    background-color: lightgreen;
+    /* position: static; */
+    /* position: relative;
+    top: 10px;
+    left: 10px; */
+
+     /*the div stops acting as block element*/
+    /* position: absolute; 
+    top: 0px;
+    right: 0px; */
+
+    /*acts like absoulute, but it positions itself relative to the whole view (it does not take into account the position of the ancestor*/
+    /* position: fixed;
+    top:20px;
+    left:50px; */
+
+    position: sticky;
+    top: 0px;
+
+}
+
+.child-two{
+    background-color: lightcoral;
+}
+
+.child-three{
+    background-color: palevioletred;
+}

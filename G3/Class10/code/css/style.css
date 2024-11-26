@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: darkred;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+section,
+article {
+    margin: 20px 0;
+}
+
+.item {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item-1 {
+    background-color: lightblue;
+}
+
+.item-2 {
+    background-color: lightcoral;
+}
+
+.item-3 {
+    background-color: lightgreen;
+}
+
+.item-4 {
+    background-color: lightseagreen;
+}
+
+.item-5 {
+    background-color: lightsalmon;
+}
+
+/* ===================== Properties for the Parent (Grid Container) ===================== */
+
+/* ========== Display Grid ========== */
+/* => Defines the element as a grid container and establishes a new grid formatting context for its contents */
+
+.container-display {
+    display: grid;
+    display: inline-grid;
+    /* The whole container is displayed as an inline element */
+}
+
+
+/* ========== Template Rows ========== */
+/* The grid-template-rows property defines the number and height of rows */
+
+.container-template-rows {
+    display: grid;
+    height: 500px;
+    /* grid-template-rows: 50px 100px 70px 10% 25%; */
+    grid-template-rows: 1fr 2fr 4fr 2fr 1fr;
+    /* 
+        1fr = height / total number of fractions
+            = 500px / 1 + 2 + 4 + 2 + 1
+            = 500px / 10
+            = 50px
+    */
+}
+
+
+/* ========== Template Columns ========== */
+/* This property specifies the number and width of columns */
+
+.container-template-columns {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* when we have repetitive column/row values, we can use the 'repeat' CSS function */
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+/* ========== Grid Template Areas ========== */
+/* Allows placement of grid items based on named areas within the grid layout */
+
+.container-grid-template-areas {
+    display: grid;
+    height: 90vh;
+    width: 90vw;
+    grid-template-rows: 1fr 6fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "header header header"
+        "sidebar radisani radisani"
+        /* ". aside"  */
+        "sidebar aside aside"
+        "footer footer footer";
+    /* NOTE: You can write custom names that explain each section separately (radisani is used for demo purposes :D) */
+}
+
+/* Assign each Grid Item to the correct grid area */
+.container-grid-template-areas .item-1 {
+    grid-area: header;
+}
+
+.container-grid-template-areas .item-2 {
+    grid-area: radisani;
+}
+
+.container-grid-template-areas .item-3 {
+    grid-area: sidebar;
+}
+
+.container-grid-template-areas .item-4 {
+    grid-area: aside;
+}
+
+.container-grid-template-areas .item-5 {
+    grid-area: footer;
+}
+
+
+/* ========== Justify Content ========== */
+/* This property aligns the grid along the inline (row) axis (horizontal alignment) */
+
+.container-justify-content {
+    border: 2px solid darkred;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+
+/* ========== Align Content ========== */
+/* This property aligns the grid along the block (column) axis (vertical alignment)*/
+
+.container-align-content {
+    border: 2px solid darkred;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-content: center;
+}
+
+
+/* ===================== Properties for the Children (Grid Items) ===================== */
+
+.container-grid-items {
+    display: grid;
+    height: 300px;
+    border: 2px solid darkred;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* ========== Grid Column ==========  */
+/* Shorthand for grid-column-start + grid-column-end */
+/* <start-line> / <end-line> */
+
+.container-grid-items .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* Using the shorthand grid-column: */
+    grid-column: 1 / 4;
+}
+
+/* ========== Grid Row ==========  */
+/* Shorthand for grid-row-start + grid-row-end */
+
+.container-grid-items .item-2 {
+    grid-row: 2 / 5;
+}
+
+/* Example: Row & Column */
+.container-grid-items .item-5 {
+    grid-column: 4 / 5;
+    grid-row: -5 / -1;
+}

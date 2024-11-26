@@ -1,0 +1,77 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+header h2 {
+    color: #114380;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.navigation li {
+    cursor: pointer;
+    color: #114380;
+}
+
+.mainSection { 
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    /* width: 50%; */
+}
+
+.plantImage {
+    background-image: url('https://illuminateliving.com/wp-content/uploads/2024/03/illuminate-image-3-squre2.jpg');
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    width: 60%;
+}
+
+.description h3 {
+    font-size: 32px;
+    color: #114380;
+}
+
+.description p {
+    color: #98A3AE;
+}
+
+.explore {
+    background-color: #074DA4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.learnMore {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+    background-color:#E8E9ED ;
+    color: #114380;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+}

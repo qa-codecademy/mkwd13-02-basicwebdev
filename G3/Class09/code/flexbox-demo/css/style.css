@@ -1,0 +1,247 @@
+/* ======== Defining variables in CSS ======== */
+html {
+    --custom-bg-color: #333;
+    --our-font-family: "Arial", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #333; */
+    /* Applying color using predefined color-variable */
+    background-color: var(--custom-bg-color);
+    text-align: center;
+    font-family: var(--our-font-family);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    padding: 2em 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin: 50px;
+    color: white;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 18px;
+    color: #B3B3B3;
+    text-transform: uppercase;
+    padding: 2em 0;
+}
+
+article {
+    background-color: white;
+    padding: 5em;
+    margin: 20px 0;
+}
+
+.parent {
+    border: 5px solid lightcoral;
+}
+
+.item {
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 5px;
+}
+
+
+/* ================== Properties for the Parent (Flex Container) ================== */
+
+
+/* ======== Display Flex ======== */
+.example-flex {
+    display: flex;
+    /* children elements take only the width they need (if no width is explicitly set to them) */
+}
+
+
+/* ======== Flex Direction ======== */
+/* => sets the direction of the flex container's main axis */
+.example-direction {
+    display: flex;
+    /* row | row-reverse | column | column-reverse */
+    /* flex-direction: column; */
+    flex-direction: row-reverse;
+}
+
+.example-direction .item {
+    width: 50px;
+}
+
+
+/* ======== Flex Wrap ======== */
+/* => controls whether the flex container is single-line or multi-line */
+.example-wrap .item {
+    width: 150px;
+}
+
+.example-wrap {
+    display: flex;
+    flex-direction: row;
+    /* nowrap | wrap | wrap-reverse */
+    flex-wrap: wrap;
+}
+
+
+/* ======== Flex Flow ======== */
+/* => Shorthand for <flex-direction> & <flex-wrap> */
+.example-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* ======== Justify Content ======== */
+/* => Aligns flex items along the *main-axis* (the one defined with flex-direction/flex flow property) */
+
+.example-justify .item {
+    width: 50px;
+}
+
+.example-justify {
+    display: flex;
+    flex-flow: row wrap;
+    /*  flex-start | flex-end | center | space-between | space-around | space-evenly  */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+
+.example-justify-column .item {
+    width: 50px;
+}
+
+/* => Example with column as main axis */
+.example-justify-column {
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
+/* ======== Align Items ======== */
+/* => Aligns flex items along the *cross* axis */
+.example-align-items .item {
+    width: 50px;
+    height: 50px;
+}
+
+.example-align-items {
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+    /* stretch | flex-start | flex-end | center | baseline  */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+/* ======== Align Content ======== */
+/* => aligns a flex container’s lines within when there is extra space in the cross-axis */
+.example-align-content .item {
+    width: 200px;
+    height: 50px;
+}
+
+.example-align-content {
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    /* flex-start | flex-end | center | space-between | space-around | space-evenly | stretch */
+    align-content: center;
+    align-content: space-evenly;
+    /* gap: 20px 10px; */
+}
+
+
+/* ================ Properties for the Children (Flex Items) ================ */
+
+/* ========== Flex Order ==========*/
+.example-order {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.example-order .item {
+    width: 50px;
+}
+
+.example-order>.item:nth-child(1) {
+    order: 5;
+}
+
+.example-order>.item:nth-child(2) {
+    order: 1;
+}
+
+.example-order>.item:nth-child(3) {
+    order: 4;
+}
+
+.example-order>.item:nth-child(4) {
+    order: 2;
+}
+
+.example-order>.item:nth-child(5) {
+    order: 3;
+}
+
+
+/* ========== Flex Grow ==========*/
+.example-grow {
+    display: flex;
+}
+
+.example-grow .item {
+    flex-grow: 1;
+}
+
+.example-grow .item:nth-child(2) {
+    flex-grow: 2;
+}
+
+.example-grow .item:nth-child(5) {
+    flex-grow: 3;
+}
+
+
+/* ========== Flex Shrink ==========*/
+.example-shrink {
+    display: flex;
+}
+
+.example-shrink .item {
+    width: 150px;
+    flex-shrink: 1;
+}
+
+.example-shrink .item:nth-child(2) {
+    flex-shrink: 3;
+}
+
+
+/* ========== Flex Basis ==========*/
+
+.example-basis {
+    display: flex;
+}
+
+.example-basis .item {
+    flex-basis: 70px;
+}

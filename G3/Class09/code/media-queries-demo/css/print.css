@@ -1,0 +1,17 @@
+body {
+    color: black;
+    background-color: white;
+}
+
+.box-container>.box {
+    width: 300px;
+    height: 300px;
+    color: red;
+    font-size: 2em;
+    border: 1px solid black;
+}
+
+.box-container>div {
+    position: static;
+    margin-bottom: 10px;
+}

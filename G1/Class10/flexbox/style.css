@@ -1,0 +1,184 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.controls {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.explanation {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #a6b9cd;
+  border-radius: 4px;
+}
+
+.demo-section {
+  margin-bottom: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #dbeafe;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.flex-item {
+  background-color: #3b82f6;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 70px;
+}
+
+#direction-demo {
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
+}
+
+#justify-demo {
+  /* justify-content: flex-start; */
+  justify-content: space-between;
+}
+
+#justify-column {
+  flex-direction: column;
+  height: 600px;
+}
+
+#align-demo {
+  height: 200px;
+  /* align-items: flex-start; */
+  align-items: center;
+}
+
+#align-column-demo {
+  height: auto;
+
+  flex-direction: column;
+}
+
+#align-column-demo .flex-item {
+  width: auto;
+}
+
+#gap-demo {
+  /* flex-direction: column; */
+  /* If flex-direction is set to row - it'll apply the gap horizontally, otherwise if flex-direction is column - it'll apply the gap vertically between elements */
+  gap: 30px;
+}
+
+#wrap-demo {
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap-reverse;
+  width: 100%;
+}
+
+#wrap-demo .flex-item {
+  width: 100px;
+}
+
+#grow-demo .grow-0 {
+  flex-grow: 0;
+}
+
+#grow-demo .grow-1 {
+  flex-grow: 1;
+}
+
+#grow-demo .grow-2 {
+  flex-grow: 2;
+}
+
+#shrink-demo {
+  min-width: 100%;
+}
+
+#shrink-demo .flex-item {
+  width: 200px;
+}
+
+#shrink-demo .shrink-1 {
+  flex-shrink: 1;
+}
+
+#shrink-demo .shrink-2 {
+  flex-shrink: 2;
+}
+
+#shrink-demo .shrink-3 {
+  flex-shrink: 3;
+}
+
+#basis-demo .basis-auto {
+  flex-basis: auto;
+}
+
+#basis-demo .basis-100 {
+  flex-basis: 100px;
+}
+
+#basis-demo .basis-200 {
+  flex-basis: 200px;
+}
+
+#shorthand-demo {
+  flex-wrap: wrap;
+}
+
+#shorthand-demo .flex-1 {
+  flex: 1;
+  /* grow: 1, shrink: 1, basis 0% */
+}
+
+#shorthand-demo .flex-2 {
+  flex: 2;
+  /* grow: 2, shrink: 1, basis: 0% */
+}
+
+#shorthand-demo .initial {
+  flex: initial;
+  /* grow: 0, shrink: 1, basis: auto */
+}
+
+#shorthand-demo .none {
+  flex: none;
+  /* grow: 0, shrink: 0, basis: auto */
+}
