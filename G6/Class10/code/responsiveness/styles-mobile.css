@@ -1,0 +1,26 @@
+header {
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+}
+
+#navList{
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#navList li {
+    background-color: #7daaab;
+    padding: 10px;
+    text-align: center;
+}
+
+#container {
+    grid-template-columns: unset;
+}
+
+#container aside {
+    margin-bottom: 20px;
+}

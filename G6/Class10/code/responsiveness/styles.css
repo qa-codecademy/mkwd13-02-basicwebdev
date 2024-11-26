@@ -1,0 +1,115 @@
+#welcomingMessage {
+    color: brown;
+    text-shadow: 1px 2px 3px black;
+}
+
+
+/* this media query rule will be applied when the screen is lower then 700px */
+@media screen and (max-width: 700px)  {
+    #welcomingMessage {
+        color: plum;
+        text-shadow: none;
+
+        text-transform: capitalize;       
+    }
+}
+
+#myBox {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+}
+
+/* this media rule will be applied when the screen size is more then 700px */
+@media screen and (min-width: 700px) {
+    #myBox {
+        width: 300px;
+        height: 300px;
+    }
+
+    #welcomingMessage {
+        font-style: italic;
+    }
+}
+
+
+/* CHAINING CONDITIONS */
+/* this media rule will applied when then screen size is between 701 and 801 */
+@media screen and (min-width: 701px) and (max-width: 801px) {
+    #welcomingMessage {
+        display: none;
+    }
+}
+
+/* REAL LIFE EXAMPLE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 2px solid #f4f4f4;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#navList {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+#navList li {
+    cursor: pointer;
+}
+
+#navList li:hover {
+   text-shadow: -1px 0px 9px black;
+}
+
+#container {
+    padding: 0px 20px;
+
+    display: grid;
+    margin-top: 20px;
+
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+/* We commented since we moved this into the styles-mobile.css */
+/* @media screen and (max-width: 550px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+    
+    #navList{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #navList li {
+        background-color: #7daaab;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #container {
+        grid-template-columns: unset;
+    }
+
+    #container aside {
+        margin-bottom: 20px;
+    }
+} */
+
+
