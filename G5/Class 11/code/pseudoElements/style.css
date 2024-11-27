@@ -1,0 +1,32 @@
+p::selection{
+    background-color: blueviolet;
+    color:blue;
+}
+
+h2::before{
+    content: "Web Development ";
+    background-color: plum;
+}
+
+h2::after{
+    content: "G5";
+    background-color: plum;
+}
+
+p::first-letter{
+    color: burlywood;
+    font-size: 40px;
+}
+
+p::first-line{
+    color: aquamarine;
+    text-decoration: dotted;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+li::marker{
+    content:"* ";
+    color: pink;
+    font-size: 25px;  
+}
