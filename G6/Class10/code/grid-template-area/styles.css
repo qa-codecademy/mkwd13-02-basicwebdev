@@ -1,0 +1,60 @@
+#container {
+    display: grid;
+
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    background-color: rgb(253, 241, 225);
+
+    /* vh => VIEW HEIGHT */
+    height: 100vh;
+
+
+    grid-template-areas: 
+    "myHeader myHeader"
+    "myAside myMain"
+    "myAside myMain"
+    "myFooter myFooter"
+
+
+    ;
+
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    border: 1px solid orange;
+    padding: 20px;
+}
+
+header {
+    grid-area: myHeader;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    height: 100px;
+}
+
+main {
+    grid-area: myMain;
+}
+
+aside {
+    grid-area: myAside
+}
+
+footer {
+    grid-area: myFooter;
+}
+
+.navList {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+
+    justify-content: flex-end;
+}
