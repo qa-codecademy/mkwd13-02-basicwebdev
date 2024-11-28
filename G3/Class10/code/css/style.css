@@ -172,6 +172,7 @@ article {
     grid-column: 1 / 4;
 }
 
+
 /* ========== Grid Row ==========  */
 /* Shorthand for grid-row-start + grid-row-end */
 
@@ -183,4 +184,25 @@ article {
 .container-grid-items .item-5 {
     grid-column: 4 / 5;
     grid-row: -5 / -1;
+}
+
+
+/* ========== Grid Area (Shorthand) ==========  */
+
+.container-grid-area-items {
+    display: grid;
+    height: 500px;
+    border: 2px solid darkred;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/* <row-start> / <column-start> / <row-end> / <column-end> */
+.container-grid-area-items .item-1 {
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+.container-grid-area-items .item-2 {
+    grid-area: 2 / 1 / 4 / 6;
 }
