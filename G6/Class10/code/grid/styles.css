@@ -1,0 +1,95 @@
+.box {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: bisque;
+}
+
+/* COLUMNS */
+#container {
+    display: grid;
+    border: 1px solid red;
+
+    /* POSITIONING COLUMNS (VERTICAL) */
+    /* grid-template-columns: 200px 200px 200px; */
+
+    /* fr => FRACTION */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+
+    /* DEPRECATED */
+    /* grid-gap: 10px; */
+
+    /* BETTER USE THIS */
+    gap: 10px;
+}
+
+/* ROWS */
+#container-rows {
+    display: grid;
+    border: 1px solid red;
+  
+    /* POSITIONING ROWS (HORIZONTAL) */
+    /* grid-template-rows: 300px 200px 300px; */
+
+    grid-template-rows: 2fr 4fr 2fr;
+
+    grid-template-rows: repeat(3, 240px);
+
+    /* will apply height of the rows that are not affected by  grid-template-rows */
+    grid-auto-rows: 150px;
+
+    gap: 10px;
+}
+
+#container-rows-columns {
+    display: grid;  
+    gap: 10px;
+    height: 600px;
+    /* VERTICAL AXIS */
+    grid-template-columns: 1fr 2fr;
+
+    /* HORIZONTAL AXIS */
+    grid-template-rows: 100px 3fr 2fr;
+
+    grid-auto-rows: 1fr;
+}
+
+#child5 {
+    background-color: rgb(242, 118, 118);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr;
+    gap: 10px;
+  
+}
+
+#child5 div {
+    border: 1px solid yellow;
+    width: 60px;
+    height: 60px;
+}
+
+/* GRID SPAN */
+
+/* grid container */
+#grid-span {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Property for grid item */
+#gridChild1 {
+    /* start from position 1 and end before the start position 3 */
+    /* grid-column-start: 1;
+    grid-column-end: 3 */
+
+    /* SHORTHAND */
+
+    /* grid-column: 1 / 3; */
+
+    /* start from position 1 and take the place of position 3 also */
+    grid-column: 1 / span 3;
+}
