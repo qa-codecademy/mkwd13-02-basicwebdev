@@ -1,0 +1,91 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+/* .box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+
+}
+
+.box:hover {
+  transform: translate(-50%, -50%) rotateZ(360deg);
+  width: 400px;
+  height: 400px;
+} */
+
+.hover-dropdown {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  padding: 50px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transform: translate(-50%, 0);
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 1s;
+  overflow: hidden;
+}
+.header-dropdown {
+  height: 80px;
+}
+
+.hover-dropdown:hover {
+  height: 180px;
+  transition: all 0.3s;
+}
+.container-dropdown {
+  border-top: 2px solid white;
+  padding-top: 10px;
+  text-transform: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container-element {
+  letter-spacing: initial;
+  margin-bottom: 20px;
+}
+/* Container element */
+.animated-border {
+  position: relative; /* Ensure pseudo-element is positioned relative to this */
+  width: 100%;
+}
+.search {
+  color: white;
+  transition: all 1s;
+}
+.search:hover {
+  color: magenta;
+}
+
+/* The pseudo-element for the border */
+.animated-border::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; /* Border thickness */
+  width: 0%; /* Start with no width */
+  transition: width 1s ease; /* Smooth animation */
+  background-color: white;
+}
+
+/* On hover, expand the border width */
+.animated-border:hover::after {
+  width: 100%; /* Expand to full width */
+}

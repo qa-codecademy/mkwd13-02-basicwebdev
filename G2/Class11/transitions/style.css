@@ -1,0 +1,15 @@
+.kocka {
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 100px;
+  background-color: red;
+  border-radius: 100px;
+  transition: width 1s ease-in-out, height 1s ease-in-out 0.5s;
+
+}
+
+.kocka:hover {
+    width: 400px;
+    height: 400px;
+}
