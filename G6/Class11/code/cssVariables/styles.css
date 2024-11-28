@@ -1,0 +1,33 @@
+:root {
+     /* Declaring of the variable and assigning value */
+    --primaryColor: pink;
+    --secondaryColor: red;
+    --defaultSize: 150px;
+
+    --spacing-xs: 8px;
+    --spacing-x: 16px;
+    --spacing-m: 24px;
+    --spacing-l: 32px;
+
+    --error: red;
+    --warning: orange;
+}
+
+
+
+h1 {
+    /* USAGE OF THE VARIABLE */
+    color: var(--primaryColor);
+}
+
+.secondParag {
+    color: var(--primaryColor);
+}
+
+.box {
+    width: var(--defaultSize);
+    height: var(--defaultSize);
+    background-color: var(--primaryColor);
+
+    margin-top: var(--spacing-m);
+}

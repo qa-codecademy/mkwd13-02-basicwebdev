@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.firstDiv{
+    padding: 20px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    /*transition-property: background-color, width;*/
+    /* transition-property: all;*/
+    /*transition-duration: 5s; */
+    /*transition-timing-function: ease;*/
+    /*transition-timing-function: ease-out;*/
+    /*transition-timing-function: ease-in;*/
+    /*transition-timing-function: ease-in-out;*/
+    /* transition-timing-function: linear; */
+    /*transition-delay: 2s;*/
+    transition: all 5s linear;
+    -webkit-transition:all 5s linear;
+    -moz-transition:all 5s linear;
+    -ms-transition:all 5s linear;
+    -o-transition:all 5s linear;
+}
+
+.box:hover{
+    background-color: coral;
+    width: 100%;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transition: background-color 1s ease-in-out, transform 2s linear 0.5s;
+    -webkit-transition: background-color 1s ease-in-out, transform 2s linear 0.5s;
+    -moz-transition: background-color 1s ease-in-out, transform 2s linear 0.5s;
+    -ms-transition: background-color 1s ease-in-out, transform 2s linear 0.5s;
+    -o-transition: background-color 1s ease-in-out, transform 2s linear 0.5s;
+}
+.box1:hover{
+    background-color: bisque;
+    /*transform: rotate(45deg);*/
+    /*transform: scale(3, 2);*/
+    /*transform: translate(50px, 50px);*/
+    /*transform: skew(10deg, 5deg);*/
+    transform:rotate(45deg) skew(10deg, 5deg) translate(50px, 50px) scale(1.5, 1);
+}
+
+/* ============= Animation ================*/
+.stage{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+
+.ball{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: rgb(138, 66, 206);
+    position: absolute;
+    /* Animation property */
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: 3;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+.ball:active{
+    animation-play-state: paused;
+}
+@keyframes slide{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color:black;
+    }
+    50%{
+        top: 250px;
+        left: 250px;
+        background-color: chocolate;
+    }
+    100%{
+        top: 0;
+        left: 450px;
+        background-color: aqua;
+    }
+}
