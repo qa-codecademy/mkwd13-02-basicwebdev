@@ -1,0 +1,55 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+
+@font-face {
+    font-family: 'East Sea';
+    src: url('../fonts/EastSeaDokdo-Regular.ttf');
+}
+
+/* System font */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+
+h1 {
+    font-family: 'East Sea', sans-serif;
+}
+
+.sea-style {
+    font-family: 'East Sea', sans-serif;
+    line-height: 55px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    text-align: justify;
+}
+
+.sea-style::first-letter {
+    font-size: 60px;
+}
+
+.sea-style::first-line {
+    background-color: aqua;
+}
+
+.font-sizes {
+    font-size: 10px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.font-sizes > span {
+    /* font-size: 2em; */
+    /* font-size: 2rem; */
+    font-size: 10vw;
+}
+
+#vertical {
+    vertical-align: 20px;
+    background-color: green;
+}
+
+h3 {
+    text-shadow: 8px 15px 3px rgba(233,21,21,0.65);
+}
