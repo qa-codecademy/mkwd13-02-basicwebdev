@@ -1,0 +1,21 @@
+.box {
+ background-color: red;
+ padding: 10px;
+ border: 1px solid black;
+
+}
+
+.colorW {
+ color: white;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+ color: white;
+}
+
+.card,
+.card img {
+ height: 100%;
+}
