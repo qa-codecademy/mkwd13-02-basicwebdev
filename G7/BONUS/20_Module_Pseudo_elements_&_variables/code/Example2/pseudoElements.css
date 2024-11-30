@@ -1,0 +1,31 @@
+p::first-line {
+  color: blue;
+  font-family: cursive;
+}
+
+p::first-letter {
+  color: chartreuse;
+}
+
+#p1::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+#p1::after {
+  content: url("https://cdn.pixabay.com/photo/2019/12/25/16/46/skopje-4718891__480.jpg");
+  height: 30px;
+  width: 30px;
+  color: beige;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+#selection::selection {
+  color: blueviolet;
+  background-color: crimson;
+}

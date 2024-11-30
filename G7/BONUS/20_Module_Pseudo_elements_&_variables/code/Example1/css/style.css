@@ -1,0 +1,43 @@
+::selection {
+    background-color: magenta;
+    color: #fff;
+}
+
+h2::before {
+    content: "Web Development";
+    background-color: yellow;
+}
+
+h2::after {
+    content: "G4";
+    background-color: plum;
+}
+
+p::first-line {
+    color:aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p::first-letter {
+    color: burlywood;
+    font-size: 40px;
+}
+
+.box {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.box::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}

@@ -1,0 +1,56 @@
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$font-size: 16px;
+
+// Define a mixin for button styles
+@mixin button-styles {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+body {
+  font-size: $font-size;
+  background-color: #f1f1f1;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 40px;
+  font-size: 24px;
+  p {
+    font-size: 18px;
+  }
+}
+
+.content, .feature {
+  padding: 20px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.button-container {
+  margin-top: 20px;
+  .button {
+    @include button-styles;
+  }
+}

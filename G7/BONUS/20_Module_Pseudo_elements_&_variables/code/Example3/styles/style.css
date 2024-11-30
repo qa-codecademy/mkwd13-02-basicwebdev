@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --font-size: 16px;
+}
+
+body {
+    font-size: var(--font-size);
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+h1 {
+    font-size: calc(var(--font-size) * 2);
+}
+
+p {
+    line-height: 1.5;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}

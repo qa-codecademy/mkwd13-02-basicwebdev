@@ -1,0 +1,104 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 50px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+
+    transition-property: background-color, border-radius, transform;
+    transition-duration: 3s;
+
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+
+    transition: all 4s ease-in 1s
+}
+
+
+.box:hover {
+    background-color: red;
+    border-radius: 50px;
+    transform: rotate(240deg) scale(2)
+}
+
+
+.stage {
+    width: 500px;
+    height: 300px;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    position: absolute;
+
+    /* Animation */
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    animation: slide 5s ease-in infinite alternate forwards
+}
+
+/* @keyframes slide {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+       top: 250px;
+       left: 225px;
+       background-color: green;
+    }
+    100% {
+        top: 0;
+        left: 450px;
+        background-color: yellow;
+    }
+} */
+
+
+@keyframes slide {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: bisque;
+    }
+    25% {
+        top: 250px;
+        left: 0;
+        background-color: green;
+    }
+    50% {
+        top: 250px;
+        left: 450px;
+        background-color: blue;
+    }
+    75% {
+        top: 0;
+        left: 450px;
+        background-color: orange;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.stage:active .ball {
+    animation-play-state: paused;
+}
+
